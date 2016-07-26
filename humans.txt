@@ -1,0 +1,19 @@
+# http://humanstxt.org/
+
+
+## TEAM
+
+Kasper Sundström (@KSundstrom)
+
+
+## THANKS
+
+Help with the initial HTML/JavaScript/jQuery drafting: André Brunnsberg
+Intended audience, design ideas: The Academic Male Voice Choir of Helsinki (@Akademen)
+
+
+## SITE
+
+Standards: Polyglot XHTML5, CSS3, JS, AJAX, RDFa, JSON-LD
+Components: Bootstrap, Bootstrap Theme, HTML5 Boilerplate, jQuery
+Software: Notepad++
