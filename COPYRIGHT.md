@@ -1,4 +1,4 @@
-COPYRIGHT NOTICE
+# COPYRIGHT NOTICE
 
 Copyright © 2016 Kasper Sundström
 
