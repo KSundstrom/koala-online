@@ -1,21 +1,22 @@
+/**
+*   CHARSET
+*/
 @charset 'utf-8';
 
-/*
- *  IMPORT GOOGLE FONTS
- *  Change | in URL to:     %7C
- *  Change & in URL to:     %26
- *  Default sans stack:     'Helvetica Neue', HelveticaNeue, Helvetica, Arial, sans-serif;
- *  Default serif stack:    Georgia, 'Times New Roman', TimesNewRoman, Times, serif;
- *  Default mono stack:     Menlo, Monaco, Consolas, 'Courier New', CourierNew, monospace;
- */
- 
+/**
+*   IMPORT GOOGLE FONTS
+*   Change | in URL to:     %7C
+*   Change & in URL to:     %26
+*   Default sans stack:     'Helvetica Neue', Helvetica, Arial, sans-serif;
+*   Default serif stack:    Georgia, 'Times New Roman', Times, serif;
+*   Default mono stack:     Menlo, Monaco, Consolas, 'Courier New', monospace;
+*/
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i%26subset=latin-ext');
 @import url('https://fonts.googleapis.com/css?family=Lobster');
 
-/*
- *  CUSTOM STYLING
- */
- 
+/**
+*   CUSTOM STYLING
+*/
 html {
     position: relative;
     min-height: 100%;
@@ -23,7 +24,7 @@ html {
 
 body {
     background-image: url(../img/bgtile.gif);
-    font-family: 'Open Sans', 'Helvetica Neue', HelveticaNeue, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 .jumbotron {
