@@ -35,4 +35,4 @@ KoalaOnline använder **[Bootstrap](http://getbootstrap.com)**.
 
 Copyright © 2016 Kasper Sundström
 
-All rights retained where applicable. You may not reproduce, distribute, or create derivative works from this work without explicit permission from the copyright holder
+All rights retained where applicable. You may not reproduce, distribute, or create derivative works from this work without explicit permission from the copyright holder.
