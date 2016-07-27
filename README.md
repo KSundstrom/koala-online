@@ -1,6 +1,6 @@
 # [KoalaOnline](http://koala.ksundstrom.fi)
 
-KoalaOnline är ett webbverktyg för Akademens LSM-tentamina, inspirerat av det tidigare Javaverktyget Koala _(Kind-of-a-Lottery App)_, bägge kodade av Kasper Sundström.
+KoalaOnline är ett webbverktyg för Akademens LSM-tentamina, inspirerat av det tidigare Javaverktyget Koala _(Kind-of-a-Lottery App)_, även det kodat av Kasper Sundström.
 
 
 ## Uppdatering av sångerna
@@ -23,7 +23,7 @@ KoalaOnline är ett webbverktyg för Akademens LSM-tentamina, inspirerat av det 
 
 ## Tack
 
-Tack till **André Brunnsberg** för hjälp med det första utkastet till HTML/JavaScript/jQuery samt förstås till **[Akademen](http://akademen.com)** som är den tänkta användaren och som inspirerat designen.
+Tack till **André Brunnsberg** för hjälp med det första utkastet till HTML/JavaScript/jQuery samt förstås till **[Akademen](https://twitter.com/akademen)** som är den tänkta användaren och som inspirerat designen.
 
 
 ## Framework
