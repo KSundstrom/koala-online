@@ -8,8 +8,8 @@ Kasper Sundström (@KSundstrom)
 
 ## THANKS
 
-Help with the initial HTML/JavaScript/jQuery drafting: André Brunnsberg
-Intended audience, design ideas: The Academic Male Voice Choir of Helsinki (@Akademen)
+Help with initial HTML/JavaScript/jQuery drafting: André Brunnsberg
+Intended audience, design inspiration: The Academic Male Voice Choir of Helsinki (@Akademen)
 
 
 ## SITE
