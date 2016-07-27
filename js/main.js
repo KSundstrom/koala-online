@@ -62,7 +62,7 @@ var jqxhrB2 = $.get( urlB2, $.noop, 'text' )
     });
 
 
-// IMPLEMENT BUTTON FUNCTIONS
+// INITIALIZE BUTTONS
 
 var buttonFunctions = function() {
     var timeIcon = '<span class="glyphicon glyphicon-time" aria-hidden="true"></span> ';
