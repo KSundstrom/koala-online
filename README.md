@@ -8,14 +8,16 @@ KoalaOnline är ett webbverktyg för Akademens LSM-tentamina, inspirerat av det 
 ## Uppdatering av sångerna
 
 * Sångerna läses in från de tre textfilerna i mappen `/data/`.
-* I filerna måste varje sång med tillhörande info finnas på exakt en egen rad. Det får inte finnas några som helst tomma rader i textfilerna.
-* Använd riktiga/typografiska citationstecken, apostrofer, ellipser och andra specialtecken.
-* Filerna måste vara ren text (`TXT`).
+* I filerna måste varje sång med all tillhörande info finnas på en egen rad.
+* Filerna måste vara ren text (TXT) i UTF-8.
 * Ta backup på filerna först om du ämnar uppdatera dem.
-* Öppna filen/filerna i `/data/` i en riktig text/kodeditor, exempelvis Notepad++. Om du i Windows öppnar i vanliga Anteckningar kan det hända att radbrytningarna inte syns.
-* Uppdatera vad som måste uppdateras. Använd vid behov hjälpfilen `kodgenerator-lsm-2015.xlsx` (fråga upphovsmannen) för att enkelt ta fram helt nya kodlistor. Kopiera kodlistorna från Excel (en kategori åt gången) och ersätt innehållet i respektive textfil.
-* Kontrollera att varje sång finns med och finns på egen rad. _Ta bort eventuella tomma rader i början och slutet!_
-* Spara filen/filerna som `TXT`, i `UTF8`, och med `LF`- eller `CRLF`-radbrytningar (bägge fungerar). _Ändra inte filnamnen eller ändelserna!_
+* Använd typografiska citationstecken, apostrofer, ellipser och andra specialtecken.
+* Öppna filen/filerna i `/data/` i en dedikerad texteditor, exempelvis Notepad++. Om du i Windows öppnar i vanliga Anteckningar kan det hända att radbytena inte syns.
+* Uppdatera vad som måste uppdateras. Använd vid behov hjälpfilen `kodgenerator-lsm-2015.xlsx` för att enkelt ta fram helt nya kodlistor. Kopiera kodlistorna från Excel (en kategori åt gången) och ersätt innehållet i respektive textfil.
+* Kontrollera att varje sång finns med och finns på egen rad.
+* Spara filen/filerna *utan att ändra inte filnamnen eller ändelserna.*
+* Inläsningen klarar av att rensa bort tomma rader, men undvik att lämna sådana.
+* Inläsningen klarar av vilket slag av radbyten som helst, men sträva till att använda `LF`.
 
 
 ## Upphovsman

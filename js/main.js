@@ -9,32 +9,44 @@ if ( window.matchMedia( '(max-width: 767px)' ).matches ) {
 *   HELPER FUNCTIONS
 */
 var getLocalTime = function() {
-    var d = new Date();
-    return d.toLocaleTimeString();
+    var fullDate = new Date();
+    return fullDate.toLocaleTimeString();
 };
 
-var textToArray = function( aText ) {
-    return aText.split(  /\r\n|\n/ );
+var textToArr = function( aText ) {
+    var dirtyArr = new Array();
+    var anyNewline = new RegExp( '\r\n|\n|\r' );
+    dirtyArr = aText.split( anyNewline );
+    return dirtyArr;
 };
 
-var getRandomIndex = function( aArray ) {
-    return Math.floor( Math.random() * aArray.length );
+function cleanupArr( dirtyArr ) {
+    var cleanArr = new Array();
+    var anyStr = new RegExp( '.+' );
+    cleanArr = $.grep( dirtyArr, function( n ) {
+        return anyStr.test( n );
+    });
+    return cleanArr;
+};
+
+var getRandomIndex = function( aArr ) {
+    return Math.floor( Math.random() * aArr.length );
 };
 
 /**
 *   RETRIEVE DATA WITH AJAX AND POPULATE ARRAYS
 */
-var urlA = 'data/lsm-a.txt',
-    urlB1 = 'data/lsm-b1.txt',
-    urlB2 = 'data/lsm-b2.txt';
+var urlA = 'data/lsm-a.txt';
+var urlB1 = 'data/lsm-b1.txt';
+var urlB2 = 'data/lsm-b2.txt';
 
-var songArrayA = [],
-    songArrayB1 = [],
-    songArrayB2 = [];
+var songArrA = new Array();
+var songArrB1 = new Array();
+var songArrB2 = new Array();
 
 var jqxhrA = $.get( urlA, $.noop, 'text' )
 .done(function( data ) {
-    songArrayA = textToArray( data );
+    songArrA = cleanupArr( textToArr( data ));
     // console.log( getLocalTime() + ': Läste in A' );
 })
 .fail(function() {
@@ -44,7 +56,7 @@ var jqxhrA = $.get( urlA, $.noop, 'text' )
 
 var jqxhrB1 = $.get( urlB1, $.noop, 'text' )
 .done(function( data ) {
-    songArrayB1 = textToArray( data );
+    songArrB1 = cleanupArr( textToArr( data ));
     // console.log( getLocalTime() + ': Läste in B1' );
 })
 .fail(function() {
@@ -54,7 +66,7 @@ var jqxhrB1 = $.get( urlB1, $.noop, 'text' )
 
 var jqxhrB2 = $.get( urlB2, $.noop, 'text' )
 .done(function( data ) {
-    songArrayB2 = textToArray( data );
+    songArrB2 = cleanupArr( textToArr( data ));
     // console.log( getLocalTime() + ': Läste in B2' );
 })
 .fail(function() {
@@ -69,7 +81,7 @@ var buttonFunctions = function() {
     var timeIcon = '<span class="glyphicon glyphicon-time" aria-hidden="true"></span> ';
 
     $( '#songButtonA' ).click(function() {
-        var song = songArrayA[ getRandomIndex( songArrayA ) ];
+        var song = songArrA[ getRandomIndex( songArrA ) ];
         var time = getLocalTime();
         // console.log( time + ': A: ' + song );
         $( '<div class="panel panel-success songResult">' +
@@ -89,7 +101,7 @@ var buttonFunctions = function() {
     });
 
     $( '#songButtonB1' ).click(function() {
-        var song = songArrayB1[ getRandomIndex( songArrayB1 ) ];
+        var song = songArrB1[ getRandomIndex( songArrB1 ) ];
         var time = getLocalTime();
         // console.log( time + ': B1: ' + song );
         $( '<div class="panel panel-warning songResult">' +
@@ -109,7 +121,7 @@ var buttonFunctions = function() {
     });
 
     $( '#songButtonB2' ).click(function() {
-        var song = songArrayB2[ getRandomIndex( songArrayB2 ) ];
+        var song = songArrB2[ getRandomIndex( songArrB2 ) ];
         var time = getLocalTime();
         // console.log( time + ': B2: ' + song );
         $( '<div class="panel panel-danger songResult">' +
@@ -138,7 +150,7 @@ var buttonFunctions = function() {
 
     $( '#resetButton' ).click(function() {
         var time = getLocalTime();
-        console.log( time + ': Raderade resultaten' );
+        // console.log( time + ': Raderade resultaten' );
         $( '#songResults' ).animate( {
             opacity: 'toggle',
             height: 'toggle'
