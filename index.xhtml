@@ -53,7 +53,7 @@
         "url": "http://koala.ksundstrom.fi/",
         "inLanguage": "sv-FI",
         "applicationCategory": "utility",
-        "browserRequirements": "HTML5",
+        "browserRequirements": "IE9+",
         "operatingSystem": "any",
         "datePublished": "2016-07-13",
         "dateModified": "2016-07-29",
@@ -122,104 +122,111 @@
 
         <!-- RAFFLE BUTTONS -->
 
-        <section class="row hidden-print">
-          <div class="col-sm-4">
-            <h2 class="sr-only">
-              Sångknappar
-            </h2>
-            <div class="btn-group btn-group-justified" role="group" aria-label="Avdelning A">
-              <a role="button" class="btn btn-primary btn-lg disabled" id="songButtonA" title="Lotta sång ur avdelning A">
-                <span class="glyphicon glyphicon-music hidden-xs" aria-hidden="true"></span>
-                <span class="hidden-xs">Lotta</span>
-                A-sång
-              </a>
+        <section class="hidden-print">
+          <h2 class="sr-only">
+            Lottoknappar
+          </h2>
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="btn-group btn-group-justified" role="group" aria-label="Avdelning A">
+                <a role="button" class="btn btn-primary btn-lg disabled" id="songButtonA" title="Lotta sång ur avdelning A">
+                  <span class="glyphicon glyphicon-music hidden-xs" aria-hidden="true"></span>
+                  <span class="hidden-xs">Lotta</span>
+                  A-sång
+                </a>
+              </div>
             </div>
-          </div>
-          <div class="col-sm-8">
-            <div class="btn-group btn-group-justified" role="group" aria-label="Avdelning B">
-              <a role="button" class="btn btn-primary btn-lg disabled" id="songButtonB1" title="Lotta lättare sång ur avdelning B">
-                <span class="glyphicon glyphicon-music hidden-xs" aria-hidden="true"></span>
-                <span class="hidden-xs">Lotta lättare</span>
-                <span class="visible-xs-inline" aria-hidden="true">Lättare</span>
-                B-sång
-              </a>
-              <a role="button" class="btn btn-primary btn-lg disabled" id="songButtonB2" title="Lotta svårare sång ur avdelning B">
-                <span class="glyphicon glyphicon-music hidden-xs" aria-hidden="true"></span>
-                <span class="hidden-xs">Lotta svårare</span>
-                <span class="visible-xs-inline" aria-hidden="true">Svårare</span>
-                B-sång
-              </a>
+            <div class="col-sm-8">
+              <div class="btn-group btn-group-justified" role="group" aria-label="Avdelning B">
+                <a role="button" class="btn btn-primary btn-lg disabled" id="songButtonB1" title="Lotta lättare sång ur avdelning B">
+                  <span class="glyphicon glyphicon-music hidden-xs" aria-hidden="true"></span>
+                  <span class="hidden-xs">Lotta lättare</span>
+                  <span class="visible-xs-inline" aria-hidden="true">Lättare</span>
+                  B-sång
+                </a>
+                <a role="button" class="btn btn-primary btn-lg disabled" id="songButtonB2" title="Lotta svårare sång ur avdelning B">
+                  <span class="glyphicon glyphicon-music hidden-xs" aria-hidden="true"></span>
+                  <span class="hidden-xs">Lotta svårare</span>
+                  <span class="visible-xs-inline" aria-hidden="true">Svårare</span>
+                  B-sång
+                </a>
+              </div>
             </div>
           </div>
         </section>
 
         <!-- RAFFLE RESULTS -->
 
-        <section class="row">
-          <div class="col-lg-12">
-            <h2 class="visible-print-block clearfix">
-              Lottade sånger
-              <span class="pull-right">
-                <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
-                <!--#config timefmt="%d.%m.%Y" --><!--#echo var="DATE_LOCAL" -->
-              </span>
-            </h2>
-            <div id="songResults" role="group" aria-label="Lottade sånger">
+        <section>
+          <div class="row">
+            <div class="col-lg-12">
+              <h2 class="visible-print-block clearfix">
+                Lottade sånger
+                <span class="pull-right">
+                  <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
+                  <!--#config timefmt="%d.%m.%Y" --><!--#echo var="DATE_LOCAL" -->
+                </span>
+              </h2>
+              <div id="songResults" role="group" aria-label="Lottade sånger"></div>
             </div>
           </div>
         </section>
 
         <!-- UTILITY BUTTONS -->
 
-        <section class="row hidden-print">
-          <div class="col-lg-12 text-right">
-            <h2 class="sr-only">
-              Övriga knappar
-            </h2>
-            <div class="btn-group">
-              <a role="button" class="btn btn-info btn-lg" id="helpButton" title="KoalaOnline bruksanvisning" data-container="body" data-toggle="popover" data-placement="auto" data-content="Använd knapparna ovan för att lotta fram sånger ur de olika LSM-kategorierna. Den senast framlottade sången dyker upp högst upp. Uppe till höger framgår när respektive sång lottades fram. Resultaten finns kvar på skärmen tills du klickar på Töm.">
-                <span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>
-                Hjälp
-              </a>
+        <section class="hidden-print">
+          <h2 class="sr-only">
+            Hjälpknappar
+          </h2>
+          <div class="row">
+            <div class="col-lg-12 text-right">
+
+              <!-- INFO POPOVER AND SONG MODALS -->
+
+              <div class="btn-group">
+                <a role="button" tabindex="0" class="btn btn-info btn-lg" id="helpButton" title="KoalaOnline bruksanvisning" data-toggle="popover" data-trigger="focus" data-container="body" data-placement="auto" data-content="Använd knapparna ovan för att lotta fram sånger ur de olika LSM-kategorierna. Den senast framlottade sången dyker upp högst upp. Uppe till höger framgår när respektive sång lottades fram. Resultaten finns kvar på skärmen tills du klickar på Töm.">
+                  <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+                  Info
+                </a>
+                <a role="button" class="btn btn-info btn-lg dropdown-toggle" title="Visa sånger" data-toggle="dropdown" data-container="body" aria-haspopup="true" aria-expanded="false">
+                  <span class="caret"></span>
+                  <span class="sr-only">Visa meny</span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="#songModal" data-target="#songModal" data-toggle="modal" data-category="A">Visa alla A-sånger</a></li>
+                  <li><a href="#songModal" data-target="#songModal" data-toggle="modal" data-category="B">Visa alla B-sånger</a></li>
+                </ul>
+              </div>
+
+              <!-- RESET BUTTON -->
+
+              <div class="btn-group">
+                <a role="button" class="btn btn-danger btn-lg" id="resetButton" title="Radera resultaten">
+                  <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+                  Töm
+                </a>
+              </div>
             </div>
-            <div class="btn-group">
-              <a role="button" class="btn btn-info btn-lg dropdown-toggle" title="Visa sånger" data-toggle="dropdown" data-container="body" aria-haspopup="true" aria-expanded="false">
-                <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
-                Sånger
-                <span class="caret"></span>
-              </a>
-              <ul class="dropdown-menu">
-                <li><a href="#songModal" data-target="#songModal" data-toggle="modal" data-category="A">Visa alla sånger i avdelning A</a></li>
-                <li><a href="#songModal" data-target="#songModal" data-toggle="modal" data-category="B">Visa alla sånger i avdelning B</a></li>
-              </ul>
-            </div>
-            <div class="btn-group">
-              <a role="button" class="btn btn-danger btn-lg" id="resetButton" title="Radera resultaten">
-                <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
-                Töm
-              </a>
+          </div>
+
+          <!-- MODAL -->
+
+          <div role="dialog" tabindex="-1" class="modal fade" id="songModal" aria-labelledby="songModalLabel">
+            <div role="document" class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Stäng">
+                    <span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span>
+                  </button>
+                  <h3 class="modal-title" id="songModalLabel">Alla sånger</h3>
+                </div>
+                <div class="modal-body">
+                  <ol id="modalList"></ol>
+                </div>
+              </div>
             </div>
           </div>
         </section>
-
-        <!-- SONG MODAL -->
-
-        <div role="dialog" tabindex="-1" class="modal fade" id="songModal" aria-labelledby="songModalLabel">
-          <div role="document" class="modal-dialog modal-lg">
-            <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Stäng">
-                  <span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span>
-                </button>
-                <h3 class="modal-title" id="songModalLabel">Sånger</h3>
-              </div>
-              <div class="modal-body">
-                <ol id="modalList">
-                </ol>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </main>
 

@@ -158,6 +158,7 @@ function initializeUI() {
   });
 }
 
+
 /**
 *   RETRIEVE DATA AND POPULATE ARRAYS
 */

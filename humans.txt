@@ -6,11 +6,11 @@ Design and development: Kasper Sundström (@KSundstrom)
 
 /* THANKS */
 
-Help with initial HTML/JS/jQuery drafting: André Brunnsberg
+Initial HTML/JavaScript/jQuery drafting assistance: André Brunnsberg
 Intended audience, design inspiration: The Academic Male Voice Choir of Helsinki (@Akademen)
 
 /* SITE */
 
-Standards: Polyglot HTML5, CSS3, JavaScript, AJAX
+Standards: Polyglot XHTML5, CSS3, JavaScript, AJAX
 Components: Bootstrap 3.3.7, jQuery 3.1.0
-Software: Notepad++, Atom, XAMPP, FileZilla, GitHub
+Software: Notepad++, Atom, GitHub, XAMPP, FileZilla, Opera
