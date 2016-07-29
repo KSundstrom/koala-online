@@ -3,86 +3,89 @@
 */
 @charset 'utf-8';
 
+
 /**
 *   IMPORT GOOGLE FONTS
-*   Change | in URL to:     %7C
-*   Change & in URL to:     %26
-*   Default sans stack:     'Helvetica Neue', Helvetica, Arial, sans-serif;
-*   Default serif stack:    Georgia, 'Times New Roman', Times, serif;
-*   Default mono stack:     Menlo, Monaco, Consolas, 'Courier New', monospace;
+*   Change | in URL to: %7C
+*   Change & in URL to: %26
+*   System font stack:  -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+*   Basic sans stack:   'Helvetica Neue', Helvetica, Arial, sans-serif;
+*   Basic serif stack:  Georgia, 'Times New Roman', Times, serif;
+*   Basic mono stack:   Menlo, Monaco, Consolas, 'Courier New', monospace;
 */
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i%26subset=latin-ext');
 @import url('https://fonts.googleapis.com/css?family=Lobster');
+
 
 /**
 *   CUSTOM STYLING
 */
 html {
-    position: relative;
-    min-height: 100%;
+  position: relative;
+  min-height: 100%;
 }
 
 body {
-    background-image: url(../img/bgtile.gif);
-    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background-image: url(../img/bgtile.gif);
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 .jumbotron {
-    background-color: transparent;
-    color: #fff;
-    text-shadow: 2px 2px 4px #333;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-    padding-bottom: 25px;
-    margin-bottom: 0;
+  background-color: transparent;
+  color: #fff;
+  text-shadow: 2px 2px 4px #333;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  padding-bottom: 25px;
+  margin-bottom: 0;
 }
 
 .jumbotron h1 {
-    font-family: inherit;
-    font-family: 'Lobster';
+  font-family: inherit;
+  font-family: 'Lobster';
 }
 
 #brand {
-    font-size: 125%;
+  font-size: 125%;
 }
 
 .jumbotron p {
-    font-family: inherit;
-    text-shadow: 1px 1px 2px #222;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+  font-family: inherit;
+  text-shadow: 1px 1px 2px #222;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
 }
 
 .jumbotron img {
-    margin-right: 25px;
+  margin-right: 25px;
 }
 
 main {
-    background-color: #fff;
-    box-shadow: 0px 4px 8px #444;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
-    padding: 25px 0;
-    margin-bottom: 75px;
+  background-color: #fff;
+  box-shadow: 0px 4px 8px #444;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+  padding: 25px 0;
+  margin-bottom: 75px;
 }
 
 .btn-group {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .panel-body {
-    font-family: inherit;
-    font-weight: 600;
+  font-family: inherit;
+  font-weight: 600;
 }
 
 footer {
-    background-color: #fff;
-    box-shadow: 0px 4px 8px #444;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: auto;
-    padding: 5px;
+  background-color: #fff;
+  box-shadow: 0px 4px 8px #444;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  padding: 5px;
 }
 
 footer p {
-    margin-top: 10px;
+  margin-top: 10px;
 }
