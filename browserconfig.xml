@@ -4,11 +4,11 @@
 <browserconfig>
     <msapplication>
         <tile>
-            <square70x70logo src="img/largetile.png"/> <!-- 128x128px recommended -->
-            <square150x150logo src="img/largetile.png"/> <!-- 270x270px recommended -->
-            <wide310x150logo src="img/widetile.png"/> <!-- 558x270px recommended -->
-            <square310x310logo src="img/largetile.png"/> <!-- 558x558px recommended -->
-            <TileColor>#0099ff</TileColor>
+            <square70x70logo src="img/largetile.png"/>      <!-- 128x128px recommended -->
+            <square150x150logo src="img/largetile.png"/>    <!-- 270x270px recommended -->
+            <wide310x150logo src="img/widetile.png"/>       <!-- 558x270px recommended -->
+            <square310x310logo src="img/largetile.png"/>    <!-- 558x558px recommended -->
+            <!-- <TileColor>#0099ff</TileColor> -->
         </tile>
     </msapplication>
 </browserconfig>

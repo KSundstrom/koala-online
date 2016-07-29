@@ -5,8 +5,8 @@
         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
     <url>
         <loc>http://koala.ksundstrom.fi/</loc>
-        <lastmod>2016-07-28</lastmod>
-        <changefreq>daily</changefreq>
+        <lastmod>2016-07-29</lastmod>
+        <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
 </urlset>
