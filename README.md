@@ -35,7 +35,11 @@ KoalaOnline är ett webbverktyg för Akademens LSM-tentamina, inspirerat av det 
 
 ## Standarder och komponenter
 
+<<<<<<< HEAD
 KoalaOnline är skrivet i polyglott XHTML5, CSS3 och JavaScript och använder **[Bootstrap 3.3.7](http://getbootstrap.com/)** och **[jQuery 3.1.0](http://jquery.com/)**.
+=======
+KoalaOnline är skrivet i polyglott (X)HTML5, CSS3 och JavaScript och använder **[Bootstrap 3.3.7](http://getbootstrap.com/)** och **[jQuery 3.1.0](http://jquery.com/)**.
+>>>>>>> origin/master
 
 
 ## Copyright
