@@ -9,18 +9,6 @@ if ( window.matchMedia( '(max-width: 767px)' ).matches ) {
 /**
 *   HELPER FUNCTIONS
 */
-var getLocalTime = function() {
-  var fullDate = new Date();
-  var localTime = fullDate.toLocaleTimeString();
-  return localTime;
-};
-
-var textToHtmlLines = function( aText ) {
-  var newline = /\r\n|\n|\r/gi;
-  var htmlLines = aText.replace( newline, '<br/>' );
-  return htmlLines;
-};
-
 var textToArray = function( aText ) {
   var newline = /\r\n|\n|\r/;
   var dirtyArray = aText.split( newline );
@@ -38,6 +26,12 @@ function cleanUpArray( aArray ) {
 
 var getRandomIndex = function( aArray ) {
   return Math.floor( Math.random() * aArray.length );
+};
+
+var getLocalTime = function() {
+  var fullDate = new Date();
+  var localTime = fullDate.toLocaleTimeString();
+  return localTime;
 };
 
 
@@ -157,25 +151,25 @@ var buttonFunctions = function() {
       // ' Allt som gjorts under en session skrivs även ut med klockslag i webbläsarens konsol. Informationen finns kvar där tills sidan stängs.</p>' +
       '</p>'
   });
-    
+
   $( '#songModal' ).on( 'show.bs.modal', function( event ) {
     var link = $( event.relatedTarget );
     var cat = link.data( 'category' );
     var songsA = new Array();
     var songsB = new Array();
     $.each( songArrayA, function( index, value ) {
-        songsA.push( '<li>' + value + '</li>');
+        songsA.push( '<li>' + value + '</li>' );
     });
     $.each( songArrayB1, function( index, value ) {
-        songsB.push( '<li>' + value + '</li>');
+        songsB.push( '<li>' + value + '</li>' );
     });
     $.each( songArrayB2, function( index, value ) {
-        songsB.push( '<li>' + value + '</li>');
+        songsB.push( '<li>' + value + '</li>' );
     });
     songsA.sort();
     songsB.sort();
     var modal = $( this );
-    modal.find( '.modal-title' ).text( 'Sångerna i kategori ' + cat );
+    modal.find( '.modal-title' ).text( 'Alla sånger i avdelning ' + cat );
     if ( cat == 'A' ) {
       modal.find( '#modalList' ).html( songsA.join( '' ) );
     } else if ( cat == 'B' ) {
