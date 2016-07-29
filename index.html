@@ -101,24 +101,6 @@
   </head>
   <body vocab="https://schema.org/" typeof="WebApplication">
 
-    <!-- MODAL -->
-
-    <div class="modal fade" id="songModal" tabindex="-1" role="dialog" aria-labelledby="songModalLabel">
-      <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Stäng">
-              <span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span>
-            </button>
-            <h3 class="modal-title" id="songModalLabel"></h3>
-          </div>
-          <div class="modal-body">
-            <ol id="modalList"></ol>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <!-- HEADER -->
 
     <header class="jumbotron">
@@ -146,7 +128,7 @@
           </h2>
           <div class="col-sm-4">
             <div class="btn-group btn-group-justified" role="group" aria-label="Avdelning A">
-              <a type="button" class="btn btn-default btn-lg" id="songButtonA" title="Lotta sång ur avdelning A" role="button">
+              <a role="button" class="btn btn-default btn-lg" id="songButtonA" title="Lotta sång ur avdelning A">
                 <span class="glyphicon glyphicon-music hidden-xs" aria-hidden="true"></span>
                 <span class="hidden-xs">Lotta</span>
                 A-sång
@@ -194,13 +176,13 @@
           </h2>
           <div class="col-lg-12 text-right">
             <div class="btn-group">
-              <a tabindex="0" type="button" class="btn btn-default btn-lg" id="helpButton" title="Anvisningar" data-toggle="popover" data-trigger="focus" role="button" aria-haspopup="true" aria-expanded="false">
+              <a role="button" tabindex="0" class="btn btn-default btn-lg" id="helpButton" title="Anvisningar" data-toggle="popover" data-trigger="focus" aria-haspopup="true" aria-expanded="false">
                 <span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>
                 Hjälp
               </a>
             </div>
             <div class="btn-group">
-              <a type="button" class="btn btn-default btn-lg dropdown-toggle" title="Visa sånger" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+              <a role="button" class="btn btn-default btn-lg dropdown-toggle" title="Visa sånger" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
                 Sånger
                 <span class="caret"></span>
@@ -211,10 +193,28 @@
               </ul>
             </div>
             <div class="btn-group">
-              <a type="button" class="btn btn-default btn-lg" id="resetButton" title="Radera resultaten" role="button">
+              <a role="button" class="btn btn-default btn-lg" id="resetButton" title="Radera resultaten">
                 <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
                 Töm
               </a>
+            </div>
+          </div>
+          
+          <!-- MODAL -->
+
+          <div class="modal fade" id="songModal" tabindex="-1" role="dialog" aria-labelledby="songModalLabel">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button class="close" data-dismiss="modal" aria-label="Stäng">
+                    <span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span>
+                  </button>
+                  <h3 class="modal-title" id="songModalLabel">Sånger</h3>
+                </div>
+                <div class="modal-body">
+                  <ol id="modalList"></ol>
+                </div>
+              </div>
             </div>
           </div>
         </section>
