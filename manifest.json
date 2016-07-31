@@ -1,0 +1,14 @@
+{
+  "name": "KoalaOnline",
+  "short_name": "Koala",
+  "description": "Kind-of-a-Lottery App, ett webbverktyg för Akademens LSM-tentamina",
+  "lang": "sv-FI",
+  "dir": "ltr",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "royalblue",
+  "theme_color": "blue",
+  "prefer_related_applications": false
+}

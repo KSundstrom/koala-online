@@ -1,43 +1,64 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="sv-FI" xml:lang="sv-FI" dir="ltr">
   <head>
-    <meta charset="utf-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"/>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
 
     <title>KoalaOnline</title>
 
-    <meta name="robots" content="index, follow"/>
-    <meta name="description" content="Kind-of-a-Lottery App, ett webbverktyg för Akademens LSM-tentamina"/>
-    <meta name="author" content="Kasper Sundström"/>
-    <meta name="copyright" content="Copyright © 2016 Kasper Sundström"/>
-    <link rel="canonical" href="http://koala.ksundstrom.fi/"/>
-    <link rel="author" href="humans.txt"/>
+    <base target="_blank" />
 
-    <!-- IE favicon 32x32px ICO -->
+    <meta name="application-name" content="Koala" />
+    <meta name="description" content="Kind-of-a-Lottery App, ett webbverktyg för Akademens LSM-tentamina" />
+    <meta name="keywords" content="Koala, KoalaOnline, Kind-of-a-Lottery, Akademen, Akademiska Sångföreningen, LSM, Lilla Sångarmärket, tentamen" />
+    <meta name="creator" content="Kasper Sundström" />
+    <meta name="publisher" content="Kasper Sundström" />
+    <meta name="robots" content="index, follow" />
+
+    <link rel="author" type="text/plain" href="humans.txt" hreflang="en" />
+    <link rel="license" type="text/plain" href="license.txt" hreflang="en" />
+    <link rel="manifest" type="application/manifest+json" href="manifest.json" />
+    <link rel="canonical" href="http://koala.ksundstrom.fi/" />
+
     <!--[if IE]>
-      <link rel="shortcut icon" href="favicon.ico"/>
+      <link rel="shortcut icon" href="favicon.ico" />
     <![endif]-->
 
-    <!-- Favicon 196x196px PNG -->
-    <link rel="icon" type="image/png" href="img/favicon.png"/>
+    <link rel="icon" type="image/png" href="img/favicon-16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="img/favicon-32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="img/favicon-96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="img/favicon-128.png" sizes="128x128" />
+    <link rel="icon" type="image/png" href="img/favicon-196.png" sizes="196x196" />
 
-    <!-- Touch icon 180x180px PNG -->
-    <link rel="apple-touch-icon" href="img/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" sizes="57x57" href="img/apple-touch-icon-57.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="img/apple-touch-icon-60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="img/apple-touch-icon-76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="img/apple-touch-icon-120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="img/apple-touch-icon-144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="img/apple-touch-icon-152.png" />
+
+    <meta name="msapplication-TileColor" content="#0099FF" />
+    <meta name="msapplication-TileImage" content="img/mstile-144.png" />
+
+    <meta name="msapplication-tooltip" content="Kind-of-a-Lottery App" />
+    <meta name="msapplication-config" content="browserconfig.xml" />
 
     <!-- Bootstrap 3.3.7 CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
 
     <!-- Bootstrap 3.3.7 Theme CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"/>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous" />
 
     <!-- Google Fonts and custom CSS -->
-    <link rel="stylesheet" href="css/main.css"/>
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <script type="application/javascript" src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script type="application/javascript" src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
     <!-- JSON-LD -->
@@ -45,8 +66,8 @@
       {
         "@context": "https://schema.org/",
         "@type": "WebApplication",
-        "name": "KoalaOnline",
-        "alternateName": "Kind-of-a-Lottery App",
+        "name": "Koala",
+        "alternateName": [ "KoalaOnline", "Kind-of-a-Lottery App" ],
         "description": "Ett webbverktyg för Akademens LSM-tentamina",
         "softwareVersion": "LSM2015",
         "image": "http://koala.ksundstrom.fi/img/widetile.png",
@@ -56,7 +77,7 @@
         "browserRequirements": "IE9+",
         "operatingSystem": "any",
         "datePublished": "2016-07-13",
-        "dateModified": "2016-07-29",
+        "dateModified": "2016-07-31",
         "copyrightYear": "2016",
         "copyrightHolder": {
           "@type": "Person",
@@ -88,11 +109,6 @@
           "@type": "BusinessAudience",
           "name": "Akademiska Sångföreningen",
           "alternateName": [ "Akademen", "The Academic Male Voice Choir of Helsinki" ],
-          "geographicArea": {
-            "@type": "City",
-            "name": "Helsingfors",
-            "alternateName": "Helsinki"
-          },
           "url": "http://akademen.com/",
           "sameAs": "https://www.wikidata.org/wiki/Q4411935"
         }
@@ -105,9 +121,9 @@
 
     <header class="jumbotron">
       <div class="container">
-        <img src="img/koala.png" alt="" class="img-responsive img-rounded pull-left hidden-print" width="100" aria-hidden="true"/>
+        <img src="img/koala.png" alt="" class="img-responsive img-rounded pull-left hidden-print" width="100" aria-hidden="true" />
         <h1>
-          <span id="brand" lang="en" xml:lang="en" title="Kind-of-a-Lottery App">Koala<wbr/>Online</span>
+          <span id="brand" lang="en" xml:lang="en" title="Kind-of-a-Lottery App">Koala<wbr />Online</span>
         </h1>
         <p>
           <small>Version LSM2015</small>
@@ -237,8 +253,9 @@
         <div class="row">
           <div class="col-lg-12">
             <p class="small text-muted">
-              Kodad av <a href="http://ksundstrom.fi/" target="_blank">Kasper Sundström</a> för <a href="http://akademen.com/" target="_blank">Akademen</a> med hjälp av <a href="http://getbootstrap.com/" target="_blank">Bootstrap</a>.
+              Byggd av <a href="http://ksundstrom.fi/" rel="external" hreflang="sv-FI">Kasper Sundström</a> för <a href="http://akademen.com/" rel="external" hreflang="sv-FI">Akademen</a> med hjälp av <a href="http://getbootstrap.com/" rel="external" hreflang="en">Bootstrap</a>.
               Senast uppdaterad <!--#config timefmt="%d.%m.%Y" --><!--#echo var="LAST_MODIFIED" -->.
+              © 2016 Kasper Sundström.
             </p>
           </div>
         </div>
@@ -246,12 +263,12 @@
     </footer>
 
     <!-- jQuery Core 3.1.0 -->
-    <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+    <script type="application/javascript" src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
 
     <!-- Bootstrap 3.3.7 JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script type="application/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
     <!-- Custom JavaScript -->
-    <script src="js/main.js"></script>
+    <script type="application/javascript" src="js/main.js"></script>
   </body>
 </html>
