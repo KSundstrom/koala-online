@@ -1,8 +1,6 @@
-# [KoalaOnline](http://koala.ksundstrom.fi/)
-
+# [KoalaOnline](http://koala.ksundstrom.fi)
 
 > It’s kind of a lottery!
-
 
 KoalaOnline är ett webbverktyg för Akademens LSM-tentamina, inspirerat av det tidigare Javaverktyget Koala _(Kind-of-a-Lottery App)_, också kodat av Kasper Sundström.
 
@@ -24,18 +22,18 @@ KoalaOnline är ett webbverktyg för Akademens LSM-tentamina, inspirerat av det 
 
 ## Upphovsman
 
-**[Kasper Sundström](https://twitter.com/ksundstrom/)**
+**[Kasper Sundström](https://twitter.com/ksundstrom)**
 
 
 ## Tack
 
 * Tack till **André Brunnsberg**, för hjälp med det första utkastet till HTML/JavaScript/jQuery.
-* Tack till **[Akademen](https://twitter.com/akademen/)**, som är den tänkta användaren och som inspirerat designen.
+* Tack till **[Akademen](https://twitter.com/akademen)**, som är den tänkta användaren och som inspirerat designen.
 
 
 ## Standarder och komponenter
 
-KoalaOnline är skrivet i polyglott XHTML5, CSS3 och JavaScript och använder **[Bootstrap 3.3.7](http://getbootstrap.com/)** och **[jQuery 3.1.0](http://jquery.com/)**.
+KoalaOnline är skrivet i polyglott XHTML5, CSS3 och JavaScript och använder **[Bootstrap 3.3.7](http://getbootstrap.com)** och **[jQuery 3.1.0](http://jquery.com)**.
 
 
 ## Copyright
