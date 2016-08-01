@@ -1,0 +1,31 @@
+{
+  "lang": "sv-FI",
+  "dir": "ltr",
+  "name": "KoalaOnline",
+  "short_name": "Koala",
+  "description": "Kind-of-a-Lottery App, ett webbverktyg för Akademens LSM-tentamina",
+  "icons": [{
+    "src": "/icons/favicon-16x16.png",
+    "sizes": "16x16",
+    "type": "image/png"
+  }, {
+    "src": "/icons/favicon-32x32.png",
+    "sizes": "32x32",
+    "type": "image/png"
+  }, {
+    "src": "/icons/mstile-558x270.png",
+    "sizes": "558x270",
+    "type": "image/png"
+  }, {
+    "src": "/icons/favicon-558x558.png",
+    "sizes": "558x558",
+    "type": "image/png"
+  }],
+  "scope": "/",
+  "start_url": "/",
+  "display": "fullscreen",
+  "orientation": "portrait-primary",
+  "theme_color": "#da532c",
+  "background_color": "#2d89ef",
+  "prefer_related_applications": false
+}

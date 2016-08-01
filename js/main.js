@@ -1,29 +1,29 @@
 /**
+*   STRICT MODE
+*/
+'use strict';
+
+/**
 *   INITIALIZE ON DOCUMENT READY
 */
 $( function() {
-
-  initializeUI();
-  runAJAX();
-
+  initializeUI(); /* Is below */
+  runAJAX(); /* Is below */
   /* Turn off animations on XS devices */
   if ( window.matchMedia( '(max-width: 767px)' ).matches ) {
     $.fx.off = true;
   };
 });
 
-
 /**
 *   GLOBAL VARIABLES AND HELPER FUNCTIONS
 */
-var urlA = 'data/lsm-a.txt';
-var urlB1 = 'data/lsm-b1.txt';
-var urlB2 = 'data/lsm-b2.txt';
-
-var songArrayA = new Array();
-var songArrayB1 = new Array();
-var songArrayB2 = new Array();
-
+var urlA = '/data/lsm-a.txt',
+    urlB1 = '/data/lsm-b1.txt',
+    urlB2 = '/data/lsm-b2.txt';
+var songArrayA = [],
+    songArrayB1 = [],
+    songArrayB2 = [];
 var timeIcon = '<span class="glyphicon glyphicon-time" aria-hidden="true"></span> ';
 
 function textToArray( aText ) {
@@ -50,7 +50,6 @@ function getLocalTime() {
   var localTime = fullDate.toLocaleTimeString();
   return localTime;
 }
-
 
 /**
 *   INITIALIZE UI
@@ -122,8 +121,9 @@ function initializeUI() {
   $( '#songModal' ).on( 'show.bs.modal', function( event ) {
     var link = $( event.relatedTarget );
     var cat = link.data( 'category' );
-    var songsA = new Array();
-    var songsB = new Array();
+    var songsA = [],
+        songsB = [];
+    var modal = $( this );
     $.each( songArrayA, function( index, value ) {
       songsA.push( '<li>' + value + '</li>' );
     });
@@ -135,11 +135,10 @@ function initializeUI() {
     });
     songsA.sort();
     songsB.sort();
-    var modal = $( this );
     modal.find( '.modal-title' ).text( 'Alla sånger i avdelning ' + cat );
-    if ( cat == 'A' ) {
+    if ( cat === 'A' ) {
       modal.find( '#modalList' ).html( songsA.join( '' ) );
-    } else if ( cat == 'B' ) {
+    } else if ( cat === 'B' ) {
       modal.find( '#modalList' ).html( songsB.join( '' ) );
     };
   })
@@ -157,7 +156,6 @@ function initializeUI() {
     });
   });
 }
-
 
 /**
 *   RETRIEVE DATA AND POPULATE ARRAYS

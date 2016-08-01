@@ -16,30 +16,14 @@
     <meta name="publisher" content="Kasper Sundström" />
     <meta name="robots" content="index, follow" />
 
-    <link rel="help" type="text/markdown" hreflang="sv-FI" href="README.md" />
-    <link rel="author" type="text/markdown" hreflang="en-GB" href="HUMANS.md" />
-    <link rel="license" type="text/markdown" hreflang="en-GB" href="LICENSE.md" />
-    <link rel="manifest" type="application/manifest+json" href="manifest.json" />
+    <link rel="help" type="text/markdown" hreflang="sv-FI" href="/README.md" />
+    <link rel="author" type="text/markdown" hreflang="en-GB" href="/HUMANS.md" />
+    <link rel="license" type="text/markdown" hreflang="en-GB" href="/LICENSE.md" />
+    <link rel="manifest" type="application/manifest+json" href="/manifest.webmanifest" />
     <link rel="canonical" href="http://koala.ksundstrom.fi" />
 
-    <link rel="icon" type="image/png" href="img/favicon-16.png" sizes="16x16" />
-    <link rel="icon" type="image/png" href="img/favicon-32.png" sizes="32x32" />
-    <link rel="icon" type="image/png" href="img/favicon-96.png" sizes="96x96" />
-    <link rel="icon" type="image/png" href="img/favicon-128.png" sizes="128x128" />
-    <link rel="icon" type="image/png" href="img/favicon-196.png" sizes="196x196" />
-
-    <link rel="apple-touch-icon" href="img/apple-touch-icon-57.png" sizes="57x57" />
-    <link rel="apple-touch-icon" href="img/apple-touch-icon-72.png" sizes="72x72" />
-    <link rel="apple-touch-icon" href="img/apple-touch-icon-114.png" sizes="114x114" />
-    <link rel="apple-touch-icon" href="img/apple-touch-icon-120.png" sizes="120x120" />
-    <link rel="apple-touch-icon" href="img/apple-touch-icon-144.png" sizes="144x144" />
-    <link rel="apple-touch-icon" href="img/apple-touch-icon-152.png" sizes="152x152" />
-
-    <meta name="msapplication-TileColor" content="#0099ff" />
-    <meta name="msapplication-TileImage" content="img/mstile-144.png" />
-
-    <meta name="msapplication-tooltip" content="Kind-of-a-Lottery App" />
-    <meta name="msapplication-config" content="browserconfig.xml" />
+    <link rel="icon" type="image/png" href="/icons/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="/icons/favicon-32x32.png" sizes="32x32" />
 
     <!-- Bootstrap 3.3.7 CSS -->
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
@@ -60,6 +44,7 @@
           "alternateName": [ "KoalaOnline", "Kind-of-a-Lottery App" ],
           "description": "Ett webbverktyg för Akademens LSM-tentamina",
           "softwareVersion": "LSM2015",
+          "image": "http://koala.ksundstrom.fi/icons/mstile-558x270.png",
           "url": "http://koala.ksundstrom.fi",
           "inLanguage": "sv-FI",
           "applicationCategory": "utility",
@@ -105,13 +90,13 @@
       //]]>
     </script>
   </head>
-  <body vocab="https://schema.org" typeof="WebApplication">
+  <body>
 
     <!-- HEADER -->
 
     <header class="jumbotron">
       <div class="container">
-        <img src="img/koala.png" alt="Logo föreställande en tecknad koala på en gren" class="img-responsive img-rounded pull-left hidden-print" width="105" aria-hidden="true" />
+        <img src="/img/koala.png" alt="Logo föreställande en tecknad koala på en gren" class="img-responsive img-rounded pull-left hidden-print" width="105" aria-hidden="true" />
         <h1>
           <span id="koalaonline" lang="en" xml:lang="en" title="Kind-of-a-Lottery App">Koala<wbr />Online</span>
         </h1>
@@ -136,25 +121,23 @@
             <div class="col-sm-4">
               <div class="btn-group btn-group-justified" role="group" aria-label="Avdelning A">
                 <a role="button" class="btn btn-primary btn-lg disabled" id="songButtonA" title="Lotta sång ur avdelning A">
-                  <span class="glyphicon glyphicon-music hidden-xs" aria-hidden="true"></span>
-                  <span class="hidden-xs">Lotta</span>
-                  A-sång
+                  <span class="glyphicon glyphicon-music" aria-hidden="true"></span>
+                  <span class="hidden-xs">Lotta A-sång</span>
+                  <span class="visible-xs-inline" aria-hidden="true">A-sång</span>
                 </a>
               </div>
             </div>
             <div class="col-sm-8">
               <div class="btn-group btn-group-justified" role="group" aria-label="Avdelning B">
                 <a role="button" class="btn btn-primary btn-lg disabled" id="songButtonB1" title="Lotta lättare sång ur avdelning B">
-                  <span class="glyphicon glyphicon-music hidden-xs" aria-hidden="true"></span>
-                  <span class="hidden-xs">Lotta lättare</span>
-                  <span class="visible-xs-inline" aria-hidden="true">Lättare</span>
-                  B-sång
+                  <span class="glyphicon glyphicon-music" aria-hidden="true"></span>
+                  <span class="hidden-xs">Lotta lättare B-sång</span>
+                  <span class="visible-xs-inline" aria-hidden="true">Lätt B-sång</span>
                 </a>
                 <a role="button" class="btn btn-primary btn-lg disabled" id="songButtonB2" title="Lotta svårare sång ur avdelning B">
-                  <span class="glyphicon glyphicon-music hidden-xs" aria-hidden="true"></span>
-                  <span class="hidden-xs">Lotta svårare</span>
-                  <span class="visible-xs-inline" aria-hidden="true">Svårare</span>
-                  B-sång
+                  <span class="glyphicon glyphicon-music" aria-hidden="true"></span>
+                  <span class="hidden-xs">Lotta svårare B-sång</span>
+                  <span class="visible-xs-inline" aria-hidden="true">Svår B-sång</span>
                 </a>
               </div>
             </div>
@@ -186,7 +169,7 @@
           </h2>
           <div class="row">
 
-            <!-- INFO POPOVER AND SONG MODALS -->
+            <!-- Info popover and song modals button -->
 
             <div class="col-xs-6 text-left">
               <div class="btn-group">
@@ -203,9 +186,27 @@
                   <li><a href="#songModal" data-target="#songModal" data-toggle="modal" data-category="B">Visa alla B-sånger</a></li>
                 </ul>
               </div>
+
+              <!-- The modal -->
+
+              <div role="dialog" tabindex="-1" class="modal fade" id="songModal" aria-labelledby="songModalLabel">
+                <div role="document" class="modal-dialog modal-lg">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Stäng">
+                        <span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span>
+                      </button>
+                      <h3 class="modal-title" id="songModalLabel">Alla sånger</h3>
+                    </div>
+                    <div class="modal-body">
+                      <ol id="modalList"></ol>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
 
-              <!-- RESET BUTTON -->
+            <!-- Reset button -->
 
             <div class="col-xs-6 text-right">
               <div class="btn-group">
@@ -213,24 +214,6 @@
                   <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
                   Töm
                 </a>
-              </div>
-            </div>
-          </div>
-
-          <!-- MODAL -->
-
-          <div role="dialog" tabindex="-1" class="modal fade" id="songModal" aria-labelledby="songModalLabel">
-            <div role="document" class="modal-dialog modal-lg">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Stäng">
-                    <span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span>
-                  </button>
-                  <h3 class="modal-title" id="songModalLabel">Alla sånger</h3>
-                </div>
-                <div class="modal-body">
-                  <ol id="modalList"></ol>
-                </div>
               </div>
             </div>
           </div>

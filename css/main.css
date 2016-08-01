@@ -3,7 +3,6 @@
 */
 @charset 'utf-8';
 
-
 /**
 *   IMPORT GOOGLE FONTS
 *   Change | in URL to: %7C
@@ -15,7 +14,6 @@
 */
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i%26subset=latin-ext');
 @import url('https://fonts.googleapis.com/css?family=Lobster');
-
 
 /**
 *   CUSTOM STYLING
@@ -38,15 +36,15 @@ body {
 
 .jumbotron h1 {
   font-family: 'Lobster', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  filter: dropshadow(color=#444, offx=1, offy=1);
   text-shadow: 0.05em 0.05em 0.05em #444;
   text-shadow: 0.05em 0.05em 0.05em rgba(0, 0, 0, 0.5);
-  filter: dropshadow(color=#444, offx=1, offy=1);
 }
 
 .jumbotron p {
+  filter: dropshadow(color=#444, offx=1, offy=1);
   text-shadow: 0.05em 0.05em 0.05em #444;
   text-shadow: 0.05em 0.05em 0.05em rgba(0, 0, 0, 0.5);
-  filter: dropshadow(color=#444, offx=1, offy=1);
 }
 
 .jumbotron img {
