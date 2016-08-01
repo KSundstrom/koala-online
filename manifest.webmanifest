@@ -17,7 +17,7 @@
     "sizes": "558x270",
     "type": "image/png"
   }, {
-    "src": "/icons/favicon-558x558.png",
+    "src": "/icons/mstile-558x558.png",
     "sizes": "558x558",
     "type": "image/png"
   }],
@@ -25,7 +25,7 @@
   "start_url": "/",
   "display": "fullscreen",
   "orientation": "portrait-primary",
-  "theme_color": "#da532c",
+  "theme_color": "#ffc40d",
   "background_color": "#2d89ef",
   "prefer_related_applications": false
 }

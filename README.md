@@ -2,7 +2,7 @@
 
 > It’s kind of a lottery!
 
-KoalaOnline är ett webbverktyg för Akademens LSM-tentamina, inspirerat av det tidigare Javaverktyget Koala _(Kind-of-a-Lottery App)_, också kodat av Kasper Sundström.
+Koala *(Kind-of-a-Lottery App)* är ett webbverktyg för Akademens LSM-tentamina, inspirerat av det tidigare Javaverktyget med samma namn, också kodat av Kasper Sundström.
 
 
 ## Uppdatering av sångerna
