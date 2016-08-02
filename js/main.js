@@ -7,24 +7,22 @@
 *   INITIALIZE ON DOCUMENT READY
 */
 $( function() {
-  initializeUI(); /* Is below */
-  runAJAX(); /* Is below */
+  initializeUI();
+  runAJAX();
   /* Turn off animations on XS devices */
-  if ( window.matchMedia( '(max-width: 767px)' ).matches ) {
-    $.fx.off = true;
-  };
+  if ( window.matchMedia( '(max-width: 767px)' ).matches ) $.fx.off = true;
 });
 
 /**
 *   GLOBAL VARIABLES AND HELPER FUNCTIONS
 */
-var urlA = '/data/lsm-a.txt',
-    urlB1 = '/data/lsm-b1.txt',
-    urlB2 = '/data/lsm-b2.txt';
-var songArrayA = [],
-    songArrayB1 = [],
-    songArrayB2 = [];
-var timeIcon = '<span class="glyphicon glyphicon-time" aria-hidden="true"></span> ';
+var urlA = '/data/lsm-a.txt';
+var urlB1 = '/data/lsm-b1.txt';
+var urlB2 = '/data/lsm-b2.txt';
+
+var songArrayA = [];
+var songArrayB1 = [];
+var songArrayB2 = [];
 
 function textToArray( aText ) {
   var anyNewline = /\r\n|\n|\r/;
@@ -56,6 +54,9 @@ function getLocalTime() {
 */
 function initializeUI() {
 
+  var musicIcon = '<span class="glyphicon glyphicon-music" aria-hidden="true"></span> ';
+  var timeIcon = '<span class="glyphicon glyphicon-time" aria-hidden="true"></span> ';
+
   $( '#songButtonA' ).click(function() {
     var song = songArrayA[ getRandomIndex( songArrayA ) ];
     var time = getLocalTime();
@@ -63,8 +64,7 @@ function initializeUI() {
     $( '<div class="panel panel-success songResult">' +
           '<div class="panel-heading">' +
             '<h3 class="panel-title clearfix">' +
-              '<span class="glyphicon glyphicon-music" aria-hidden="true"></span> A-sång' +
-              '<span class="pull-right">' + timeIcon + time + '</span>' +
+              musicIcon + 'A-sång' + '<span class="pull-right">' + timeIcon + time + '</span>' +
             '</h3>' +
           '</div>' +
           '<div class="panel-body">' +
@@ -83,8 +83,7 @@ function initializeUI() {
     $( '<div class="panel panel-warning songResult">' +
           '<div class="panel-heading">' +
             '<h3 class="panel-title clearfix">' +
-              '<span class="glyphicon glyphicon-music" aria-hidden="true"></span> Lättare B-sång' +
-              '<span class="pull-right">' + timeIcon + time + '</span>' +
+              musicIcon + 'Lättare B-sång' + '<span class="pull-right">' + timeIcon + time + '</span>' +
             '</h3>' +
           '</div>' +
           '<div class="panel-body">' +
@@ -103,8 +102,7 @@ function initializeUI() {
     $( '<div class="panel panel-danger songResult">' +
           '<div class="panel-heading">' +
             '<h3 class="panel-title clearfix">' +
-              '<span class="glyphicon glyphicon-music" aria-hidden="true"></span> Svårare B-sång' +
-              '<span class="pull-right">' + timeIcon + time + '</span>' +
+              musicIcon + 'Svårare B-sång' + '<span class="pull-right">' + timeIcon + time + '</span>' +
             '</h3>' +
           '</div>' +
           '<div class="panel-body">' +
@@ -144,7 +142,7 @@ function initializeUI() {
   })
 
   $( '#resetButton' ).click( function() {
-    var time = getLocalTime();
+    // var time = getLocalTime();
     // console.log( time + ' Raderade resultaten' );
     $( '#songResults' ).animate( {
       opacity: 'toggle',
@@ -162,36 +160,37 @@ function initializeUI() {
 */
 function runAJAX() {
 
-  var jqxhrA = $.get( urlA, $.noop, 'text' )
-    .done( function( data ) {
-      songArrayA = cleanUpArray( textToArray( data ));
-      $( '#songButtonA' ).removeClass( 'disabled' );
-      // console.log( getLocalTime() + ' Läste in A' );
-    })
-    .fail( function() {
-      // console.log( getLocalTime() + ' Kunde inte läsa in A' );
-      alert( 'Fel: inläsning av A-sångerna misslyckades!' );
-    });
+  var jqxhrA = $.get( urlA, $.noop, 'text' );
+  var jqxhrB1 = $.get( urlB1, $.noop, 'text' );
+  var jqxhrB2 = $.get( urlB2, $.noop, 'text' );
 
-  var jqxhrB1 = $.get( urlB1, $.noop, 'text' )
-    .done( function( data ) {
-      songArrayB1 = cleanUpArray( textToArray( data ));
-      $( '#songButtonB1' ).removeClass( 'disabled' );
-      // console.log( getLocalTime() + ' Läste in B1' );
-    })
-    .fail( function() {
-      // console.log( getLocalTime() + ' Kunde inte läsa in B1' );
-      alert( 'Fel: inläsning av lättare B-sångerna misslyckades!' );
-    });
+  jqxhrA.done( function( data ) {
+    songArrayA = cleanUpArray( textToArray( data ));
+    $( '#songButtonA' ).removeClass( 'disabled' );
+    // console.log( getLocalTime() + ' Läste in A' );
+  })
+  .fail( function() {
+    // console.log( getLocalTime() + ' Kunde inte läsa in A' );
+    alert( 'Fel: inläsning av A-sångerna misslyckades!' );
+  });
 
-  var jqxhrB2 = $.get( urlB2, $.noop, 'text' )
-    .done( function( data ) {
-      songArrayB2 = cleanUpArray( textToArray( data ));
-      $( '#songButtonB2' ).removeClass( 'disabled' );
-      // console.log( getLocalTime() + ' Läste in B2' );
-    })
-    .fail( function() {
-      // console.log( getLocalTime() + ' Kunde inte läsa in B2' );
-      alert( 'Fel: inläsning av svårare B-sångerna misslyckades!' );
-    });
+  jqxhrB1.done( function( data ) {
+    songArrayB1 = cleanUpArray( textToArray( data ));
+    $( '#songButtonB1' ).removeClass( 'disabled' );
+    // console.log( getLocalTime() + ' Läste in B1' );
+  })
+  .fail( function() {
+    // console.log( getLocalTime() + ' Kunde inte läsa in B1' );
+    alert( 'Fel: inläsning av lättare B-sångerna misslyckades!' );
+  });
+
+  jqxhrB2.done( function( data ) {
+    songArrayB2 = cleanUpArray( textToArray( data ));
+    $( '#songButtonB2' ).removeClass( 'disabled' );
+    // console.log( getLocalTime() + ' Läste in B2' );
+  })
+  .fail( function() {
+    // console.log( getLocalTime() + ' Kunde inte läsa in B2' );
+    alert( 'Fel: inläsning av svårare B-sångerna misslyckades!' );
+  });
 }

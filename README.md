@@ -38,6 +38,6 @@ KoalaOnline är skrivet i polyglott XHTML5, CSS3 och JavaScript och använder **
 
 ## Copyright
 
-Copyright © 2016 Kasper Sundström
+Copyright © 2016 K. Sundström
 
 All rights retained. You may not without permission reproduce, distribute, or create derivative works from this work.
