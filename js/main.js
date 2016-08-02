@@ -16,9 +16,9 @@ $( function() {
 /**
 *   GLOBAL VARIABLES AND HELPER FUNCTIONS
 */
-var urlA = '/data/lsm-a.txt';
-var urlB1 = '/data/lsm-b1.txt';
-var urlB2 = '/data/lsm-b2.txt';
+var urlA = './data/lsm-a.txt';
+var urlB1 = './data/lsm-b1.txt';
+var urlB2 = './data/lsm-b2.txt';
 
 var songArrayA = [];
 var songArrayB1 = [];
