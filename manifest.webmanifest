@@ -1,8 +1,7 @@
 {
   "lang": "sv-FI",
   "dir": "ltr",
-  "name": "KoalaOnline",
-  "short_name": "Koala",
+  "name": "Koala",
   "description": "Kind-of-a-Lottery App, ett webbverktyg för Akademens LSM-tentamina",
   "icons": [
     {
