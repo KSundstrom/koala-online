@@ -37,6 +37,8 @@ body {
 }
 
 #logo {
+  max-width: 10em;
+  height: auto;
   margin: 0 1em 0 0;
 }
 
