@@ -1,21 +1,20 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="sv-FI" xml:lang="sv-FI" dir="ltr">
-  <head>
+  <head prefix="og: http://ogp.me/ns#">
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"/>
 
     <title>KoalaOnline</title>
 
     <base target="_blank"/>
     <link rel="canonical" href="http://koala.ksundstrom.fi"/>
 
-    <meta name="robots" content="index,follow"/>
-    <meta name="description" content="Kind-of-a-Lottery App,ett webbverktyg för Akademens LSM-tentamina"/>
-    <meta name="keywords" content="Koala,KoalaOnline,Kind-of-a-Lottery App,Akademen,Akademiska Sångföreningen,LSM,Lilla Sångarmärket,tentamen"/>
+    <meta name="robots" content="index, follow"/>
+    <meta name="description" content="Koala är ett webbverktyg för Akademens tentamina för Lilla sångarmärket"/>
+    <meta name="keywords" content="Koala, KoalaOnline, Kind-of-a-Lottery App, Akademen, Akademiska Sångföreningen, LSM, Lilla sångarmärket, tentamen"/>
     <meta name="creator" content="Kasper Sundström"/>
     <meta name="publisher" content="Kasper Sundström"/>
-
     <meta name="application-name" content="Koala"/>
     <meta name="apple-mobile-web-app-title" content="Koala"/>
     <meta name="theme-color" content="#f01849"/>
@@ -29,7 +28,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="./icon/apple-touch-icon.png?v=QE55YdJ9dR"/>
     <link rel="icon" type="image/png" href="./icon/favicon-32x32.png?v=QE55YdJ9dR" sizes="32x32"/>
     <link rel="icon" type="image/png" href="./icon/favicon-16x16.png?v=QE55YdJ9dR" sizes="16x16"/>
-    <link rel="mask-icon" href="./icon/safari-pinned-tab.svg?v=QE55YdJ9dR" color="#f01849"/>
+    <link rel="mask-icon" href="./icon/safari-pinned-tab.svg?v=QE55YdJ9dR"/>
     <link rel="shortcut icon" href="./favicon.ico?v=QE55YdJ9dR"/>
 
     <!-- Bootstrap 3.3.7 CSS -->
@@ -50,70 +49,26 @@
     <!-- Custom JavaScript -->
     <script defer="defer" type="application/javascript" charset="utf-8" src="./js/main.js"></script>
 
-    <!-- JSON-LD -->
-    <script type="application/ld+json">
-      //<![CDATA[
-        {
-          "@context": "https://schema.org",
-          "@type": "WebApplication",
-          "name": "Koala",
-          "alternateName": "Kind-of-a-Lottery App",
-          "description": "Ett webbverktyg för Akademens LSM-tentamina",
-          "softwareVersion": "LSM2015",
-          "image": "http://koala.ksundstrom.fi/img/logo-bg.svg",
-          "url": "http://koala.ksundstrom.fi",
-          "inLanguage": "sv-FI",
-          "applicationCategory": "utility",
-          "browserRequirements": "IE9+",
-          "operatingSystem": "any",
-          "datePublished": "2016-07-13",
-          "dateModified": "2016-08-04",
-          "copyrightYear": "2016",
-          "copyrightHolder": {
-            "@type": "Person",
-            "name": "Kasper Sundström",
-            "nationality": "FI",
-            "url": "http://ksundstrom.fi"
-          },
-          "creator": {
-            "@type": "Person",
-            "name": "Kasper Sundström",
-            "nationality": "FI",
-            "url": "http://ksundstrom.fi"
-          },
-          "sourceOrganization": {
-            "@type": "MusicGroup",
-            "name": "Akademiska Sångföreningen",
-            "alternateName": [ "Akademen","The Academic Male Voice Choir of Helsinki" ],
-            "address": {
-              "@type": "PostalAddress",
-              "streetAddress": "Simonsgatan 8 A",
-              "postalCode": "00100",
-              "addressLocality": "Helsingfors",
-              "addressCountry": "FI"
-            },
-            "url": "http://akademen.com",
-            "sameAs": "https://www.wikidata.org/wiki/Q4411935"
-          },
-          "audience": {
-            "@type": "BusinessAudience",
-            "name": "Akademiska Sångföreningen",
-            "alternateName": [ "Akademen","The Academic Male Voice Choir of Helsinki" ],
-            "url": "http://akademen.com",
-            "sameAs": "https://www.wikidata.org/wiki/Q4411935"
-          }
-        }
-      //]]>
-    </script>
+    <!-- Twitter and Open Graph -->
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:site" content="@KSundstrom"/>
+    <meta name="twitter:creator" content="@KSundstrom"/>
+    <meta property="og:title" content="KoalaOnline"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:image" content="http://koala.ksundstrom.fi/img/banner-red.png"/>
+    <meta property="og:image:type" content="image/png"/>
+    <meta property="og:image:width" content="1200"/>
+    <meta property="og:image:height" content="627"/>
+    <meta property="og:url" content="http://koala.ksundstrom.fi"/>
+    <meta property="og:description" content="Koala är ett webbverktyg för Akademens tentamina för Lilla sångarmärket. It’s kind of a lottery!"/>
   </head>
-  <body>
+  <body vocab="https://schema.org/" typeof="WebApplication">
 
     <!-- HEADER -->
-
     <header class="jumbotron">
       <div class="container">
         <div id="logowrap" class="pull-left">
-          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 384 384">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 384 384">
             <title>Logotyp</title>
             <g id="cards">
               <path id="bottomcard" d="M124.4 346c-5.3.6-11-5.2-11.6-11.8l-23.4-269-82.6 30c-5 2-8.3 8-6 14l96 265.8c2.2 6.3 9.2 10.4 14.2 8.5L241 336l-116.6 10z"/>
@@ -123,19 +78,22 @@
           </svg>
         </div>
         <h1>
-          <span id="namewrap" title="Kind-of-a-Lottery App" lang="en" xml:lang="en">Koala<wbr/>Online</span>
-          <span class="small"><sub>LSM2015</sub></span>
+          <span id="namewrap" title="Kind-of-a-Lottery App" lang="en" xml:lang="en">
+             <span property="name">Koala</span><wbr/>Online
+             <meta property="alternateName" content="Kind-of-a-Lottery App"/>
+          </span>
+          <sub class="small">
+            <span property="softwareVersion">LSM2015</span>
+          </sub>
         </h1>
       </div>
     </header>
 
     <!-- MAIN -->
-
     <main>
       <div class="container">
 
         <!-- RAFFLE BUTTONS -->
-
         <section class="hidden-print">
           <h2 class="sr-only">
             Lottoknappar
@@ -143,10 +101,9 @@
           <div class="row">
 
             <!-- Category A -->
-
             <div class="col-sm-4">
               <div class="btn-group btn-group-justified" role="group" aria-label="Avdelning A">
-                <a role="button" class="btn btn-primary btn-lg disabled" id="songButtonA" title="Lotta sång ur avdelning A">
+                <a role="button" class="btn btn-default btn-lg disabled" id="songButtonA" title="Lotta sång ur avdelning A">
                   <span class="glyphicon glyphicon-music" aria-hidden="true"></span>
                   <span class="hidden-xs">Lotta A-sång</span>
                   <span class="visible-xs-inline" aria-hidden="true">A-sång</span>
@@ -155,15 +112,14 @@
             </div>
 
             <!-- Category B -->
-
             <div class="col-sm-8">
               <div class="btn-group btn-group-justified" role="group" aria-label="Avdelning B">
-                <a role="button" class="btn btn-primary btn-lg disabled" id="songButtonB1" title="Lotta lättare sång ur avdelning B">
+                <a role="button" class="btn btn-default btn-lg disabled" id="songButtonB1" title="Lotta lättare sång ur avdelning B">
                   <span class="glyphicon glyphicon-music" aria-hidden="true"></span>
                   <span class="hidden-xs">Lotta lättare B-sång</span>
                   <span class="visible-xs-inline" aria-hidden="true">Lätt B-sång</span>
                 </a>
-                <a role="button" class="btn btn-primary btn-lg disabled" id="songButtonB2" title="Lotta svårare sång ur avdelning B">
+                <a role="button" class="btn btn-default btn-lg disabled" id="songButtonB2" title="Lotta svårare sång ur avdelning B">
                   <span class="glyphicon glyphicon-music" aria-hidden="true"></span>
                   <span class="hidden-xs">Lotta svårare B-sång</span>
                   <span class="visible-xs-inline" aria-hidden="true">Svår B-sång</span>
@@ -174,7 +130,6 @@
         </section>
 
         <!-- RAFFLE RESULTS -->
-
         <section>
           <div class="row">
             <div class="col-lg-12">
@@ -191,7 +146,6 @@
         </section>
 
         <!-- UTILITY BUTTONS -->
-
         <section class="hidden-print">
           <h2 class="sr-only">
             Hjälpknappar
@@ -199,14 +153,13 @@
           <div class="row">
 
             <!-- Info popover and song modals button -->
-
             <div class="col-xs-6 text-left">
               <div class="btn-group">
-                <a role="button" tabindex="0" class="btn btn-info btn-lg" id="helpButton" title="Kind-of-a-Lottery App" data-toggle="popover" data-trigger="focus" data-container="body" data-placement="auto" data-content="Använd knapparna ovan för att lotta fram sånger ur de olika LSM-kategorierna. Den senast framlottade sången dyker upp högst upp. Uppe till höger framgår när respektive sång lottades fram. Resultaten finns kvar på skärmen tills du klickar på Töm.">
+                <a role="button" tabindex="0" class="btn btn-default btn-lg" id="helpButton" title="Kind-of-a-Lottery App" data-toggle="popover" data-trigger="focus" data-container="body" data-placement="auto" data-content="Använd knapparna ovan för att lotta fram sånger ur de olika LSM-kategorierna. Den senast framlottade sången dyker upp högst upp. Uppe till höger framgår när respektive sång lottades fram. Resultaten finns kvar på skärmen tills du klickar på Töm.">
                   <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
                   Info
                 </a>
-                <a role="button" class="btn btn-info btn-lg dropdown-toggle" title="Visa sånger" data-toggle="dropdown" data-container="body" aria-haspopup="true" aria-expanded="false">
+                <a role="button" class="btn btn-default btn-lg dropdown-toggle" title="Visa sånger" data-toggle="dropdown" data-container="body" aria-haspopup="true" aria-expanded="false">
                   <span class="caret"></span>
                   <span class="sr-only">Visa meny</span>
                 </a>
@@ -217,7 +170,6 @@
               </div>
 
               <!-- The modal -->
-
               <div role="dialog" tabindex="-1" class="modal fade" id="songModal" aria-labelledby="songModalLabel">
                 <div role="document" class="modal-dialog modal-lg">
                   <div class="modal-content">
@@ -236,7 +188,6 @@
             </div>
 
             <!-- Reset button -->
-
             <div class="col-xs-6 text-right">
               <div class="btn-group">
                 <a role="button" class="btn btn-danger btn-lg" id="resetButton" title="Radera resultaten">
@@ -251,19 +202,51 @@
     </main>
 
     <!-- FOOTER -->
-
     <footer>
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
             <p class="small text-muted">
-              © 2016 <a rel="external" hreflang="sv-FI" href="http://ksundstrom.fi">Kasper Sundström</a>.
-              Byggd för <a rel="external" hreflang="sv-FI" href="http://akademen.com">Akademen</a> med hjälp av <a rel="external" hreflang="en-US" href="http://getbootstrap.com">Bootstrap</a>.
-              Uppdaterad <!--#config timefmt="%d.%m.%Y" --><!--#echo var="LAST_MODIFIED" -->.
+
+              <!-- Copyright -->
+              © <span property="copyrightYear">2016</span>
+              <a hreflang="sv-FI" href="http://ksundstrom.fi" property="copyrightHolder" typeof="Person">
+                <span property="name">Kasper Sundström</span>
+                <meta property="nationality" content="FI"/>
+              </a>
+              för
+              <a hreflang="sv-FI" href="http://akademen.com" property="sourceOrganization" typeof="MusicGroup">
+                <span property="name">Akademen</span>.
+                <meta property="legalName" content="Akademiska Sångföreningen rf"/>
+                <meta property="sameAs" content="https://www.wikidata.org/wiki/Q4411935"/>
+              </a>
+
+              <!-- Dates -->
+              Uppdaterad
+              <span property="dateModified"><!--#config timefmt="%Y-%m-%d" --><!--#echo var="LAST_MODIFIED" --></span>.
+              <meta property="datePublished" content="2016-07-13"/>
+
+              <!-- Framework -->
+              <span lang="en-US" xml:lang="en-US">
+                Framework by <a hreflang="en-US" href="http://getbootstrap.com">Bootstrap</a>.
+              </span>
             </p>
           </div>
         </div>
       </div>
     </footer>
+
+    <!-- Other RDFa data -->
+    <meta property="description" content="Webbverktyg för Akademens LSM-tentamina"/>
+    <meta property="image" content="http://koala.ksundstrom.fi/img/logo-red.png"/>
+    <meta property="url" content="http://koala.ksundstrom.fi"/>
+    <meta property="inLanguage" content="sv-FI"/>
+    <meta property="applicationCategory" content="tool"/>
+    <meta property="browserRequirements" content="IE9+"/>
+    <meta property="operatingSystem" content="any"/>
+    <div property="audience" typeof="Audience">
+      <meta property="name" content="Akademen"/>
+      <meta property="sameAs" content="https://www.wikidata.org/wiki/Q4411935"/>
+    </div>
   </body>
 </html>

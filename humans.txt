@@ -11,6 +11,6 @@ Intended audience, design inspiration: The Academic Male Voice Choir of Helsinki
 
 ## Site
 
-Standards: Polyglot XHTML5, SVG, CSS3, JavaScript, AJAX
+Standards: Polyglot XHTML5, SVG, RDFa, CSS3, JavaScript, AJAX
 Components: Bootstrap 3.3.7, jQuery 3.1.0
 Software: Notepad++, Atom, XAMPP, FileZilla, GitHub, Windows 10

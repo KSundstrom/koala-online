@@ -83,7 +83,7 @@ svg|path#bottomcard:hover {
   font-size: 1.25em;
 }
 
-h1 > .small {
+h1 .small {
   color: inherit;
   font-size: 0.5em;
 }
