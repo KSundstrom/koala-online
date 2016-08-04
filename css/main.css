@@ -12,8 +12,15 @@
 *   Basic serif stack:  Georgia, 'Times New Roman', Times, serif;
 *   Basic mono stack:   Menlo, Monaco, Consolas, 'Courier New', monospace;
 */
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i%26subset=latin-ext');
-@import url('https://fonts.googleapis.com/css?family=Lobster');
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i%26subset=latin-ext);
+@import url(https://fonts.googleapis.com/css?family=Lobster);
+
+/**
+*   NAMESPACES
+*/
+@namespace url(http://www.w3.org/1999/xhtml);
+@namespace svg url(http://www.w3.org/2000/svg);
+@namespace xlink url(http://www.w3.org/1999/xlink);
 
 /**
 *   CUSTOM STYLING
@@ -24,25 +31,54 @@ html {
 }
 
 body {
-  background-image: url('../img/bgtile.gif');
+  background-image: url(../img/bgtile.gif);
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 .jumbotron {
   background-color: transparent;
-  color: #fff;
+  color: white;
   text-shadow: 0.1em 0.1em 0.1em #333;
   text-shadow: 0.1em 0.1em 0.1em rgba(0, 0, 0, 0.75);
   margin: auto;
 }
 
-#logo {
-  max-width: 10em;
+#logowrap {
+  width: 130px;
   height: auto;
+  -webkit-filter: drop-shadow(0.1em 0.1em 0.1em rgba(0, 0, 0, 0.75));
+  filter: drop-shadow(0.1em 0.1em 0.1em rgba(0, 0, 0, 0.75));
   margin: 0 1em 0 0;
 }
 
-#name {
+svg|g#cards {
+  fill: white;
+}
+
+svg|path#topcard:hover {
+  fill: #dff0d8;
+}
+
+svg|path#midcard:hover {
+  fill: #fcf8e3;
+}
+
+svg|path#bottomcard:hover {
+  fill: #f2dede;
+}
+
+@media print {
+  #logowrap {
+    max-width: 72pt;
+    -webkit-filter: none;
+    filter: none;
+  }
+  svg|g#cards {
+    fill: black;
+  }
+}
+
+#namewrap {
   font-family: 'Lobster', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 1.25em;
 }
@@ -53,7 +89,7 @@ h1 > .small {
 }
 
 main {
-  background-color: #fff;
+  background-color: white;
   box-shadow: 0 0.2rem 0.4rem #333;
   box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.75);
   padding: 30px 0 10px;
@@ -69,7 +105,7 @@ main {
 }
 
 footer {
-  background-color: #fff;
+  background-color: white;
   box-shadow: 0 0.2rem 0.4rem #333;
   box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.75);
   position: absolute;
