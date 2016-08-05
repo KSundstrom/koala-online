@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="sv-FI" xml:lang="sv-FI" dir="ltr">
   <head prefix="og: http://ogp.me/ns#">
@@ -11,13 +12,13 @@
     <link rel="canonical" href="http://koala.ksundstrom.fi"/>
 
     <meta name="robots" content="index, follow"/>
-    <meta name="description" content="Koala är ett webbverktyg för Akademens tentamina för Lilla sångarmärket"/>
+    <meta name="description" content="Ett webbverktyg för Akademens tentamina för Lilla sångarmärket"/>
     <meta name="keywords" content="Koala, KoalaOnline, Kind-of-a-Lottery App, Akademen, Akademiska Sångföreningen, LSM, Lilla sångarmärket, tentamen"/>
     <meta name="creator" content="Kasper Sundström"/>
     <meta name="publisher" content="Kasper Sundström"/>
     <meta name="application-name" content="Koala"/>
     <meta name="apple-mobile-web-app-title" content="Koala"/>
-    <meta name="theme-color" content="#f01849"/>
+    <meta name="theme-color" content="#00aeed"/>
 
     <link rel="author" type="text/plain" hreflang="en-GB" href="./humans.txt"/>
     <link rel="license" type="text/plain" hreflang="en-GB" href="./LICENSE.txt"/>
@@ -25,10 +26,20 @@
     <link rel="manifest" type="application/manifest+json" href="./manifest.webmanifest"/>
 
     <!-- Icons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="./icon/apple-touch-icon.png?v=QE55YdJ9dR"/>
-    <link rel="icon" type="image/png" href="./icon/favicon-32x32.png?v=QE55YdJ9dR" sizes="32x32"/>
-    <link rel="icon" type="image/png" href="./icon/favicon-16x16.png?v=QE55YdJ9dR" sizes="16x16"/>
-    <link rel="mask-icon" href="./icon/safari-pinned-tab.svg?v=QE55YdJ9dR"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="./icon/apple-touch-icon.png"/>
+    <link rel="icon" type="image/png" href="./icon/favicon-32x32.png" sizes="32x32"/>
+    <link rel="icon" type="image/png" href="./icon/favicon-16x16.png" sizes="16x16"/>
+    <link rel="mask-icon" href="./icon/safari-pinned-tab.svg"/>
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="KoalaOnline"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:image" content="http://koala.ksundstrom.fi/img/logo-blue-300.png"/>
+    <meta property="og:image:type" content="image/png"/>
+    <meta property="og:image:width" content="300"/>
+    <meta property="og:image:height" content="300"/>
+    <meta property="og:url" content="http://koala.ksundstrom.fi"/>
+    <meta property="og:description" content="Koala är ett verktyg för Akademens tentamina för Lilla sångarmärket. It’s kind of a lottery!"/>
 
     <!-- Bootstrap 3.3.7 CSS -->
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
@@ -47,19 +58,6 @@
 
     <!-- Custom JavaScript -->
     <script defer="defer" type="application/javascript" charset="utf-8" src="./js/main.js"></script>
-
-    <!-- Twitter and Open Graph -->
-    <meta name="twitter:card" content="summary"/>
-    <meta name="twitter:site" content="@KSundstrom"/>
-    <meta name="twitter:creator" content="@KSundstrom"/>
-    <meta property="og:title" content="KoalaOnline"/>
-    <meta property="og:type" content="website"/>
-    <meta property="og:image" content="http://koala.ksundstrom.fi/img/banner-red.png"/>
-    <meta property="og:image:type" content="image/png"/>
-    <meta property="og:image:width" content="1200"/>
-    <meta property="og:image:height" content="627"/>
-    <meta property="og:url" content="http://koala.ksundstrom.fi"/>
-    <meta property="og:description" content="Koala är ett webbverktyg för Akademens tentamina för Lilla sångarmärket. It’s kind of a lottery!"/>
   </head>
   <body vocab="https://schema.org/" typeof="WebApplication">
 
@@ -68,7 +66,7 @@
       <div class="container">
         <div id="logowrapper" class="pull-left">
           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 384 384">
-            <title>Logotyp</title>
+            <title>Logo</title>
             <g id="cards">
               <path id="bottomcard" d="M124.4 346c-5.3.6-11-5.2-11.6-11.8l-23.4-269-82.6 30c-5 2-8.3 8-6 14l96 265.8c2.2 6.3 9.2 10.4 14.2 8.5L241 336l-116.6 10z"/>
               <path id="midcard" d="M143.8 306.7c-5.3-1-9.3-8-8.2-14.6l46.2-263.5-79 7c-5.2.5-10 5.4-9.4 12L118 329c.5 6.5 6.2 12.3 11.5 11.8l138-12-123.7-22z"/>

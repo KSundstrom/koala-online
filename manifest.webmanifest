@@ -5,12 +5,12 @@
   "description": "Kind-of-a-Lottery App, ett webbverktyg för Akademens LSM-tentamina",
   "icons": [
     {
-			"src": ".\/icon\/android-chrome-192x192.png?v=QE55YdJ9dR",
+			"src": ".\/icon\/android-chrome-192x192.png",
 			"sizes": "192x192",
 			"type": "image\/png"
 		},
 		{
-			"src": ".\/icon\/android-chrome-512x512.png?v=QE55YdJ9dR",
+			"src": ".\/icon\/android-chrome-512x512.png",
 			"sizes": "512x512",
 			"type": "image\/png"
 		}
