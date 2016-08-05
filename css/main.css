@@ -38,16 +38,16 @@ body {
 .jumbotron {
   background-color: transparent;
   color: white;
-  text-shadow: 0.1em 0.1em 0.1em #333;
-  text-shadow: 0.1em 0.1em 0.1em rgba(0, 0, 0, 0.75);
+  text-shadow: 2px 2px 2px #333;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.75);
   margin: auto;
 }
 
-#logowrap {
+#logowrapper {
   width: 125px;
   height: auto;
-  -webkit-filter: drop-shadow(0.1em 0.1em 0.1em rgba(0, 0, 0, 0.75));
-  filter: drop-shadow(0.1em 0.1em 0.1em rgba(0, 0, 0, 0.75));
+  -webkit-filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.75));
+  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.75));
   margin: 0 1em 0 0;
 }
 
@@ -68,7 +68,7 @@ svg|path#bottomcard:hover {
 }
 
 @media print {
-  #logowrap {
+  #logowrapper {
     max-width: 72pt;
     -webkit-filter: none;
     filter: none;
@@ -78,7 +78,7 @@ svg|path#bottomcard:hover {
   }
 }
 
-#namewrap {
+#brandwrapper {
   font-family: 'Lobster', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 1.25em;
 }
@@ -88,10 +88,13 @@ h1 .small {
   font-size: 0.4em;
 }
 
-main {
+.box {
   background-color: white;
-  box-shadow: 0 0.2rem 0.4rem #333;
-  box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.75);
+  box-shadow: 0 3px 3px #333;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.75);
+}
+
+main {
   padding: 30px 0 10px;
   margin-bottom: 45px;
 }
@@ -105,9 +108,6 @@ main {
 }
 
 footer {
-  background-color: white;
-  box-shadow: 0 0.2rem 0.4rem #333;
-  box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.75);
   position: absolute;
   bottom: 0;
   width: 100%;

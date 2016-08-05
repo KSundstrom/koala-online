@@ -44,9 +44,10 @@ function getRandomIndex( aArray ) {
 }
 
 function getLocalTime() {
-  var fullDate = new Date();
-  var localTime = fullDate.toLocaleTimeString();
-  return localTime;
+  var d = new Date();
+  var options = { hour: '2-digit', minute: '2-digit', second: '2-digit' };
+  var timeString = d.toLocaleTimeString( 'sv-FI', options );
+  return timeString;
 }
 
 /**
@@ -138,7 +139,7 @@ function initializeUI() {
       modal.find( '#modalList' ).html( songsA.join( '' ) );
     } else if ( cat === 'B' ) {
       modal.find( '#modalList' ).html( songsB.join( '' ) );
-    };
+    }
   })
 
   $( '#resetButton' ).click( function() {
