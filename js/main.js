@@ -4,21 +4,11 @@
 'use strict';
 
 /**
-*   INITIALIZE ON DOCUMENT READY
-*/
-$( function() {
-  initializeUI();
-  runAJAX();
-  /* Turn off animations on XS devices */
-  if ( window.matchMedia( '(max-width: 767px)' ).matches ) $.fx.off = true;
-});
-
-/**
 *   GLOBAL VARIABLES AND HELPER FUNCTIONS
 */
-var urlA = './data/lsm-a.txt';
-var urlB1 = './data/lsm-b1.txt';
-var urlB2 = './data/lsm-b2.txt';
+var urlA = 'data/lsm-a.txt';
+var urlB1 = 'data/lsm-b1.txt';
+var urlB2 = 'data/lsm-b2.txt';
 
 var songArrayA = [];
 var songArrayB1 = [];
@@ -120,8 +110,8 @@ function initializeUI() {
   $( '#songModal' ).on( 'show.bs.modal', function( event ) {
     var link = $( event.relatedTarget );
     var cat = link.data( 'category' );
-    var songsA = [],
-        songsB = [];
+    var songsA = [];
+    var songsB = [];
     var modal = $( this );
     $.each( songArrayA, function( index, value ) {
       songsA.push( '<li>' + value + '</li>' );
@@ -195,3 +185,13 @@ function runAJAX() {
     alert( 'Fel: inläsning av svårare B-sångerna misslyckades!' );
   });
 }
+
+/**
+*   INITIALIZE ON DOCUMENT READY
+*/
+$( function() {
+  initializeUI();
+  runAJAX();
+  /* Turn off animations on XS devices */
+  if ( window.matchMedia( '(max-width: 767px)' ).matches ) $.fx.off = true;
+});

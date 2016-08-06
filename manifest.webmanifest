@@ -1,25 +1,26 @@
 {
   "lang": "sv-FI",
   "dir": "ltr",
-  "name": "Koala",
-  "description": "Kind-of-a-Lottery App, ett webbverktyg för Akademens LSM-tentamina",
+  "name": "KoalaOnline",
+  "short_name": "Koala",
+  "description": "Koala är ett verktyg för Akademens tentamina för Lilla sångarmärket. It’s kind of a lottery!",
   "icons": [
     {
-			"src": ".\/icon\/android-chrome-192x192.png",
+			"src": "\/icon\/android-chrome-192x192.png",
 			"sizes": "192x192",
 			"type": "image\/png"
 		},
 		{
-			"src": ".\/icon\/android-chrome-512x512.png",
+			"src": "\/icon\/android-chrome-512x512.png",
 			"sizes": "512x512",
 			"type": "image\/png"
 		}
   ],
-  "scope": ".\/",
-  "start_url": ".\/",
+  "scope": "\/",
+  "start_url": "\/",
   "display": "standalone",
-  "orientation": "portrait",
-  "theme_color": "#f01849",
-  "background_color": "#00aeed",
+  "orientation": "natural",
+  "theme_color": "#bab013",
+  "background_color": "#f01849",
   "prefer_related_applications": false
 }
