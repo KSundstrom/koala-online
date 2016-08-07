@@ -27,17 +27,22 @@ Koala *(Kind-of-a-Lottery App)* är ett verktyg för Akademens tentamina för Li
 
 ## Tack
 
-* Tack till **André Brunnsberg**, för hjälp med det första utkastet till HTML/JavaScript/jQuery.
-* Tack till **[Akademen](https://twitter.com/akademen)**, som är den tänkta användaren och som inspirerat designen.
+* Tack till **André Brunnsberg**, för hjälp med det första utkastet till JavaScript/jQuery.
+* Tack till **[Akademen](https://twitter.com/akademen)**, som inspirerat designen och är den tänkta användaren.
 
 
 ## Standarder och komponenter
 
-KoalaOnline är skrivet i polyglott (X)HTML5+SVG+RDFa+ARIA, CSS3 och JavaScript och använder **[jQuery](http://jquery.com/)** och **[Bootstrap](http://getbootstrap.com/)**.
+KoalaOnline är skrivet i polyglott (X)HTML5 + SVG + RDFa + ARIA, CSS3 och JavaScript och använder **[Bootstrap](https://getbootstrap.com/)** och **[jQuery](https://jquery.com/)**; viss hjälp kommer också från **[HTML5 Boilerplate](https://html5boilerplate.com/)**.
+
+
+## Krav
+
+KoalaOnline försöker inte aktivt stöda annat än moderna webbläsare (Internet Explorer 10 och senare).
 
 
 ## Copyright
 
-Copyright © 2016 K. Sundström, Finland
+© 2016 Kasper Sundström
 
-All rights retained. You may not without permission reproduce, distribute, or create derivative works from this work.
+Alla rättigheter förbehållna.

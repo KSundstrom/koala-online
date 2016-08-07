@@ -1,11 +1,16 @@
 /**
-*   STRICT MODE
-*/
+ * KoalaOnline
+ * Copyright 2016 Kasper Sundström
+ */
+
+/**
+ * STRICT MODE
+ */
 'use strict';
 
 /**
-*   GLOBAL VARIABLES AND HELPER FUNCTIONS
-*/
+ * GLOBAL VARIABLES AND HELPER FUNCTIONS
+ */
 var urlA = 'data/lsm-a.txt';
 var urlB1 = 'data/lsm-b1.txt';
 var urlB2 = 'data/lsm-b2.txt';
@@ -41,8 +46,8 @@ function getLocalTime() {
 }
 
 /**
-*   INITIALIZE UI
-*/
+ * INITIALIZE UI
+ */
 function initializeUI() {
 
   var musicIcon = '<span class="glyphicon glyphicon-music" aria-hidden="true"></span> ';
@@ -147,8 +152,8 @@ function initializeUI() {
 }
 
 /**
-*   RETRIEVE DATA AND POPULATE ARRAYS
-*/
+ * RETRIEVE DATA AND POPULATE ARRAYS
+ */
 function runAJAX() {
 
   var jqxhrA = $.get( urlA, $.noop, 'text' );
@@ -187,8 +192,8 @@ function runAJAX() {
 }
 
 /**
-*   INITIALIZE ON DOCUMENT READY
-*/
+ * INITIALIZE ON DOCUMENT READY
+ */
 $( function() {
   initializeUI();
   runAJAX();
