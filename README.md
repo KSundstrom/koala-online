@@ -33,7 +33,7 @@ Koala *(Kind-of-a-Lottery App)* är ett verktyg för Akademens tentamina för Li
 
 ## Standarder och komponenter
 
-KoalaOnline är skrivet i polyglott (X)HTML5 + SVG + RDFa + ARIA, CSS3 och JavaScript och använder **[Bootstrap](https://getbootstrap.com/)** och **[jQuery](https://jquery.com/)**; viss hjälp kommer också från **[HTML5 Boilerplate](https://html5boilerplate.com/)**.
+KoalaOnline är skrivet i polyglott XHTML5 + SVG + RDFa + ARIA, CSS3 och JavaScript och använder **[Bootstrap](https://getbootstrap.com/)** och **[jQuery](https://jquery.com/)**. Viss hjälp kommer också från **[HTML5 Boilerplate](https://html5boilerplate.com/)**.
 
 
 ## Krav
