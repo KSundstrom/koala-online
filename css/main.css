@@ -5,14 +5,13 @@
 
 /**
 *   IMPORT FONTS
-*   Change | in URL to: %7C
-*   Change & in URL to: %26
+*   Change '|' in URL to '%7C' and '&' to '%26'
 *   System font stack:  -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
 *   Basic sans stack:   'Helvetica Neue', Helvetica, Arial, sans-serif;
 *   Basic serif stack:  Georgia, 'Times New Roman', Times, serif;
 *   Basic mono stack:   Menlo, Monaco, Consolas, 'Courier New', monospace;
 */
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i%26subset=latin-ext);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i);
 @import url(https://fonts.googleapis.com/css?family=Lobster);
 
 /**

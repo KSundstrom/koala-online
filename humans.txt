@@ -1,4 +1,4 @@
-# http://humanstxt.org
+# http://humanstxt.org/
 
 ## Team
 
@@ -11,6 +11,6 @@ Intended audience, design inspiration: The Academic Male Voice Choir of Helsinki
 
 ## Site
 
-Standards: Polyglot (X)HTML 5 + SVG 1.1 + RDFa 1.1 + ARIA, CSS3, JavaScript, AJAX
+Standards: Polyglot (X)HTML5+SVG+RDFa+ARIA, CSS3, JavaScript, AJAX
 Components: jQuery 3.1.0, Bootstrap 3.3.7
 Software: Notepad++, Atom, Illustrator, Excel, XAMPP, FileZilla, GitHub, Windows 10

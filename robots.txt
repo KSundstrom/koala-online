@@ -1,4 +1,4 @@
-# http://www.robotstxt.org
+# http://www.robotstxt.org/
 User-agent: *
 Disallow: /cgi-bin/
 Disallow: /data/

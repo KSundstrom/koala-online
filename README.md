@@ -1,4 +1,4 @@
-# [KoalaOnline](http://koala.ksundstrom.fi)
+# [KoalaOnline](http://koala.ksundstrom.fi/)
 
 > It’s kind of a lottery!
 
@@ -33,11 +33,11 @@ Koala *(Kind-of-a-Lottery App)* är ett verktyg för Akademens tentamina för Li
 
 ## Standarder och komponenter
 
-KoalaOnline är skrivet i polyglott (X)HTML5+SVG+RDFa+ARIA, CSS3 och JavaScript och använder **[jQuery](http://jquery.com)** och **[Bootstrap](http://getbootstrap.com)**.
+KoalaOnline är skrivet i polyglott (X)HTML5+SVG+RDFa+ARIA, CSS3 och JavaScript och använder **[jQuery](http://jquery.com/)** och **[Bootstrap](http://getbootstrap.com/)**.
 
 
 ## Copyright
 
-Copyright © 2016 Kasper Sundström
+Copyright © 2016 K. Sundström, Finland
 
 All rights retained. You may not without permission reproduce, distribute, or create derivative works from this work.
