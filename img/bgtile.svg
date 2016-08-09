@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="80px" height="80px" viewBox="0 0 80 80">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="80" height="80" viewBox="0 0 80 80">
   <rect id="bg" width="80" height="80" fill="#00aeed"/>
   <g id="lines" stroke="#00caf3" stroke-linecap="square">
   	<line x1="35" y1="0" x2="-45" y2="80"/>

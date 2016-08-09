@@ -1,3 +1,14 @@
+<?php
+  $haystack = strtolower($_SERVER['HTTP_ACCEPT']);
+  $needle = 'application/xhtml+xml';
+  $position = strpos($haystack, $needle);
+  if($position !== false) {
+    header('Content-Type: application/xhtml+xml; charset=utf-8');
+    echo '<?xml version="1.0" encoding="utf-8" ?>' . chr(0x0a);
+  } else {
+    header('Content-Type: text/html; charset=utf-8');
+  }
+?>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="sv-FI" xml:lang="sv-FI" dir="ltr">
   <head prefix="og: http://ogp.me/ns#">
@@ -29,7 +40,7 @@
 
     <!-- Icons -->
     <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="icon/apple-touch-icon.png"/>
-    <link rel="mask-icon" type="image/svg+xml" href="icon/safari-pinned-tab.svg"/>
+    <link rel="mask-icon" type="image/svg+xml" href="icon/safari-pinned-tab.svg" color="#f01849"/>
     <link rel="icon" type="image/png" href="icon/favicon-32x32.png" sizes="32x32"/>
     <link rel="icon" type="image/png" href="icon/favicon-16x16.png" sizes="16x16"/>
 
@@ -156,7 +167,7 @@
                 Lottade sånger
                 <span class="pull-right">
                   <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
-                  <!--#config timefmt="%d.%m.%Y" --><!--#echo var="DATE_LOCAL" -->
+                  <?php echo date('j.n.Y'); ?>
                 </span>
               </h2>
               <div id="songResults" role="group" aria-label="Lottade sånger"></div>
@@ -236,7 +247,7 @@
 
               <!-- Dates -->
               Senast uppdaterad
-              <span property="dateModified"><!--#config timefmt="%Y-%m-%d" --><!--#echo var="LAST_MODIFIED" --></span>.
+              <span property="dateModified"><?php echo date('Y-m-d', getlastmod()); ?></span>.
               <meta property="datePublished" content="2016-07-13"/>
 
               <!-- Organization -->

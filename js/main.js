@@ -1,4 +1,4 @@
-/**
+/*!
  * KoalaOnline
  * Copyright 2016 Kasper Sundström
  */
