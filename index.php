@@ -30,7 +30,7 @@
     <meta name="publisher" content="Kasper Sundström"/>
     <meta name="application-name" content="Koala"/>
     <meta name="apple-mobile-web-app-title" content="Koala"/>
-    <meta name="theme-color" content="#f01849"/>
+    <meta name="theme-color" content="#00aeed"/>
 
     <link rel="author" type="text/plain" hreflang="en-GB" href="humans.txt"/>
     <link rel="license" type="text/plain" hreflang="en-GB" href="COPYRIGHT.txt"/>
@@ -40,7 +40,7 @@
 
     <!-- Icons -->
     <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="icon/apple-touch-icon.png"/>
-    <link rel="mask-icon" type="image/svg+xml" href="icon/safari-pinned-tab.svg" color="#f01849"/>
+    <link rel="mask-icon" type="image/svg+xml" href="icon/safari-pinned-tab.svg" color="#00aeed"/>
     <link rel="icon" type="image/png" href="icon/favicon-32x32.png" sizes="32x32"/>
     <link rel="icon" type="image/png" href="icon/favicon-16x16.png" sizes="16x16"/>
 
@@ -185,7 +185,7 @@
             <!-- Info popover and song modals button -->
             <div class="col-xs-6 text-left">
               <div class="btn-group">
-                <a role="button" tabindex="0" class="btn btn-info btn-lg" id="helpButton" title="Kind-of-a-Lottery App" data-toggle="popover" data-trigger="focus" data-container="body" data-placement="auto" data-content="Använd knapparna ovan för att lotta fram sånger ur de olika LSM-kategorierna. Den senast framlottade sången dyker upp högst upp. Uppe till höger framgår när respektive sång lottades fram. Resultaten finns kvar på skärmen tills du klickar på Töm.">
+                <a role="button" tabindex="0" class="btn btn-info btn-lg" id="helpButton" title="It’s kind of a lottery!" data-toggle="popover" data-trigger="focus" data-container="body" data-placement="auto" data-content="Använd knapparna ovan för att lotta fram sånger ur de olika LSM-kategorierna. Den senast framlottade sången dyker upp högst upp. Uppe till höger framgår när respektive sång lottades fram. Resultaten finns kvar på skärmen tills du klickar på Töm.">
                   <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
                   Info
                 </a>
@@ -246,7 +246,7 @@
               </a>
 
               <!-- Dates -->
-              Senast uppdaterad
+              Uppdaterad
               <span property="dateModified"><?php echo date('Y-m-d', getlastmod()); ?></span>.
               <meta property="datePublished" content="2016-07-13"/>
 

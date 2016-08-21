@@ -19,7 +19,7 @@
   "scope": "\/",
   "start_url": "\/",
   "display": "standalone",
-  "orientation": "natural",
+  "orientation": "any",
   "theme_color": "#f01849",
   "background_color": "#00aeed",
   "prefer_related_applications": false
