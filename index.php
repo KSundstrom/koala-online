@@ -1,18 +1,18 @@
 <?php
-  $haystack = strtolower($_SERVER['HTTP_ACCEPT']);
+  $haystack = strtolower( $_SERVER['HTTP_ACCEPT'] );
   $needle = 'application/xhtml+xml';
-  $position = strpos($haystack, $needle);
-  if($position !== false) {
-    header('Content-Type: application/xhtml+xml; charset=utf-8');
-    echo '<?xml version="1.0" encoding="utf-8" ?>' . chr(0x0a);
+  $position = strpos( $haystack, $needle );
+  if( $position !== false ) {
+    header( 'Content-Type: application/xhtml+xml; charset=utf-8' );
+    echo '<?xml version="1.0" encoding="utf-8" standalone="no"?>' . chr( 0x0a );
   } else {
-    header('Content-Type: text/html; charset=utf-8');
+    header( 'Content-Type: text/html; charset=utf-8' );
   }
 ?>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="sv-FI" xml:lang="sv-FI" dir="ltr">
   <head prefix="og: http://ogp.me/ns#">
-    <meta charset="utf-8"/>
+    <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"/>
 
@@ -98,7 +98,7 @@
     <header class="jumbotron">
       <div class="container">
         <div id="logowrapper" class="pull-left">
-          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 384 384">
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 384 384">
             <title>Logo</title>
             <g id="cards">
               <path id="bottomcard" d="M124.4 346c-5.3.6-11-5.2-11.6-11.8l-23.4-269-82.6 30c-5 2-8.3 8-6 14l96 265.8c2.2 6.3 9.2 10.4 14.2 8.5L241 336l-116.6 10z"/>

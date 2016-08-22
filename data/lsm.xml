@@ -1,0 +1,798 @@
+<?xml version="1.0" encoding="utf-8"?>
+<songs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="lsm.xsd">
+	<song lsmCategory="A">
+		<title>Vårt land</title>
+		<incipit/>
+		<lang>sv</lang>
+		<verses>första, sista</verses>
+		<travesty>false</travesty>
+		<original/>
+		<composer>Pacius</composer>
+		<arranger/>
+		<lyricist>Runeberg</lyricist>
+		<translator/>
+		<firstChord>unis a</firstChord>
+		<mmNumber>1</mmNumber>
+		<byHeart>true</byHeart>
+	</song>
+	<song lsmCategory="A">
+		<title>Finlandia-hymnen</title>
+		<incipit>Oi Suomi, katso…</incipit>
+		<lang>fi, sv</lang>
+		<verses/>
+		<travesty>false</travesty>
+		<original/>
+		<composer>Sibelius</composer>
+		<arranger/>
+		<lyricist>Koskenniemi</lyricist>
+		<translator>Rundt</translator>
+		<firstChord>c¹/a♭/e♭/e♭</firstChord>
+		<mmNumber>2</mmNumber>
+		<byHeart>true</byHeart>
+	</song>
+	<song lsmCategory="A">
+		<title>Suomis sång</title>
+		<incipit>Hör, hur härligt…</incipit>
+		<lang>sv, fi</lang>
+		<verses>första, sista</verses>
+		<travesty>false</travesty>
+		<original/>
+		<composer>Pacius</composer>
+		<arranger/>
+		<lyricist>von Qvanten, Runeberg</lyricist>
+		<translator>Hahl</translator>
+		<firstChord>unis e</firstChord>
+		<mmNumber>3</mmNumber>
+		<byHeart>true</byHeart>
+	</song>
+	<song lsmCategory="A">
+		<title>Sångarfanan</title>
+		<incipit/>
+		<lang>sv</lang>
+		<verses/>
+		<travesty>false</travesty>
+		<original/>
+		<composer>Frieberg</composer>
+		<arranger/>
+		<lyricist>Frieberg</lyricist>
+		<translator/>
+		<firstChord>unis a</firstChord>
+		<mmNumber>14</mmNumber>
+		<byHeart>true</byHeart>
+	</song>
+	<song lsmCategory="A">
+		<title>Studentsång</title>
+		<incipit>Sjungom studentens…</incipit>
+		<lang>sv</lang>
+		<verses>första</verses>
+		<travesty>false</travesty>
+		<original/>
+		<composer>Prins Gustaf</composer>
+		<arranger/>
+		<lyricist>Sätherberg</lyricist>
+		<translator/>
+		<firstChord>h/g/d/G</firstChord>
+		<mmNumber>18</mmNumber>
+		<byHeart>true</byHeart>
+	</song>
+	<song lsmCategory="A">
+		<title>Madrigal</title>
+		<incipit>Kom du ljuva…</incipit>
+		<lang>sv</lang>
+		<verses>första, sista</verses>
+		<travesty>false</travesty>
+		<original/>
+		<composer>de la Halle</composer>
+		<arranger>Schreiber</arranger>
+		<lyricist>anon</lyricist>
+		<translator>Ralf</translator>
+		<firstChord>d¹/a/f♯/d</firstChord>
+		<mmNumber>143</mmNumber>
+		<byHeart>true</byHeart>
+	</song>
+	<song lsmCategory="A">
+		<title>Serenad</title>
+		<incipit>Ljuva flicka…</incipit>
+		<lang>sv</lang>
+		<verses/>
+		<travesty>false</travesty>
+		<original/>
+		<composer>Abt</composer>
+		<arranger/>
+		<lyricist>anon</lyricist>
+		<translator/>
+		<firstChord>d♭¹/b♭/g♭/G♭</firstChord>
+		<mmNumber>147</mmNumber>
+		<byHeart>true</byHeart>
+	</song>
+	<song lsmCategory="A">
+		<title>Helan går</title>
+		<incipit/>
+		<lang>sv</lang>
+		<verses/>
+		<travesty>false</travesty>
+		<original/>
+		<composer>anon, Berwald</composer>
+		<arranger>Bergman</arranger>
+		<lyricist>anon</lyricist>
+		<translator/>
+		<firstChord>a/a/–/–</firstChord>
+		<mmNumber>153</mmNumber>
+		<byHeart>true</byHeart>
+	</song>
+	<song lsmCategory="A">
+		<title>Halvan</title>
+		<incipit>Hur länge skall…</incipit>
+		<lang>sv</lang>
+		<verses/>
+		<travesty>true</travesty>
+		<original>Stridsrop</original>
+		<composer>Wennerberg</composer>
+		<arranger/>
+		<lyricist>Nyblom</lyricist>
+		<translator/>
+		<firstChord>–/–/–/e♭</firstChord>
+		<mmNumber>154</mmNumber>
+		<byHeart>true</byHeart>
+	</song>
+	<song lsmCategory="A">
+		<title>Tersen</title>
+		<incipit>Re’n helan…</incipit>
+		<lang>sv</lang>
+		<verses/>
+		<travesty>false</travesty>
+		<original/>
+		<composer>Fougstedt</composer>
+		<arranger/>
+		<lyricist>Fougstedt</lyricist>
+		<translator/>
+		<firstChord>unis d¹</firstChord>
+		<mmNumber>155</mmNumber>
+		<byHeart>true</byHeart>
+	</song>
+	<song lsmCategory="A">
+		<title>Aquaviten</title>
+		<incipit>Ren som en jomfru…</incipit>
+		<lang>da</lang>
+		<verses/>
+		<travesty>false</travesty>
+		<original/>
+		<composer>Thomsén</composer>
+		<arranger/>
+		<lyricist>Seedorf</lyricist>
+		<translator/>
+		<firstChord>d¹/h/g/g</firstChord>
+		<mmNumber>156</mmNumber>
+		<byHeart>true</byHeart>
+	</song>
+	<song lsmCategory="A">
+		<title>Das Königslied</title>
+		<incipit>Ein König ist der Wein…</incipit>
+		<lang>de</lang>
+		<verses/>
+		<travesty>false</travesty>
+		<original/>
+		<composer>Marschner</composer>
+		<arranger/>
+		<lyricist>von Kobell</lyricist>
+		<translator/>
+		<firstChord>unis a</firstChord>
+		<mmNumber>159</mmNumber>
+		<byHeart>true</byHeart>
+	</song>
+	<song lsmCategory="A">
+		<title>Metsämiehen juomalaulu</title>
+		<incipit>Käy metsolan halki…</incipit>
+		<lang>fi</lang>
+		<verses/>
+		<travesty>false</travesty>
+		<original/>
+		<composer>Hermes</composer>
+		<arranger/>
+		<lyricist>anon</lyricist>
+		<translator/>
+		<firstChord>unis a</firstChord>
+		<mmNumber>164</mmNumber>
+		<byHeart>true</byHeart>
+	</song>
+	<song lsmCategory="A">
+		<title>Fredmans epistel № 81</title>
+		<incipit>Märk hur’ vår skugga…</incipit>
+		<lang>sv</lang>
+		<verses>första, sista</verses>
+		<travesty>false</travesty>
+		<original/>
+		<composer>Bellman</composer>
+		<arranger>Donner</arranger>
+		<lyricist>Bellman</lyricist>
+		<translator/>
+		<firstChord>c¹/e/e/A</firstChord>
+		<mmNumber>186</mmNumber>
+		<byHeart>true</byHeart>
+	</song>
+	<song lsmCategory="A">
+		<title>Var redo</title>
+		<incipit/>
+		<lang>sv</lang>
+		<verses/>
+		<travesty>true</travesty>
+		<original>Fredmans sång № 27</original>
+		<composer>Bellman</composer>
+		<arranger>Ahlström</arranger>
+		<lyricist>anon</lyricist>
+		<translator/>
+		<firstChord>–/–/–/e</firstChord>
+		<mmNumber>190</mmNumber>
+		<byHeart>true</byHeart>
+	</song>
+	<song lsmCategory="B1">
+		<title>Oi kallis Suomenmaa</title>
+		<incipit/>
+		<lang>fi</lang>
+		<verses/>
+		<travesty>false</travesty>
+		<original/>
+		<composer>trad</composer>
+		<arranger>Klemetti</arranger>
+		<lyricist>Klemetti</lyricist>
+		<translator/>
+		<firstChord>g¹/d¹/h/g</firstChord>
+		<mmNumber>6</mmNumber>
+		<byHeart>false</byHeart>
+	</song>
+	<song lsmCategory="B1">
+		<title>Modersmålets sång</title>
+		<incipit>Hur härligt sången klingar…</incipit>
+		<lang>sv</lang>
+		<verses/>
+		<travesty>false</travesty>
+		<original/>
+		<composer>Hagfors</composer>
+		<arranger/>
+		<lyricist>Hagfors</lyricist>
+		<translator/>
+		<firstChord>c¹/c¹/c/c</firstChord>
+		<mmNumber>9</mmNumber>
+		<byHeart>true</byHeart>
+	</song>
+	<song lsmCategory="B1">
+		<title>Sangerhilsen</title>
+		<incipit>Lad os hvirvle…</incipit>
+		<lang>no</lang>
+		<verses/>
+		<travesty>false</travesty>
+		<original/>
+		<composer>Grieg</composer>
+		<arranger/>
+		<lyricist>Skavlan</lyricist>
+		<translator/>
+		<firstChord>unis a</firstChord>
+		<mmNumber>12</mmNumber>
+		<byHeart>true</byHeart>
+	</song>
+	<song lsmCategory="B1">
+		<title>Jägarsång</title>
+		<incipit>Bröder, hörden I signalen…</incipit>
+		<lang>sv</lang>
+		<verses/>
+		<travesty>false</travesty>
+		<original/>
+		<composer>Feuk</composer>
+		<arranger>Cronhamn</arranger>
+		<lyricist>Feuk</lyricist>
+		<translator/>
+		<firstChord>h/–/–/–</firstChord>
+		<mmNumber>19</mmNumber>
+		<byHeart>true</byHeart>
+	</song>
+	<song lsmCategory="B1">
+		<title>Studentsång</title>
+		<incipit>Dåne liksom åskan…</incipit>
+		<lang>sv</lang>
+		<verses/>
+		<travesty>false</travesty>
+		<original/>
+		<composer>Stunz</composer>
+		<arranger/>
+		<lyricist>Weismann</lyricist>
+		<translator/>
+		<firstChord>unis d</firstChord>
+		<mmNumber>21</mmNumber>
+		<byHeart>false</byHeart>
+	</song>
+	<song lsmCategory="B1">
+		<title>Till havs</title>
+		<incipit>Nu blåser havets…</incipit>
+		<lang>sv</lang>
+		<verses>första, sista</verses>
+		<travesty>false</travesty>
+		<original/>
+		<composer>Sibelius</composer>
+		<arranger/>
+		<lyricist>Reuter</lyricist>
+		<translator/>
+		<firstChord>unis c♯¹</firstChord>
+		<mmNumber>43</mmNumber>
+		<byHeart>false</byHeart>
+	</song>
+	<song lsmCategory="B1">
+		<title>Poijat kun raitilla laulelivat</title>
+		<incipit>Kun poijat ne raitilla…</incipit>
+		<lang>fi</lang>
+		<verses/>
+		<travesty>false</travesty>
+		<original/>
+		<composer>trad</composer>
+		<arranger>Pesonen</arranger>
+		<lyricist>trad</lyricist>
+		<translator/>
+		<firstChord>–/–/c/F</firstChord>
+		<mmNumber>71</mmNumber>
+		<byHeart>true</byHeart>
+	</song>
+	<song lsmCategory="B1">
+		<title>Island</title>
+		<incipit>Vilar i vita…</incipit>
+		<lang>sv</lang>
+		<verses/>
+		<travesty>false</travesty>
+		<original/>
+		<composer>Möller</composer>
+		<arranger/>
+		<lyricist>Bååth</lyricist>
+		<translator/>
+		<firstChord>–/–/–/A</firstChord>
+		<mmNumber>98</mmNumber>
+		<byHeart>true</byHeart>
+	</song>
+	<song lsmCategory="B1">
+		<title>Gute Nacht</title>
+		<incipit>Warum bist du so ferne…</incipit>
+		<lang>de</lang>
+		<verses/>
+		<travesty>false</travesty>
+		<original/>
+		<composer>Marschner</composer>
+		<arranger/>
+		<lyricist>anon</lyricist>
+		<translator/>
+		<firstChord>unis c¹</firstChord>
+		<mmNumber>141</mmNumber>
+		<byHeart>false</byHeart>
+	</song>
+	<song lsmCategory="B1">
+		<title>Kristallen</title>
+		<incipit/>
+		<lang>sv</lang>
+		<verses/>
+		<travesty>false</travesty>
+		<original/>
+		<composer>trad</composer>
+		<arranger>Tullberg</arranger>
+		<lyricist>trad</lyricist>
+		<translator/>
+		<firstChord>a/a/a/A</firstChord>
+		<mmNumber>142</mmNumber>
+		<byHeart>true</byHeart>
+	</song>
+	<song lsmCategory="B1">
+		<title>Champagnerlied</title>
+		<incipit>Wir griffen jüngst…</incipit>
+		<lang>de</lang>
+		<verses/>
+		<travesty>false</travesty>
+		<original/>
+		<composer>Adam</composer>
+		<arranger/>
+		<lyricist>Herwegh</lyricist>
+		<translator/>
+		<firstChord>unis g</firstChord>
+		<mmNumber>158</mmNumber>
+		<byHeart>true</byHeart>
+	</song>
+	<song lsmCategory="B1">
+		<title>Bacchi ordenskapitel VII № 10</title>
+		<incipit>Klinga nu med klarinetter…</incipit>
+		<lang>sv</lang>
+		<verses/>
+		<travesty>false</travesty>
+		<original/>
+		<composer>Bellman</composer>
+		<arranger>Kjerulf</arranger>
+		<lyricist>Bellman</lyricist>
+		<translator/>
+		<firstChord>d¹/h/g/–</firstChord>
+		<mmNumber>184</mmNumber>
+		<byHeart>false</byHeart>
+	</song>
+	<song lsmCategory="B1">
+		<title>Fredmans epistel № 13</title>
+		<incipit>Nå ä’ nu alla…</incipit>
+		<lang>sv</lang>
+		<verses>första</verses>
+		<travesty>false</travesty>
+		<original/>
+		<composer>Bellman</composer>
+		<arranger>Pacius</arranger>
+		<lyricist>Bellman</lyricist>
+		<translator/>
+		<firstChord>f¹/a/a/f</firstChord>
+		<mmNumber>187</mmNumber>
+		<byHeart>false</byHeart>
+	</song>
+	<song lsmCategory="B1">
+		<title>Fredmans epistel № 82</title>
+		<incipit>Vila vid denna källa…</incipit>
+		<lang>sv</lang>
+		<verses>första</verses>
+		<travesty>false</travesty>
+		<original/>
+		<composer>Bellman</composer>
+		<arranger>Moring</arranger>
+		<lyricist>Bellman</lyricist>
+		<translator/>
+		<firstChord>e¹/c♯¹/a/A</firstChord>
+		<mmNumber>192</mmNumber>
+		<byHeart>true</byHeart>
+	</song>
+	<song lsmCategory="B1">
+		<title>Längtan till landet</title>
+		<incipit>Vintern rasat…</incipit>
+		<lang>sv</lang>
+		<verses/>
+		<travesty>false</travesty>
+		<original/>
+		<composer>Lindblad</composer>
+		<arranger/>
+		<lyricist>Sätherberg</lyricist>
+		<translator/>
+		<firstChord>d¹/a/f♯/d</firstChord>
+		<mmNumber>193</mmNumber>
+		<byHeart>true</byHeart>
+	</song>
+	<song lsmCategory="B1">
+		<title>Majsång</title>
+		<incipit>O hur härligt…</incipit>
+		<lang>sv</lang>
+		<verses/>
+		<travesty>false</travesty>
+		<original/>
+		<composer>Kuhlau</composer>
+		<arranger/>
+		<lyricist>Voss</lyricist>
+		<translator>Böttiger</translator>
+		<firstChord>e♭¹/b♭/g/e♭</firstChord>
+		<mmNumber>194</mmNumber>
+		<byHeart>true</byHeart>
+	</song>
+	<song lsmCategory="B1">
+		<title>Vårsång</title>
+		<incipit>Glad såsom fågeln…</incipit>
+		<lang>sv</lang>
+		<verses/>
+		<travesty>false</travesty>
+		<original/>
+		<composer>Prins Gustaf</composer>
+		<arranger/>
+		<lyricist>Sätherberg</lyricist>
+		<translator/>
+		<firstChord>d¹/h/g/g</firstChord>
+		<mmNumber>195</mmNumber>
+		<byHeart>true</byHeart>
+	</song>
+	<song lsmCategory="B1">
+		<title>Fridolins dårskap</title>
+		<incipit>Knappt leker mört…</incipit>
+		<lang>sv</lang>
+		<verses/>
+		<travesty>false</travesty>
+		<original/>
+		<composer>Sibelius</composer>
+		<arranger/>
+		<lyricist>Karlfeldt</lyricist>
+		<translator/>
+		<firstChord>c¹/a♭/e♭/A♭</firstChord>
+		<mmNumber>196</mmNumber>
+		<byHeart>true</byHeart>
+	</song>
+	<song lsmCategory="B1">
+		<title>Källan</title>
+		<incipit>Jag sitter, källa…</incipit>
+		<lang>sv</lang>
+		<verses/>
+		<travesty>false</travesty>
+		<original/>
+		<composer>Ehrström</composer>
+		<arranger>Moring</arranger>
+		<lyricist>Runeberg</lyricist>
+		<translator/>
+		<firstChord>c¹/a/f/f</firstChord>
+		<mmNumber>206</mmNumber>
+		<byHeart>true</byHeart>
+	</song>
+	<song lsmCategory="B1">
+		<title>Uti vår hage</title>
+		<incipit/>
+		<lang>sv</lang>
+		<verses/>
+		<travesty>false</travesty>
+		<original/>
+		<composer>trad</composer>
+		<arranger>Alfvén</arranger>
+		<lyricist>trad</lyricist>
+		<translator/>
+		<firstChord>h/f♯/d/H</firstChord>
+		<mmNumber>211</mmNumber>
+		<byHeart>false</byHeart>
+	</song>
+	<song lsmCategory="B1">
+		<title>Jul, jul, strålande jul</title>
+		<incipit/>
+		<lang>sv</lang>
+		<verses/>
+		<travesty>false</travesty>
+		<original/>
+		<composer>Nordqvist</composer>
+		<arranger/>
+		<lyricist>Evers</lyricist>
+		<translator/>
+		<firstChord>d¹/b♭/f/B♭</firstChord>
+		<mmNumber>220</mmNumber>
+		<byHeart>true</byHeart>
+	</song>
+	<song lsmCategory="B1">
+		<title>Sua tervehdin</title>
+		<incipit/>
+		<lang>fi</lang>
+		<verses/>
+		<travesty>false</travesty>
+		<original/>
+		<composer>Härtel</composer>
+		<arranger/>
+		<lyricist>anon</lyricist>
+		<translator/>
+		<firstChord>unis b♭</firstChord>
+		<mmNumber>234</mmNumber>
+		<byHeart>true</byHeart>
+	</song>
+	<song lsmCategory="B1">
+		<title>Lugn vilar sjön</title>
+		<incipit/>
+		<lang>sv</lang>
+		<verses/>
+		<travesty>false</travesty>
+		<original/>
+		<composer>Pfeil</composer>
+		<arranger/>
+		<lyricist>Pfeil</lyricist>
+		<translator>anon</translator>
+		<firstChord>unis h</firstChord>
+		<mmNumber>246</mmNumber>
+		<byHeart>false</byHeart>
+	</song>
+	<song lsmCategory="B1">
+		<title>Ode</title>
+		<incipit>Integer vitae…</incipit>
+		<lang>la</lang>
+		<verses/>
+		<travesty>false</travesty>
+		<original/>
+		<composer>Flemming</composer>
+		<arranger/>
+		<lyricist>Flacchus</lyricist>
+		<translator/>
+		<firstChord>d¹/a/f♯/d</firstChord>
+		<mmNumber>249</mmNumber>
+		<byHeart>false</byHeart>
+	</song>
+	<song lsmCategory="B1">
+		<title>My Evaline</title>
+		<incipit/>
+		<lang>en</lang>
+		<verses/>
+		<travesty>false</travesty>
+		<original/>
+		<composer>trad</composer>
+		<arranger>Hall</arranger>
+		<lyricist>trad</lyricist>
+		<translator/>
+		<firstChord>–/e/–/–</firstChord>
+		<mmNumber/>
+		<byHeart>false</byHeart>
+	</song>
+	<song lsmCategory="B2">
+		<title>Studentsång</title>
+		<incipit>Bröder! o slutom förbund…</incipit>
+		<lang>sv</lang>
+		<verses/>
+		<travesty>false</travesty>
+		<original/>
+		<composer>Cronhamn</composer>
+		<arranger/>
+		<lyricist>anon</lyricist>
+		<translator/>
+		<firstChord>e♭¹/g/g/e♭</firstChord>
+		<mmNumber>20</mmNumber>
+		<byHeart>false</byHeart>
+	</song>
+	<song lsmCategory="B2">
+		<title>Gammalt porslin</title>
+		<incipit>En kung i Sachsen…</incipit>
+		<lang>sv</lang>
+		<verses/>
+		<travesty>false</travesty>
+		<original/>
+		<composer>Bergman</composer>
+		<arranger/>
+		<lyricist>Snoilsky</lyricist>
+		<translator/>
+		<firstChord>unis d</firstChord>
+		<mmNumber>30</mmNumber>
+		<byHeart>false</byHeart>
+	</song>
+	<song lsmCategory="B2">
+		<title>Soita, somer, helkä hiekka…</title>
+		<incipit/>
+		<lang>fi</lang>
+		<verses/>
+		<travesty>false</travesty>
+		<original/>
+		<composer>Madetoja</composer>
+		<arranger/>
+		<lyricist>Leino</lyricist>
+		<translator/>
+		<firstChord>f♯/f♯/–/–</firstChord>
+		<mmNumber>74</mmNumber>
+		<byHeart>false</byHeart>
+	</song>
+	<song lsmCategory="B2">
+		<title>Sydämeni laulu</title>
+		<incipit>Tuonen lehto…</incipit>
+		<lang>fi</lang>
+		<verses/>
+		<travesty>false</travesty>
+		<original/>
+		<composer>Sibelius</composer>
+		<arranger/>
+		<lyricist>Kivi</lyricist>
+		<translator/>
+		<firstChord>b♭/b♭/g/e♭</firstChord>
+		<mmNumber>77</mmNumber>
+		<byHeart>false</byHeart>
+	</song>
+	<song lsmCategory="B2">
+		<title>Nur im Herzen</title>
+		<incipit/>
+		<lang>de</lang>
+		<verses/>
+		<travesty>false</travesty>
+		<original/>
+		<composer>Witt</composer>
+		<arranger/>
+		<lyricist>anon</lyricist>
+		<translator/>
+		<firstChord>c¹/g/e/c</firstChord>
+		<mmNumber>145</mmNumber>
+		<byHeart>false</byHeart>
+	</song>
+	<song lsmCategory="B2">
+		<title>Hej dunkom</title>
+		<incipit/>
+		<lang>sv</lang>
+		<verses/>
+		<travesty>false</travesty>
+		<original/>
+		<composer>trad</composer>
+		<arranger>Svedbom</arranger>
+		<lyricist>trad</lyricist>
+		<translator/>
+		<firstChord>g¹/d¹/b♭/g</firstChord>
+		<mmNumber>161</mmNumber>
+		<byHeart>true</byHeart>
+	</song>
+	<song lsmCategory="B2">
+		<title>Heppeneppetepp</title>
+		<incipit>Till Stockholm…</incipit>
+		<lang>sv</lang>
+		<verses/>
+		<travesty>false</travesty>
+		<original/>
+		<composer>trad</composer>
+		<arranger>Fougstedt</arranger>
+		<lyricist>trad</lyricist>
+		<translator/>
+		<firstChord>f/f/F/F</firstChord>
+		<mmNumber>162</mmNumber>
+		<byHeart>true</byHeart>
+	</song>
+	<song lsmCategory="B2">
+		<title>Trinklied</title>
+		<incipit>Guckt nicht in Wasserquellen…</incipit>
+		<lang>de</lang>
+		<verses/>
+		<travesty>false</travesty>
+		<original/>
+		<composer>Pacius</composer>
+		<arranger/>
+		<lyricist>Müller</lyricist>
+		<translator/>
+		<firstChord>b♭/g/g/e♭</firstChord>
+		<mmNumber>175</mmNumber>
+		<byHeart>false</byHeart>
+	</song>
+	<song lsmCategory="B2">
+		<title>Tuborg</title>
+		<incipit/>
+		<lang>sv</lang>
+		<verses/>
+		<travesty>false</travesty>
+		<original/>
+		<composer>trad</composer>
+		<arranger>Westerlund</arranger>
+		<lyricist>anon</lyricist>
+		<translator/>
+		<firstChord>–/–/–/d</firstChord>
+		<mmNumber>176</mmNumber>
+		<byHeart>false</byHeart>
+	</song>
+	<song lsmCategory="B2">
+		<title>Ack om jag vore kejsare</title>
+		<incipit/>
+		<lang>sv</lang>
+		<verses/>
+		<travesty>false</travesty>
+		<original/>
+		<composer>Düring</composer>
+		<arranger/>
+		<lyricist>Gleim</lyricist>
+		<translator>anon</translator>
+		<firstChord>unis f</firstChord>
+		<mmNumber>198</mmNumber>
+		<byHeart>false</byHeart>
+	</song>
+	<song lsmCategory="B2">
+		<title>Morgonvisa</title>
+		<incipit>Morgonen ljusnar…</incipit>
+		<lang>sv</lang>
+		<verses/>
+		<travesty>false</travesty>
+		<original/>
+		<composer>trad</composer>
+		<arranger>Rosas</arranger>
+		<lyricist>Reuter</lyricist>
+		<translator/>
+		<firstChord>unis b♭</firstChord>
+		<mmNumber>207</mmNumber>
+		<byHeart>true</byHeart>
+	</song>
+	<song lsmCategory="B2">
+		<title>Ej med klagan</title>
+		<incipit/>
+		<lang>sv</lang>
+		<verses/>
+		<travesty>false</travesty>
+		<original/>
+		<composer>Sibelius</composer>
+		<arranger>Fougstedt</arranger>
+		<lyricist>Runeberg</lyricist>
+		<translator/>
+		<firstChord>e¹/c¹/c¹/c¹</firstChord>
+		<mmNumber>245</mmNumber>
+		<byHeart>true</byHeart>
+	</song>
+	<song lsmCategory="B2">
+		<title>Coney Island Baby</title>
+		<incipit>Oh goodbye…</incipit>
+		<lang>en</lang>
+		<verses/>
+		<travesty>false</travesty>
+		<original/>
+		<composer>trad</composer>
+		<arranger>The Mainstreeters</arranger>
+		<lyricist>trad</lyricist>
+		<translator/>
+		<firstChord>e♭¹/f/a/c</firstChord>
+		<mmNumber/>
+		<byHeart>false</byHeart>
+	</song>
+</songs>
