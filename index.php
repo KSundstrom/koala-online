@@ -12,7 +12,7 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="sv-FI" xml:lang="sv-FI" dir="ltr">
   <head prefix="og: http://ogp.me/ns#">
-    <meta charset="UTF-8"/>
+    <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"/>
 
@@ -40,7 +40,7 @@
 
     <!-- Icons -->
     <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="icon/apple-touch-icon.png"/>
-    <link rel="mask-icon" type="image/svg+xml" href="icon/safari-pinned-tab.svg" color="#00aeed"/>
+    <link rel="mask-icon" type="image/svg+xml" href="icon/safari-pinned-tab.svg"/>
     <link rel="icon" type="image/png" href="icon/favicon-32x32.png" sizes="32x32"/>
     <link rel="icon" type="image/png" href="icon/favicon-16x16.png" sizes="16x16"/>
 
