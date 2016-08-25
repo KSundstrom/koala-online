@@ -1,15 +1,15 @@
-/*!
+/**
  * KoalaOnline
  * Copyright 2016 Kasper Sundström
  */
 
 /**
- * DECLARE CHARSET
+ * CHARSET
  */
 @charset 'utf-8';
 
 /**
- * IMPORT FONTS
+ * FONT IMPORTS
  * Change '|' in URL to '%7C' and '&' to '%26'
  * System font stack: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
  * Basic sans stack:  'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -20,14 +20,14 @@
 @import url(https://fonts.googleapis.com/css?family=Lobster);
 
 /**
- * DECLARE NAMESPACES
+ * NAMESPACES
  */
 @namespace url(http://www.w3.org/1999/xhtml);
 @namespace svg url(http://www.w3.org/2000/svg);
 @namespace xlink url(http://www.w3.org/1999/xlink);
 
 /**
- * CUSTOM STYLING
+ * CUSTOM STYLES
  */
 html {
   position: relative;

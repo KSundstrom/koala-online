@@ -7,16 +7,16 @@ Koala *(Kind-of-a-Lottery App)* är ett verktyg för Akademens tentamina för Li
 
 ## Uppdatering av sångerna
 
-* Sångerna läses in från de tre textfilerna i mappen `data`.
+* Sångerna läses in från de tre textfilerna i mappen `txt`.
 * I filerna måste varje sång med all tillhörande info finnas på en egen rad.
 * Filerna måste vara ren text (TXT) och i UTF-8.
 * Ta backup på filerna före uppdatering av dem.
-* Öppna filen/filerna i `data` i en dedikerad texteditor, exempelvis Notepad++. Om du i Windows öppnar i vanliga Anteckningar kan det hända att radbytena inte syns.
-* Uppdatera vad som måste uppdateras. Använd vid behov hjälpfilen `kodgenerator-lsm-2015.xlsx` för att enkelt ta fram helt nya kodlistor. Kopiera kodlistorna från Excel (en kategori åt gången) och ersätt innehållet i respektive textfil.
+* Öppna filen/filerna i `txt` i en dedikerad texteditor, exempelvis Notepad++. Om du i Windows öppnar i vanliga Anteckningar kan det hända att radbytena inte syns.
+* Uppdatera vad som måste uppdateras. Använd vid behov Excel-hjälpfilen för att enkelt ta fram helt nya kodlistor. Kopiera kodlistorna från Excel (en kategori åt gången) och ersätt innehållet i respektive textfil.
 * Kontrollera att varje sång finns med och finns på egen rad.
 * Spara filen/filerna *utan att ändra filnamn och ändelser*.
 * Inläsningen klarar av att rensa bort tomma rader, men undvik att lämna sådana.
-* Inläsningen klarar av vilket slag av radbyten som helst, men sträva efter att använda `LF`.
+* Inläsningen klarar av alla de vanliga typerna av radbyten, men sträva efter att använda `LF`.
 * Sträva efter att använda riktiga typografiska citationstecken, apostrofer, ellipser och andra specialtecken.
 
 

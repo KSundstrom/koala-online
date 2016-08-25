@@ -1,5 +1,6 @@
 # http://www.robotstxt.org/
 User-agent: *
 Disallow: /cgi-bin/
-Disallow: /data/
+Disallow: /txt/
+Disallow: /xml/
 Sitemap: http://koala.ksundstrom.fi/sitemap.xml
