@@ -70,7 +70,7 @@
     <script defer="defer" type="application/javascript" charset="utf-8" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
     <!-- Custom UI and AJAX JavaScript -->
-    <script defer="defer" type="application/javascript" charset="utf-8" src="js/main.js"></script>
+    <script defer="defer" type="application/javascript" charset="utf-8" src="js/xmlmain.js"></script>
 
     <!-- Google Analytics -->
     <script type="application/javascript">
