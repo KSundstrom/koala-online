@@ -21,7 +21,7 @@
       Copyright 2016 Kasper Sundström
     -->
 
-    <title>KoalaOnline</title>
+    <title>Koala X</title>
 
     <meta name="robots" content="index, follow"/>
     <meta name="description" content="Koala är ett verktyg för Akademens tentamina för Lilla sångarmärket. It’s kind of a lottery!"/>
@@ -108,8 +108,8 @@
           </svg>
         </div>
         <h1>
-          <span id="brandwrapper" title="Kind-of-a-Lottery App" lang="en-GB" xml:lang="en-GB">
-             <span property="name">Koala</span><wbr/>Online
+          <span id="brandwrapper" title="Kind-of-a-Lottery App XML" lang="en-GB" xml:lang="en-GB">
+             <span property="name">Koala</span>&#160;X
              <meta property="alternateName" content="Kind-of-a-Lottery App"/>
           </span>
           <sub class="small">

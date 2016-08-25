@@ -107,10 +107,6 @@ main {
   margin-bottom: 20px;
 }
 
-.panel-body {
-  font-weight: 600;
-}
-
 footer {
   position: absolute;
   bottom: 0;
@@ -121,4 +117,57 @@ footer {
 
 footer p {
   margin-top: 10px;
+}
+
+#songResults .lsmTitle {
+  font-size: 1.25em;
+  font-weight: 600;
+}
+
+#songResults .lsmIncipit {
+  font-size: 1.25em;
+  color: grey;
+  font-style: italic;
+}
+
+#songResults .lsmLang {
+  text-transform: uppercase;
+}
+
+#songResults .lsmVerses {
+
+}
+
+#songResults .lsmOriginal {
+
+}
+
+#songResults .lsmComposer {
+  font-weight: 600;
+}
+
+#songResults .lsmArranger {
+  font-weight: 600;
+}
+
+#songResults .lsmLyricist {
+  font-weight: 600;
+}
+
+#songResults .lsmTranslator {
+  font-weight: 600;
+}
+
+#songResults .lsmFirstChord {
+  font-weight: 600;
+}
+
+#songResults .lsmMmNumber {
+  font-size: 1.25em;
+  font-weight: 600;
+}
+
+#songResults .lsmByHeart {
+  text-transform: uppercase;
+  font-weight: 600;
 }
