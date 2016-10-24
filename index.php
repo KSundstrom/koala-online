@@ -17,15 +17,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"/>
 
     <!--
-      KoalaOnline
+      KoalaX
       Copyright 2016 Kasper Sundström
     -->
 
-    <title>Koala X</title>
+    <title>KoalaX</title>
 
-    <meta name="robots" content="index, follow"/>
+    <meta name="robots" content="noindex, nofollow"/>
+
     <meta name="description" content="Koala är ett verktyg för Akademens tentamina för Lilla sångarmärket. It’s kind of a lottery!"/>
-    <meta name="keywords" content="Koala, KoalaOnline, Kind-of-a-Lottery App, Akademen, Akademiska Sångföreningen, LSM, Lilla sångarmärket, tentamen"/>
+    <meta name="keywords" content="Koala, KoalaX, KoalaOnline, Kind-of-a-Lottery App, Akademen, Akademiska Sångföreningen, LSM, Lilla sångarmärket, tentamen"/>
     <meta name="creator" content="Kasper Sundström"/>
     <meta name="publisher" content="Kasper Sundström"/>
     <meta name="application-name" content="Koala"/>
@@ -40,12 +41,12 @@
 
     <!-- Icons -->
     <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="icon/apple-touch-icon.png"/>
-    <link rel="mask-icon" type="image/svg+xml" href="icon/safari-pinned-tab.svg"/>
+    <link rel="mask-icon" type="image/svg+xml" href="icon/safari-pinned-tab.svg" color="#00aeed"/>
     <link rel="icon" type="image/png" href="icon/favicon-32x32.png" sizes="32x32"/>
     <link rel="icon" type="image/png" href="icon/favicon-16x16.png" sizes="16x16"/>
 
     <!-- Open Graph -->
-    <meta property="og:title" content="KoalaOnline"/>
+    <meta property="og:title" content="Koala"/>
     <meta property="og:type" content="website"/>
     <meta property="og:image" content="http://koala.ksundstrom.fi/img/logo-300-cyan.png"/>
     <meta property="og:image:type" content="image/png"/>
@@ -63,14 +64,14 @@
     <!-- Custom CSS and font imports -->
     <link rel="stylesheet" type="text/css" href="css/main.css"/>
 
-    <!-- jQuery Core 3.1.0 -->
-    <script defer="defer" type="application/javascript" charset="utf-8" src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+    <!-- jQuery Core 3.1.1 -->
+    <script defer="defer" type="application/javascript" charset="utf-8" src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
 
     <!-- Bootstrap 3.3.7 JavaScript -->
-    <script defer="defer" type="application/javascript" charset="utf-8" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script defer="defer" type="application/javascript" charset="utf-8" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
 
     <!-- Custom UI and AJAX JavaScript -->
-    <script defer="defer" type="application/javascript" charset="utf-8" src="js/xmlmain.js"></script>
+    <script defer="defer" type="application/javascript" charset="utf-8" src="js/xmain.js"></script>
 
     <!-- Google Analytics -->
     <script type="application/javascript">
@@ -109,7 +110,7 @@
         </div>
         <h1>
           <span id="brandwrapper" title="Kind-of-a-Lottery App XML" lang="en-GB" xml:lang="en-GB">
-             <span property="name">Koala</span>&#160;X
+             <span property="name">Koala</span>X
              <meta property="alternateName" content="Kind-of-a-Lottery App"/>
           </span>
           <sub class="small">

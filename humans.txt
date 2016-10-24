@@ -20,6 +20,6 @@ Location: Finland
 /* SITE */
 
 Language: Swedish
-Standards: Polyglot XHTML5 + SVG + RDFa + ARIA, CSS3, JavaScript, AJAX, PHP
+Standards: Polyglot XHTML5 + SVG + RDFa + ARIA, XML + XSD, CSS3, JavaScript, AJAX, PHP
 Components: Bootstrap 3.3.7, jQuery 3.1.0, HTML5 Boilerplate 5.3.0
 Software: Atom, Notepad++, Illustrator, Excel, XAMPP, FileZilla, GitHub
