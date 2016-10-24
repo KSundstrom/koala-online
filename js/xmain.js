@@ -50,7 +50,7 @@ function loadXML() {
       songArrayA.push(
 
         ( $( this ).find( 'mmNumber' ).text() ?
-            'MM250 <span class="lsmMmNumber pull-right">#' + $( this ).find( 'mmNumber' ).text() + '</span> ' :
+            '<span class="lsmMmNumber pull-right">#' + $( this ).find( 'mmNumber' ).text() + '</span> ' :
             '<span class="lsmMmNumber pull-right">Lösbl.</span> ' )
 
         + '<span class="lsmTitle">' + $( this ).find( 'title' ).text() + '</span> '
@@ -101,7 +101,7 @@ function loadXML() {
       songArrayB1.push(
 
         ( $( this ).find( 'mmNumber' ).text() ?
-            'MM250 <span class="lsmMmNumber pull-right">#' + $( this ).find( 'mmNumber' ).text() + '</span> ' :
+            '<span class="lsmMmNumber pull-right">#' + $( this ).find( 'mmNumber' ).text() + '</span> ' :
             '<span class="lsmMmNumber pull-right">Lösbl.</span> ' )
 
         + '<span class="lsmTitle">' + $( this ).find( 'title' ).text() + '</span> '
@@ -152,7 +152,7 @@ function loadXML() {
       songArrayB2.push(
 
         ( $( this ).find( 'mmNumber' ).text() ?
-            'MM250 <span class="lsmMmNumber pull-right">#' + $( this ).find( 'mmNumber' ).text() + '</span> ' :
+            '<span class="lsmMmNumber pull-right">#' + $( this ).find( 'mmNumber' ).text() + '</span> ' :
             '<span class="lsmMmNumber pull-right">Lösbl.</span> ' )
 
         + '<span class="lsmTitle">' + $( this ).find( 'title' ).text() + '</span> '

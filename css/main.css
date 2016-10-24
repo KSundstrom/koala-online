@@ -94,8 +94,8 @@ h1 .small {
 
 .mainandfooter {
   background-color: white;
-  box-shadow: 0 2px 4px #555;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 2px 4px #666;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
 }
 
 main {
@@ -136,7 +136,6 @@ footer p {
 }
 
 #songResults .lsmVerses {
-  text-transform: uppercase;
   font-weight: 600;
 }
 
