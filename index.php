@@ -23,7 +23,7 @@
 
     <title>Koala</title>
 
-    <meta name="robots" content="noindex, nofollow"/>
+    <meta name="robots" content="index, follow"/>
 
     <meta name="description" content="Ett verktyg för Akademens tentamina för Lilla sångarmärket. It’s kind of a lottery!"/>
     <meta name="keywords" content="Koala, KoalaOnline, Kind-of-a-Lottery App, Akademen, Akademiska Sångföreningen, LSM, Lilla sångarmärket, tentamen"/>
