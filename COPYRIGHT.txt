@@ -1,5 +1,5 @@
 COPYRIGHT NOTICE
 
-© 2016 Kasper Sundström
+© 2016–2017 Kasper Sundström
 
 All rights reserved.

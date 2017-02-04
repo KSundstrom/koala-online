@@ -1,6 +1,6 @@
 /**
- * KoalaOnline
- * Copyright 2016 Kasper Sundström
+ * Koala
+ * Copyright 2016–2017 Kasper Sundström
  */
 
 /**
@@ -13,7 +13,7 @@
  */
 $( function() {
   initUI();
-  loadTXT();
+  loadXML();
   /* Turn off animations on XS devices */
   if( window.matchMedia( '(max-width: 767px)' ).matches ) $.fx.off = true;
 });
@@ -21,10 +21,6 @@ $( function() {
 /**
  * GLOBAL VARIABLES AND HELPER FUNCTIONS
  */
-var urlA = 'txt/lsm-a.txt';
-var urlB1 = 'txt/lsm-b1.txt';
-var urlB2 = 'txt/lsm-b2.txt';
-
 var songArrayA = [];
 var songArrayB1 = [];
 var songArrayB2 = [];
@@ -40,19 +36,188 @@ function getLocalTime() {
   return timeString;
 }
 
-function textToArray( aText ) {
-  var anyNewline = /\r\n|\n|\r/;
-  var dirtyArray = aText.split( anyNewline );
-  return dirtyArray;
-}
+/**
+ * AJAX DATA LOADING AND ARRAY POPULATION
+ */
+function loadXML() {
 
-function cleanUpArray( aArray ) {
-  var anyString = /.+/;
-  var cleanArray = $.grep( aArray, function( n ) {
-    return anyString.test( n );
+  var jqxhr = $.get( 'xml/lsm.xml', null, null, 'xml' );
+
+  jqxhr.done( function( data ) {
+    var $xml = $( data );
+
+    $xml.find( 'song[lsmCategory="A"]' ).each( function( index ) {
+      songArrayA.push(
+
+        ( $( this ).find( 'mmNumber' ).text() ?
+            '<span class="lsmMmNumber pull-right">#' + $( this ).find( 'mmNumber' ).text() + '</span> ' :
+            '<span class="lsmMmNumber pull-right">Lösbl.</span> ' )
+
+        + ( $( this ).find( 'title' ).text() ?
+            '<span class="lsmTitle">' + $( this ).find( 'title' ).text() + '</span> ' :
+            '' )
+
+        + ( $( this ).find( 'incipit' ).text() ?
+            '<span class="lsmIncipit"> — ' + $( this ).find( 'incipit' ).text() + '</span> ' :
+            '' )
+
+        + ( $( this ).find( 'lang' ).text() ?
+            '<br/>Språk: <span class="lsmLang">' + $( this ).find( 'lang' ).text() + '</span> ' :
+            '<br/>' )
+
+        + ( $( this ).find( 'verses' ).text() ?
+            'Verser: <span class="lsmVerses">' + $( this ).find( 'verses' ).text() + '</span> ' :
+            '' )
+
+        + ( $( this ).find( 'travesty' ).text() === 'true' ?
+            'Travesti på: <span class="lsmOriginal">' + $( this ).find( 'original' ).text() + '</span> ' :
+            '' )
+
+        + ( $( this ).find( 'byHeart' ).text() === 'true' ?
+            '<span class="lsmByHeart pull-right">Utantill</span> ' :
+            '<span class="lsmByHeart pull-right">Med noter</span> ' )
+
+        + ( $( this ).find( 'composer' ).text() ?
+            '<br/>Musik: <span class="lsmComposer">' + $( this ).find( 'composer' ).text() + '</span> ' :
+            '<br/>' )
+
+        + ( $( this ).find( 'arranger' ).text() ?
+            'Arr: <span class="lsmArranger">' + $( this ).find( 'arranger' ).text() + '</span> ' :
+            '' )
+
+        + ( $( this ).find( 'lyricist' ).text() ?
+            'Text: <span class="lsmLyricist">' + $( this ).find( 'lyricist' ).text() + '</span> ' :
+            '' )
+
+        + ( $( this ).find( 'translator' ).text() ?
+            'Övers: <span class="lsmTranslator">' + $( this ).find( 'translator' ).text() + '</span> ' :
+            '' )
+
+        + ( $( this ).find( 'firstChord' ).text() ?
+            '<br/>Starttoner: <span class="lsmFirstChord">' + $( this ).find( 'firstChord' ).text() + '</span> ' :
+            '<br/>' )
+
+      );
+      $( '#songButtonA' ).removeClass( 'disabled' );
+    });
+
+    $xml.find( 'song[lsmCategory="B1"]' ).each( function( index ) {
+      songArrayB1.push(
+
+        ( $( this ).find( 'mmNumber' ).text() ?
+            '<span class="lsmMmNumber pull-right">#' + $( this ).find( 'mmNumber' ).text() + '</span> ' :
+            '<span class="lsmMmNumber pull-right">Lösbl.</span> ' )
+
+        + ( $( this ).find( 'title' ).text() ?
+            '<span class="lsmTitle">' + $( this ).find( 'title' ).text() + '</span> ' :
+            '' )
+
+        + ( $( this ).find( 'incipit' ).text() ?
+            '<span class="lsmIncipit"> — ' + $( this ).find( 'incipit' ).text() + '</span> ' :
+            '' )
+
+        + ( $( this ).find( 'lang' ).text() ?
+            '<br/>Språk: <span class="lsmLang">' + $( this ).find( 'lang' ).text() + '</span> ' :
+            '<br/>' )
+
+        + ( $( this ).find( 'verses' ).text() ?
+            'Verser: <span class="lsmVerses">' + $( this ).find( 'verses' ).text() + '</span> ' :
+            '' )
+
+        + ( $( this ).find( 'travesty' ).text() === 'true' ?
+            'Travesti på: <span class="lsmOriginal">' + $( this ).find( 'original' ).text() + '</span> ' :
+            '' )
+
+        + ( $( this ).find( 'byHeart' ).text() === 'true' ?
+            '<span class="lsmByHeart pull-right">Utantill</span> ' :
+            '<span class="lsmByHeart pull-right">Med noter</span> ' )
+
+        + ( $( this ).find( 'composer' ).text() ?
+            '<br/>Musik: <span class="lsmComposer">' + $( this ).find( 'composer' ).text() + '</span> ' :
+            '<br/>' )
+
+        + ( $( this ).find( 'arranger' ).text() ?
+            'Arr: <span class="lsmArranger">' + $( this ).find( 'arranger' ).text() + '</span> ' :
+            '' )
+
+        + ( $( this ).find( 'lyricist' ).text() ?
+            'Text: <span class="lsmLyricist">' + $( this ).find( 'lyricist' ).text() + '</span> ' :
+            '' )
+
+        + ( $( this ).find( 'translator' ).text() ?
+            'Övers: <span class="lsmTranslator">' + $( this ).find( 'translator' ).text() + '</span> ' :
+            '' )
+
+        + ( $( this ).find( 'firstChord' ).text() ?
+            '<br/>Starttoner: <span class="lsmFirstChord">' + $( this ).find( 'firstChord' ).text() + '</span> ' :
+            '<br/>' )
+
+      );
+      $( '#songButtonB1' ).removeClass( 'disabled' );
+    });
+
+    $xml.find( 'song[lsmCategory="B2"]' ).each( function( index ) {
+      songArrayB2.push(
+
+        ( $( this ).find( 'mmNumber' ).text() ?
+            '<span class="lsmMmNumber pull-right">#' + $( this ).find( 'mmNumber' ).text() + '</span> ' :
+            '<span class="lsmMmNumber pull-right">Lösbl.</span> ' )
+
+        + ( $( this ).find( 'title' ).text() ?
+            '<span class="lsmTitle">' + $( this ).find( 'title' ).text() + '</span> ' :
+            '' )
+
+        + ( $( this ).find( 'incipit' ).text() ?
+            '<span class="lsmIncipit"> — ' + $( this ).find( 'incipit' ).text() + '</span> ' :
+            '' )
+
+        + ( $( this ).find( 'lang' ).text() ?
+            '<br/>Språk: <span class="lsmLang">' + $( this ).find( 'lang' ).text() + '</span> ' :
+            '<br/>' )
+
+        + ( $( this ).find( 'verses' ).text() ?
+            'Verser: <span class="lsmVerses">' + $( this ).find( 'verses' ).text() + '</span> ' :
+            '' )
+
+        + ( $( this ).find( 'travesty' ).text() === 'true' ?
+            'Travesti på: <span class="lsmOriginal">' + $( this ).find( 'original' ).text() + '</span> ' :
+            '' )
+
+        + ( $( this ).find( 'byHeart' ).text() === 'true' ?
+            '<span class="lsmByHeart pull-right">Utantill</span> ' :
+            '<span class="lsmByHeart pull-right">Med noter</span> ' )
+
+        + ( $( this ).find( 'composer' ).text() ?
+            '<br/>Musik: <span class="lsmComposer">' + $( this ).find( 'composer' ).text() + '</span> ' :
+            '<br/>' )
+
+        + ( $( this ).find( 'arranger' ).text() ?
+            'Arr: <span class="lsmArranger">' + $( this ).find( 'arranger' ).text() + '</span> ' :
+            '' )
+
+        + ( $( this ).find( 'lyricist' ).text() ?
+            'Text: <span class="lsmLyricist">' + $( this ).find( 'lyricist' ).text() + '</span> ' :
+            '' )
+
+        + ( $( this ).find( 'translator' ).text() ?
+            'Övers: <span class="lsmTranslator">' + $( this ).find( 'translator' ).text() + '</span> ' :
+            '' )
+
+        + ( $( this ).find( 'firstChord' ).text() ?
+            '<br/>Starttoner: <span class="lsmFirstChord">' + $( this ).find( 'firstChord' ).text() + '</span> ' :
+            '<br/>' )
+
+      );
+      $( '#songButtonB2' ).removeClass( 'disabled' );
+    });
+
+    console.log( getLocalTime() + ' Läste in XML-data' );
   });
-  cleanArray.sort();
-  return cleanArray;
+
+  jqxhr.fail( function() {
+    console.log( getLocalTime() + ' Kunde inte läsa in XML-data' );
+    alert( 'Fel: inläsning av sångerna misslyckades!' );
+  });
 }
 
 /**
@@ -66,7 +231,7 @@ function initUI() {
   $( '#songButtonA' ).click(function() {
     var song = songArrayA[ getRandomIndex( songArrayA ) ];
     var time = getLocalTime();
-    // console.log( time + ' A ' + song );
+    console.log( time + ' A ' + song );
     $( '<div class="panel panel-success songResult">' +
           '<div class="panel-heading">' +
             '<h3 class="panel-title clearfix">' +
@@ -85,7 +250,7 @@ function initUI() {
   $( '#songButtonB1' ).click(function() {
     var song = songArrayB1[ getRandomIndex( songArrayB1 ) ];
     var time = getLocalTime();
-    // console.log( time + ' B1 ' + song );
+    console.log( time + ' B1 ' + song );
     $( '<div class="panel panel-warning songResult">' +
           '<div class="panel-heading">' +
             '<h3 class="panel-title clearfix">' +
@@ -104,7 +269,7 @@ function initUI() {
   $( '#songButtonB2' ).click(function() {
     var song = songArrayB2[ getRandomIndex( songArrayB2 ) ];
     var time = getLocalTime();
-    // console.log( time + ' B2 ' + song );
+    console.log( time + ' B2 ' + song );
     $( '<div class="panel panel-danger songResult">' +
           '<div class="panel-heading">' +
             '<h3 class="panel-title clearfix">' +
@@ -148,8 +313,8 @@ function initUI() {
   })
 
   $( '#resetButton' ).click( function() {
-    // var time = getLocalTime();
-    // console.log( time + ' Raderade resultaten' );
+    var time = getLocalTime();
+    console.log( time + ' Raderade resultaten' );
     $( '#songResults' ).animate( {
       opacity: 'toggle',
       height: 'toggle'
@@ -158,45 +323,5 @@ function initUI() {
         .empty()
         .show();
     });
-  });
-}
-
-/**
- * AJAX DATA LOADING AND ARRAY POPULATION
- */
-function loadTXT() {
-
-  var jqxhrA = $.get( urlA, null, null, 'text' );
-  var jqxhrB1 = $.get( urlB1, null, null, 'text' );
-  var jqxhrB2 = $.get( urlB2, null, null, 'text' );
-
-  jqxhrA.done( function( data ) {
-    songArrayA = cleanUpArray( textToArray( data ));
-    $( '#songButtonA' ).removeClass( 'disabled' );
-    // console.log( getLocalTime() + ' Läste in A' );
-  })
-  .fail( function() {
-    // console.log( getLocalTime() + ' Kunde inte läsa in A' );
-    alert( 'Fel: inläsning av A-sångerna misslyckades!' );
-  });
-
-  jqxhrB1.done( function( data ) {
-    songArrayB1 = cleanUpArray( textToArray( data ));
-    $( '#songButtonB1' ).removeClass( 'disabled' );
-    // console.log( getLocalTime() + ' Läste in B1' );
-  })
-  .fail( function() {
-    // console.log( getLocalTime() + ' Kunde inte läsa in B1' );
-    alert( 'Fel: inläsning av lättare B-sångerna misslyckades!' );
-  });
-
-  jqxhrB2.done( function( data ) {
-    songArrayB2 = cleanUpArray( textToArray( data ));
-    $( '#songButtonB2' ).removeClass( 'disabled' );
-    // console.log( getLocalTime() + ' Läste in B2' );
-  })
-  .fail( function() {
-    // console.log( getLocalTime() + ' Kunde inte läsa in B2' );
-    alert( 'Fel: inläsning av svårare B-sångerna misslyckades!' );
   });
 }

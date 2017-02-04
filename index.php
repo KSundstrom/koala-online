@@ -17,16 +17,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"/>
 
     <!--
-      KoalaX
-      Copyright 2016 Kasper Sundström
+      Koala
+      Copyright 2016–2017 Kasper Sundström
     -->
 
-    <title>KoalaX</title>
+    <title>Koala</title>
 
     <meta name="robots" content="noindex, nofollow"/>
 
-    <meta name="description" content="Koala är ett verktyg för Akademens tentamina för Lilla sångarmärket. It’s kind of a lottery!"/>
-    <meta name="keywords" content="Koala, KoalaX, KoalaOnline, Kind-of-a-Lottery App, Akademen, Akademiska Sångföreningen, LSM, Lilla sångarmärket, tentamen"/>
+    <meta name="description" content="Ett verktyg för Akademens tentamina för Lilla sångarmärket. It’s kind of a lottery!"/>
+    <meta name="keywords" content="Koala, KoalaOnline, Kind-of-a-Lottery App, Akademen, Akademiska Sångföreningen, LSM, Lilla sångarmärket, tentamen"/>
     <meta name="creator" content="Kasper Sundström"/>
     <meta name="publisher" content="Kasper Sundström"/>
     <meta name="application-name" content="Koala"/>
@@ -53,7 +53,7 @@
     <meta property="og:image:width" content="300"/>
     <meta property="og:image:height" content="300"/>
     <meta property="og:url" content="http://koala.ksundstrom.fi/"/>
-    <meta property="og:description" content="Koala är ett verktyg för Akademens tentamina för Lilla sångarmärket. It’s kind of a lottery!"/>
+    <meta property="og:description" content="Ett verktyg för Akademens tentamina för Lilla sångarmärket. It’s kind of a lottery!"/>
 
     <!-- Bootstrap 3.3.7 CSS -->
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
@@ -71,7 +71,7 @@
     <script defer="defer" type="application/javascript" charset="utf-8" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
 
     <!-- Custom UI and AJAX JavaScript -->
-    <script defer="defer" type="application/javascript" charset="utf-8" src="js/xmain.js"></script>
+    <script defer="defer" type="application/javascript" charset="utf-8" src="js/main.js"></script>
 
     <!-- Google Analytics -->
     <script type="application/javascript">
@@ -109,8 +109,8 @@
           </svg>
         </div>
         <h1>
-          <span id="brandwrapper" title="Kind-of-a-Lottery App XML" lang="en-GB" xml:lang="en-GB">
-             <span property="name">Koala</span>X
+          <span id="brandwrapper" title="Kind-of-a-Lottery App" lang="en-GB" xml:lang="en-GB">
+             <span property="name">Koala</span>
              <meta property="alternateName" content="Kind-of-a-Lottery App"/>
           </span>
           <sub class="small">
@@ -123,6 +123,58 @@
     <!-- MAIN -->
     <main class="mainandfooter">
       <div class="container">
+
+        <!-- UTILITY BUTTONS -->
+        <section class="hidden-print">
+          <h2 class="sr-only">
+            Hjälpknappar
+          </h2>
+          <div class="row">
+
+            <!-- Info popover and song modals button -->
+            <div class="col-lg-12 text-right">
+              <div class="btn-group">
+                <a role="button" tabindex="0" class="btn btn-info btn-lg" id="helpButton" title="It’s kind of a lottery!" data-toggle="popover" data-trigger="focus" data-container="body" data-placement="auto" data-content="Använd knapparna nedan för att lotta fram sånger ur de olika kategorierna. Den senast framlottade sången dyker upp högst upp. Uppe till höger framgår när respektive sång lottades fram. Resultaten finns kvar på skärmen tills du klickar på Töm. Allt skrivs även ut i webbläsarens konsol.">
+                  <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+                  Info
+                </a>
+                <a role="button" class="btn btn-info btn-lg dropdown-toggle" title="Visa sånger" data-toggle="dropdown" data-container="body" aria-haspopup="true" aria-expanded="false">
+                  <span class="caret"></span>
+                  <span class="sr-only">Visa meny</span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="#songModal" data-target="#songModal" data-toggle="modal" data-category="A">Visa alla A-sånger</a></li>
+                  <li><a href="#songModal" data-target="#songModal" data-toggle="modal" data-category="B">Visa alla B-sånger</a></li>
+                </ul>
+              </div>
+
+            <!-- Reset button -->
+              <div class="btn-group">
+                <a role="button" class="btn btn-danger btn-lg" id="resetButton" title="Radera resultaten">
+                  <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+                  Töm
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- The modal -->
+          <div role="dialog" tabindex="-1" class="modal fade" id="songModal" aria-labelledby="songModalLabel">
+            <div role="document" class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Stäng">
+                    <span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span>
+                  </button>
+                  <h3 class="modal-title" id="songModalLabel">Alla sånger</h3>
+                </div>
+                <div class="modal-body">
+                  <ol id="modalList"></ol>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
         <!-- RAFFLE BUTTONS -->
         <section class="hidden-print">
@@ -176,59 +228,6 @@
           </div>
         </section>
 
-        <!-- UTILITY BUTTONS -->
-        <section class="hidden-print">
-          <h2 class="sr-only">
-            Hjälpknappar
-          </h2>
-          <div class="row">
-
-            <!-- Info popover and song modals button -->
-            <div class="col-xs-6 text-left">
-              <div class="btn-group">
-                <a role="button" tabindex="0" class="btn btn-info btn-lg" id="helpButton" title="It’s kind of a lottery!" data-toggle="popover" data-trigger="focus" data-container="body" data-placement="auto" data-content="Använd knapparna ovan för att lotta fram sånger ur de olika LSM-kategorierna. Den senast framlottade sången dyker upp högst upp. Uppe till höger framgår när respektive sång lottades fram. Resultaten finns kvar på skärmen tills du klickar på Töm.">
-                  <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
-                  Info
-                </a>
-                <a role="button" class="btn btn-info btn-lg dropdown-toggle" title="Visa sånger" data-toggle="dropdown" data-container="body" aria-haspopup="true" aria-expanded="false">
-                  <span class="caret"></span>
-                  <span class="sr-only">Visa meny</span>
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a href="#songModal" data-target="#songModal" data-toggle="modal" data-category="A">Visa alla A-sånger</a></li>
-                  <li><a href="#songModal" data-target="#songModal" data-toggle="modal" data-category="B">Visa alla B-sånger</a></li>
-                </ul>
-              </div>
-
-              <!-- The modal -->
-              <div role="dialog" tabindex="-1" class="modal fade" id="songModal" aria-labelledby="songModalLabel">
-                <div role="document" class="modal-dialog modal-lg">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Stäng">
-                        <span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span>
-                      </button>
-                      <h3 class="modal-title" id="songModalLabel">Alla sånger</h3>
-                    </div>
-                    <div class="modal-body">
-                      <ol id="modalList"></ol>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Reset button -->
-            <div class="col-xs-6 text-right">
-              <div class="btn-group">
-                <a role="button" class="btn btn-danger btn-lg" id="resetButton" title="Radera resultaten">
-                  <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
-                  Töm
-                </a>
-              </div>
-            </div>
-          </div>
-        </section>
       </div>
     </main>
 
@@ -240,7 +239,7 @@
             <p class="small text-muted">
 
               <!-- Copyright -->
-              © <span property="copyrightYear">2016</span>
+              © <span property="copyrightYear">2016–2017</span>
               <a hreflang="sv-FI" href="http://ksundstrom.fi/" property="copyrightHolder creator" typeof="Person">
                 <span property="name">Kasper Sundström</span>.
                 <meta property="nationality" content="FI"/>
@@ -283,5 +282,6 @@
         <meta property="sameAs" content="https://www.wikidata.org/wiki/Q4411935"/>
       </div>
     </div>
+
   </body>
 </html>

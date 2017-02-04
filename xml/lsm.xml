@@ -17,7 +17,7 @@
 	</song>
 	<song lsmCategory="A">
 		<title>Finlandia-hymnen</title>
-		<incipit>Oi Suomi, katso…</incipit>
+		<incipit>Oi Suomi, katso…/O Finland, se…</incipit>
 		<lang>fi, sv</lang>
 		<verses/>
 		<travesty>false</travesty>
@@ -32,7 +32,7 @@
 	</song>
 	<song lsmCategory="A">
 		<title>Suomis sång</title>
-		<incipit>Hör, hur härligt…</incipit>
+		<incipit>Hör, hur härlig…</incipit>
 		<lang>sv, fi</lang>
 		<verses>första, sista</verses>
 		<travesty>false</travesty>
@@ -632,7 +632,7 @@
 	</song>
 	<song lsmCategory="B2">
 		<title>Soita, somer, helkä hiekka…</title>
-		<incipit/>
+		<incipit>Suvi-illan suussa impi…</incipit>
 		<lang>fi</lang>
 		<verses/>
 		<travesty>false</travesty>
