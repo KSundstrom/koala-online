@@ -11,13 +11,13 @@
 		<arranger/>
 		<lyricist>Runeberg</lyricist>
 		<translator/>
-		<firstChord>unis a</firstChord>
+		<firstChord>unis. a</firstChord>
 		<mmNumber>1</mmNumber>
 		<byHeart>true</byHeart>
 	</song>
 	<song lsmCategory="A">
 		<title>Finlandia-hymnen</title>
-		<incipit>Oi Suomi, katso…</incipit>
+		<incipit>Oi Suomi, katso…/O Finland, se…</incipit>
 		<lang>fi, sv</lang>
 		<verses/>
 		<travesty>false</travesty>
@@ -32,7 +32,7 @@
 	</song>
 	<song lsmCategory="A">
 		<title>Suomis sång</title>
-		<incipit>Hör, hur härligt…</incipit>
+		<incipit>Hör, hur härlig…</incipit>
 		<lang>sv, fi</lang>
 		<verses>första, sista</verses>
 		<travesty>false</travesty>
@@ -41,7 +41,7 @@
 		<arranger/>
 		<lyricist>von Qvanten, Runeberg</lyricist>
 		<translator>Hahl</translator>
-		<firstChord>unis e</firstChord>
+		<firstChord>unis. e</firstChord>
 		<mmNumber>3</mmNumber>
 		<byHeart>true</byHeart>
 	</song>
@@ -56,7 +56,7 @@
 		<arranger/>
 		<lyricist>Frieberg</lyricist>
 		<translator/>
-		<firstChord>unis a</firstChord>
+		<firstChord>unis. a</firstChord>
 		<mmNumber>14</mmNumber>
 		<byHeart>true</byHeart>
 	</song>
@@ -84,7 +84,7 @@
 		<original/>
 		<composer>de la Halle</composer>
 		<arranger>Schreiber</arranger>
-		<lyricist>anon</lyricist>
+		<lyricist>anon.</lyricist>
 		<translator>Ralf</translator>
 		<firstChord>d¹/a/f♯/d</firstChord>
 		<mmNumber>143</mmNumber>
@@ -99,7 +99,7 @@
 		<original/>
 		<composer>Abt</composer>
 		<arranger/>
-		<lyricist>anon</lyricist>
+		<lyricist>anon.</lyricist>
 		<translator/>
 		<firstChord>d♭¹/b♭/g♭/G♭</firstChord>
 		<mmNumber>147</mmNumber>
@@ -112,9 +112,9 @@
 		<verses/>
 		<travesty>false</travesty>
 		<original/>
-		<composer>anon, Berwald</composer>
+		<composer>anon., Berwald</composer>
 		<arranger>Bergman</arranger>
-		<lyricist>anon</lyricist>
+		<lyricist>anon.</lyricist>
 		<translator/>
 		<firstChord>a/a/–/–</firstChord>
 		<mmNumber>153</mmNumber>
@@ -146,7 +146,7 @@
 		<arranger/>
 		<lyricist>Fougstedt</lyricist>
 		<translator/>
-		<firstChord>unis d¹</firstChord>
+		<firstChord>unis. d¹</firstChord>
 		<mmNumber>155</mmNumber>
 		<byHeart>true</byHeart>
 	</song>
@@ -176,7 +176,7 @@
 		<arranger/>
 		<lyricist>von Kobell</lyricist>
 		<translator/>
-		<firstChord>unis a</firstChord>
+		<firstChord>unis. a</firstChord>
 		<mmNumber>159</mmNumber>
 		<byHeart>true</byHeart>
 	</song>
@@ -189,9 +189,9 @@
 		<original/>
 		<composer>Hermes</composer>
 		<arranger/>
-		<lyricist>anon</lyricist>
+		<lyricist>anon.</lyricist>
 		<translator/>
-		<firstChord>unis a</firstChord>
+		<firstChord>unis. a</firstChord>
 		<mmNumber>164</mmNumber>
 		<byHeart>true</byHeart>
 	</song>
@@ -219,7 +219,7 @@
 		<original>Fredmans sång № 27</original>
 		<composer>Bellman</composer>
 		<arranger>Ahlström</arranger>
-		<lyricist>anon</lyricist>
+		<lyricist>anon.</lyricist>
 		<translator/>
 		<firstChord>–/–/–/e</firstChord>
 		<mmNumber>190</mmNumber>
@@ -232,7 +232,7 @@
 		<verses/>
 		<travesty>false</travesty>
 		<original/>
-		<composer>trad</composer>
+		<composer>trad.</composer>
 		<arranger>Klemetti</arranger>
 		<lyricist>Klemetti</lyricist>
 		<translator/>
@@ -266,7 +266,7 @@
 		<arranger/>
 		<lyricist>Skavlan</lyricist>
 		<translator/>
-		<firstChord>unis a</firstChord>
+		<firstChord>unis. a</firstChord>
 		<mmNumber>12</mmNumber>
 		<byHeart>true</byHeart>
 	</song>
@@ -296,7 +296,7 @@
 		<arranger/>
 		<lyricist>Weismann</lyricist>
 		<translator/>
-		<firstChord>unis d</firstChord>
+		<firstChord>unis. d</firstChord>
 		<mmNumber>21</mmNumber>
 		<byHeart>false</byHeart>
 	</song>
@@ -311,7 +311,7 @@
 		<arranger/>
 		<lyricist>Reuter</lyricist>
 		<translator/>
-		<firstChord>unis c♯¹</firstChord>
+		<firstChord>unis. c♯¹</firstChord>
 		<mmNumber>43</mmNumber>
 		<byHeart>false</byHeart>
 	</song>
@@ -322,9 +322,9 @@
 		<verses/>
 		<travesty>false</travesty>
 		<original/>
-		<composer>trad</composer>
+		<composer>trad.</composer>
 		<arranger>Pesonen</arranger>
-		<lyricist>trad</lyricist>
+		<lyricist>trad.</lyricist>
 		<translator/>
 		<firstChord>–/–/c/F</firstChord>
 		<mmNumber>71</mmNumber>
@@ -354,9 +354,9 @@
 		<original/>
 		<composer>Marschner</composer>
 		<arranger/>
-		<lyricist>anon</lyricist>
+		<lyricist>anon.</lyricist>
 		<translator/>
-		<firstChord>unis c¹</firstChord>
+		<firstChord>unis. c¹</firstChord>
 		<mmNumber>141</mmNumber>
 		<byHeart>false</byHeart>
 	</song>
@@ -367,9 +367,9 @@
 		<verses/>
 		<travesty>false</travesty>
 		<original/>
-		<composer>trad</composer>
+		<composer>trad.</composer>
 		<arranger>Tullberg</arranger>
-		<lyricist>trad</lyricist>
+		<lyricist>trad.</lyricist>
 		<translator/>
 		<firstChord>a/a/a/A</firstChord>
 		<mmNumber>142</mmNumber>
@@ -386,7 +386,7 @@
 		<arranger/>
 		<lyricist>Herwegh</lyricist>
 		<translator/>
-		<firstChord>unis g</firstChord>
+		<firstChord>unis. g</firstChord>
 		<mmNumber>158</mmNumber>
 		<byHeart>true</byHeart>
 	</song>
@@ -517,9 +517,9 @@
 		<verses/>
 		<travesty>false</travesty>
 		<original/>
-		<composer>trad</composer>
+		<composer>trad.</composer>
 		<arranger>Alfvén</arranger>
-		<lyricist>trad</lyricist>
+		<lyricist>trad.</lyricist>
 		<translator/>
 		<firstChord>h/f♯/d/H</firstChord>
 		<mmNumber>211</mmNumber>
@@ -549,9 +549,9 @@
 		<original/>
 		<composer>Härtel</composer>
 		<arranger/>
-		<lyricist>anon</lyricist>
+		<lyricist>anon.</lyricist>
 		<translator/>
-		<firstChord>unis b♭</firstChord>
+		<firstChord>unis. b♭</firstChord>
 		<mmNumber>234</mmNumber>
 		<byHeart>true</byHeart>
 	</song>
@@ -565,8 +565,8 @@
 		<composer>Pfeil</composer>
 		<arranger/>
 		<lyricist>Pfeil</lyricist>
-		<translator>anon</translator>
-		<firstChord>unis h</firstChord>
+		<translator>anon.</translator>
+		<firstChord>unis. h</firstChord>
 		<mmNumber>246</mmNumber>
 		<byHeart>false</byHeart>
 	</song>
@@ -592,9 +592,9 @@
 		<verses/>
 		<travesty>false</travesty>
 		<original/>
-		<composer>trad</composer>
+		<composer>trad.</composer>
 		<arranger>Hall</arranger>
-		<lyricist>trad</lyricist>
+		<lyricist>trad.</lyricist>
 		<translator/>
 		<firstChord>–/e/–/–</firstChord>
 		<mmNumber/>
@@ -609,7 +609,7 @@
 		<original/>
 		<composer>Cronhamn</composer>
 		<arranger/>
-		<lyricist>anon</lyricist>
+		<lyricist>anon.</lyricist>
 		<translator/>
 		<firstChord>e♭¹/g/g/e♭</firstChord>
 		<mmNumber>20</mmNumber>
@@ -626,13 +626,13 @@
 		<arranger/>
 		<lyricist>Snoilsky</lyricist>
 		<translator/>
-		<firstChord>unis d</firstChord>
+		<firstChord>unis. d</firstChord>
 		<mmNumber>30</mmNumber>
 		<byHeart>false</byHeart>
 	</song>
 	<song lsmCategory="B2">
 		<title>Soita, somer, helkä hiekka…</title>
-		<incipit/>
+		<incipit>Suvi-illan suussa impi…</incipit>
 		<lang>fi</lang>
 		<verses/>
 		<travesty>false</travesty>
@@ -669,7 +669,7 @@
 		<original/>
 		<composer>Witt</composer>
 		<arranger/>
-		<lyricist>anon</lyricist>
+		<lyricist>anon.</lyricist>
 		<translator/>
 		<firstChord>c¹/g/e/c</firstChord>
 		<mmNumber>145</mmNumber>
@@ -682,9 +682,9 @@
 		<verses/>
 		<travesty>false</travesty>
 		<original/>
-		<composer>trad</composer>
+		<composer>trad.</composer>
 		<arranger>Svedbom</arranger>
-		<lyricist>trad</lyricist>
+		<lyricist>trad.</lyricist>
 		<translator/>
 		<firstChord>g¹/d¹/b♭/g</firstChord>
 		<mmNumber>161</mmNumber>
@@ -697,9 +697,9 @@
 		<verses/>
 		<travesty>false</travesty>
 		<original/>
-		<composer>trad</composer>
+		<composer>trad.</composer>
 		<arranger>Fougstedt</arranger>
-		<lyricist>trad</lyricist>
+		<lyricist>trad.</lyricist>
 		<translator/>
 		<firstChord>f/f/F/F</firstChord>
 		<mmNumber>162</mmNumber>
@@ -727,9 +727,9 @@
 		<verses/>
 		<travesty>false</travesty>
 		<original/>
-		<composer>trad</composer>
+		<composer>trad.</composer>
 		<arranger>Westerlund</arranger>
-		<lyricist>anon</lyricist>
+		<lyricist>anon.</lyricist>
 		<translator/>
 		<firstChord>–/–/–/d</firstChord>
 		<mmNumber>176</mmNumber>
@@ -745,8 +745,8 @@
 		<composer>Düring</composer>
 		<arranger/>
 		<lyricist>Gleim</lyricist>
-		<translator>anon</translator>
-		<firstChord>unis f</firstChord>
+		<translator>anon.</translator>
+		<firstChord>unis. f</firstChord>
 		<mmNumber>198</mmNumber>
 		<byHeart>false</byHeart>
 	</song>
@@ -757,11 +757,11 @@
 		<verses/>
 		<travesty>false</travesty>
 		<original/>
-		<composer>trad</composer>
+		<composer>trad.</composer>
 		<arranger>Rosas</arranger>
 		<lyricist>Reuter</lyricist>
 		<translator/>
-		<firstChord>unis b♭</firstChord>
+		<firstChord>unis. b♭</firstChord>
 		<mmNumber>207</mmNumber>
 		<byHeart>true</byHeart>
 	</song>
@@ -787,9 +787,9 @@
 		<verses/>
 		<travesty>false</travesty>
 		<original/>
-		<composer>trad</composer>
+		<composer>trad.</composer>
 		<arranger>The Mainstreeters</arranger>
-		<lyricist>trad</lyricist>
+		<lyricist>trad.</lyricist>
 		<translator/>
 		<firstChord>e♭¹/f/a/c</firstChord>
 		<mmNumber/>

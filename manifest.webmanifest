@@ -1,9 +1,9 @@
 {
   "lang": "sv-FI",
   "dir": "ltr",
-  "name": "KoalaOnline",
+  "name": "Koala",
   "short_name": "Koala",
-  "description": "Koala är ett verktyg för Akademens tentamina för Lilla sångarmärket. It’s kind of a lottery!",
+  "description": "Ett verktyg för Akademens tentamina för Lilla sångarmärket. It’s kind of a lottery!",
   "icons": [
     {
 			"src": "\/icon\/android-chrome-192x192.png",

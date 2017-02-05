@@ -13,7 +13,7 @@
  */
 $( function() {
   initUI();
-  loadXML();
+  loadTXT();
   /* Turn off animations on XS devices */
   if( window.matchMedia( '(max-width: 767px)' ).matches ) $.fx.off = true;
 });
@@ -21,7 +21,9 @@ $( function() {
 /**
  * GLOBAL VARIABLES AND HELPER FUNCTIONS
  */
-var dataurl = 'xml/lsm.xml';
+var urlA = 'txt/lsm-a.txt';
+var urlB1 = 'txt/lsm-b1.txt';
+var urlB2 = 'txt/lsm-b2.txt';
 
 var songArrayA = [];
 var songArrayB1 = [];
@@ -38,6 +40,12 @@ function getLocalTime() {
   return timeString;
 }
 
+function textToArray( aText ) {
+  var anyNewline = /\r\n|\n|\r/;
+  var dirtyArray = aText.split( anyNewline );
+  return dirtyArray;
+}
+
 function cleanUpArray( aArray ) {
   var anyString = /.+/;
   var cleanArray = $.grep( aArray, function( n ) {
@@ -45,31 +53,6 @@ function cleanUpArray( aArray ) {
   });
   cleanArray.sort();
   return cleanArray;
-}
-
-/**
- * AJAX DATA LOADING AND ARRAY POPULATION
- */
-function loadXML() {
-
-  var jqxhr = $.get( dataurl, null, null, 'xml' );
-
-  jqxhr.done( function( data ) {
-    var $xml = $( data );
-
-    $xml.find( 'song' ).prependTo( '#songResults' );
-
-    $( '#songButtonA' ).removeClass( 'disabled' );
-    $( '#songButtonB1' ).removeClass( 'disabled' );
-    $( '#songButtonB2' ).removeClass( 'disabled' );
-
-    console.log( getLocalTime() + ' Läste in XML-data' );
-  });
-
-  jqxhr.fail( function() {
-    console.log( getLocalTime() + ' Kunde inte läsa in XML-data' );
-    alert( 'Fel: inläsning av sångerna misslyckades!' );
-  });
 }
 
 /**
@@ -175,5 +158,45 @@ function initUI() {
         .empty()
         .show();
     });
+  });
+}
+
+/**
+ * AJAX DATA LOADING AND ARRAY POPULATION
+ */
+function loadTXT() {
+
+  var jqxhrA = $.get( urlA, null, null, 'text' );
+  var jqxhrB1 = $.get( urlB1, null, null, 'text' );
+  var jqxhrB2 = $.get( urlB2, null, null, 'text' );
+
+  jqxhrA.done( function( data ) {
+    songArrayA = cleanUpArray( textToArray( data ));
+    $( '#songButtonA' ).removeClass( 'disabled' );
+    // console.log( getLocalTime() + ' Läste in A' );
+  })
+  .fail( function() {
+    // console.log( getLocalTime() + ' Kunde inte läsa in A' );
+    alert( 'Fel: inläsning av A-sångerna misslyckades!' );
+  });
+
+  jqxhrB1.done( function( data ) {
+    songArrayB1 = cleanUpArray( textToArray( data ));
+    $( '#songButtonB1' ).removeClass( 'disabled' );
+    // console.log( getLocalTime() + ' Läste in B1' );
+  })
+  .fail( function() {
+    // console.log( getLocalTime() + ' Kunde inte läsa in B1' );
+    alert( 'Fel: inläsning av lättare B-sångerna misslyckades!' );
+  });
+
+  jqxhrB2.done( function( data ) {
+    songArrayB2 = cleanUpArray( textToArray( data ));
+    $( '#songButtonB2' ).removeClass( 'disabled' );
+    // console.log( getLocalTime() + ' Läste in B2' );
+  })
+  .fail( function() {
+    // console.log( getLocalTime() + ' Kunde inte läsa in B2' );
+    alert( 'Fel: inläsning av svårare B-sångerna misslyckades!' );
   });
 }
