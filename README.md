@@ -4,7 +4,19 @@
 
 Koala *(Kind-of-a-Lottery App)* är ett verktyg för Akademens tentamina för Lilla sångarmärket. Den nuvarande versionen (även känd som KoalaX) är en XML-baserad version av den tidigare TXT-baserade versionen (även känd som KoalaOnline), vilken i sin tur inspirerades av det tidigare Java-verktyget Koala (även känt som JKoala), även det skrivet av Kasper Sundström.
 
-## Uppdatering av sångerna i den tidigare TXT-baserade versionen (föråldrad information)
+
+## Uppdatering av sångerna i den nuvarande XML-baserade versionen
+
+* Sångerna läses in från XML-filen `lsm.xml` i mappen `xml`.
+* Filens struktur definieras av schemafilen `lsm.xsd` i samma mapp. *Ändra inte i denna fil om du inte vet vad du gör (kräver ändringar i andra filer).*
+* Ta backup på `lsm.xml` före uppdatering av den.
+* Smärre korrigeringar av informationen kan göras direkt i filen.
+* Större ändringar görs lämpligen med ett program som kan hantera XML i tabellform, exempelvis Excel.
+* Spara filen *utan att ändra filnamn och ändelse*.
+* Sträva efter att använda riktiga typografiska citationstecken, apostrofer, ellipser och andra specialtecken.
+
+
+## Uppdatering av sångerna i den tidigare TXT-baserade versionen
 
 * Sångerna läses in från de tre textfilerna i mappen `txt`.
 * I filerna måste varje sång med all tillhörande info finnas på en egen rad.
@@ -18,26 +30,27 @@ Koala *(Kind-of-a-Lottery App)* är ett verktyg för Akademens tentamina för Li
 * Inläsningen klarar av alla de vanliga typerna av radbyten, men sträva efter att använda `LF`.
 * Sträva efter att använda riktiga typografiska citationstecken, apostrofer, ellipser och andra specialtecken.
 
-## Uppdatering av sångerna i den nuvarande XML-baserade versionen
-
-**TODO**
 
 ## Upphovsman
 
 **[Kasper Sundström](https://twitter.com/ksundstrom)**
+
 
 ## Tack
 
 * Tack till **André Brunnsberg**, för hjälp med det första utkastet till JavaScript/jQuery.
 * Tack till **[Akademen](https://twitter.com/akademen)**, som inspirerat designen och är den tänkta användaren.
 
+
 ## Standarder och komponenter
 
-Koala är skrivet i polyglott XHTML5 + SVG + RDFa + ARIA, XML + XSD, CSS3, JavaScript och PHP samt använder **[Bootstrap](https://getbootstrap.com/)** och **[jQuery](https://jquery.com/)**. Viss hjälp kommer också från **[HTML5 Boilerplate](https://html5boilerplate.com/)**.
+Koala är skrivet i polyglott XHTML5 + SVG + RDFa + ARIA, XML + XSD, CSS3, JavaScript och PHP samt använder **[Bootstrap 3](https://getbootstrap.com/)** och **[jQuery Core 3](https://jquery.com/)**. Viss hjälp kommer också från **[HTML5 Boilerplate](https://html5boilerplate.com/)**.
+
 
 ## Krav
 
 Koala avser inte stöda annat än moderna webbläsare (Internet Explorer 10 och senare).
+
 
 ## Copyright
 
