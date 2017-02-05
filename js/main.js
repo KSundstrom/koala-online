@@ -58,7 +58,7 @@ function loadXML() {
             '' )
 
         + ( $( this ).find( 'incipit' ).text() ?
-            '<span class="lsmIncipit"> — ' + $( this ).find( 'incipit' ).text() + '</span> ' :
+            '<span class="lsmIncipit">(' + $( this ).find( 'incipit' ).text() + ')</span> ' :
             '' )
 
         + ( $( this ).find( 'lang' ).text() ?
@@ -72,10 +72,6 @@ function loadXML() {
         + ( $( this ).find( 'travesty' ).text() === 'true' ?
             'Travesti på: <span class="lsmOriginal">' + $( this ).find( 'original' ).text() + '</span> ' :
             '' )
-
-        + ( $( this ).find( 'byHeart' ).text() === 'true' ?
-            '<span class="lsmByHeart pull-right">Utantill</span> ' :
-            '<span class="lsmByHeart pull-right">Med noter</span> ' )
 
         + ( $( this ).find( 'composer' ).text() ?
             '<br/>Musik: <span class="lsmComposer">' + $( this ).find( 'composer' ).text() + '</span> ' :
@@ -96,6 +92,10 @@ function loadXML() {
         + ( $( this ).find( 'firstChord' ).text() ?
             '<br/>Starttoner: <span class="lsmFirstChord">' + $( this ).find( 'firstChord' ).text() + '</span> ' :
             '<br/>' )
+
+        + ( $( this ).find( 'byHeart' ).text() === 'true' ?
+            '<span class="lsmByHeart pull-right">Utantill</span> ' :
+            '<span class="lsmByHeart pull-right">Med noter</span> ' )
 
       );
       $( '#songButtonA' ).removeClass( 'disabled' );
@@ -113,7 +113,7 @@ function loadXML() {
             '' )
 
         + ( $( this ).find( 'incipit' ).text() ?
-            '<span class="lsmIncipit"> — ' + $( this ).find( 'incipit' ).text() + '</span> ' :
+            '<span class="lsmIncipit">(' + $( this ).find( 'incipit' ).text() + ')</span> ' :
             '' )
 
         + ( $( this ).find( 'lang' ).text() ?
@@ -127,10 +127,6 @@ function loadXML() {
         + ( $( this ).find( 'travesty' ).text() === 'true' ?
             'Travesti på: <span class="lsmOriginal">' + $( this ).find( 'original' ).text() + '</span> ' :
             '' )
-
-        + ( $( this ).find( 'byHeart' ).text() === 'true' ?
-            '<span class="lsmByHeart pull-right">Utantill</span> ' :
-            '<span class="lsmByHeart pull-right">Med noter</span> ' )
 
         + ( $( this ).find( 'composer' ).text() ?
             '<br/>Musik: <span class="lsmComposer">' + $( this ).find( 'composer' ).text() + '</span> ' :
@@ -151,6 +147,10 @@ function loadXML() {
         + ( $( this ).find( 'firstChord' ).text() ?
             '<br/>Starttoner: <span class="lsmFirstChord">' + $( this ).find( 'firstChord' ).text() + '</span> ' :
             '<br/>' )
+
+        + ( $( this ).find( 'byHeart' ).text() === 'true' ?
+            '<span class="lsmByHeart pull-right">Utantill</span> ' :
+            '<span class="lsmByHeart pull-right">Med noter</span> ' )
 
       );
       $( '#songButtonB1' ).removeClass( 'disabled' );
@@ -168,7 +168,7 @@ function loadXML() {
             '' )
 
         + ( $( this ).find( 'incipit' ).text() ?
-            '<span class="lsmIncipit"> — ' + $( this ).find( 'incipit' ).text() + '</span> ' :
+            '<span class="lsmIncipit">(' + $( this ).find( 'incipit' ).text() + ')</span> ' :
             '' )
 
         + ( $( this ).find( 'lang' ).text() ?
@@ -182,10 +182,6 @@ function loadXML() {
         + ( $( this ).find( 'travesty' ).text() === 'true' ?
             'Travesti på: <span class="lsmOriginal">' + $( this ).find( 'original' ).text() + '</span> ' :
             '' )
-
-        + ( $( this ).find( 'byHeart' ).text() === 'true' ?
-            '<span class="lsmByHeart pull-right">Utantill</span> ' :
-            '<span class="lsmByHeart pull-right">Med noter</span> ' )
 
         + ( $( this ).find( 'composer' ).text() ?
             '<br/>Musik: <span class="lsmComposer">' + $( this ).find( 'composer' ).text() + '</span> ' :
@@ -207,6 +203,10 @@ function loadXML() {
             '<br/>Starttoner: <span class="lsmFirstChord">' + $( this ).find( 'firstChord' ).text() + '</span> ' :
             '<br/>' )
 
+        + ( $( this ).find( 'byHeart' ).text() === 'true' ?
+            '<span class="lsmByHeart pull-right">Utantill</span> ' :
+            '<span class="lsmByHeart pull-right">Med noter</span> ' )
+            
       );
       $( '#songButtonB2' ).removeClass( 'disabled' );
     });

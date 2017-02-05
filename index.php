@@ -4,7 +4,7 @@
   $position = strpos( $haystack, $needle );
   if( $position !== false ) {
     header( 'Content-Type: application/xhtml+xml; charset=utf-8' );
-    echo '<?xml version="1.0" encoding="utf-8" standalone="no"?>' . chr( 0x0a );
+    echo '<?xml version="1.0" encoding="utf-8"?>' . chr( 0x0a );
   } else {
     header( 'Content-Type: text/html; charset=utf-8' );
   }
@@ -24,9 +24,8 @@
     <title>Koala</title>
 
     <meta name="robots" content="index, follow"/>
-
     <meta name="description" content="Ett verktyg för Akademens tentamina för Lilla sångarmärket. It’s kind of a lottery!"/>
-    <meta name="keywords" content="Koala, KoalaOnline, Kind-of-a-Lottery App, Akademen, Akademiska Sångföreningen, LSM, Lilla sångarmärket, tentamen"/>
+    <meta name="keywords" content="Koala, KoalaX, KoalaOnline, Kind-of-a-Lottery App, Akademen, Akademiska Sångföreningen, LSM, Lilla sångarmärket, tentamen"/>
     <meta name="creator" content="Kasper Sundström"/>
     <meta name="publisher" content="Kasper Sundström"/>
     <meta name="application-name" content="Koala"/>
@@ -76,9 +75,10 @@
     <!-- Google Analytics -->
     <script type="application/javascript">
       //<![CDATA[
-        window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-        ga('create', 'UA-48814688-2', 'auto');
-        ga('send', 'pageview');
+        window.ga = window.ga || function(){ ( ga.q = ga.q || [] ).push( arguments ) };
+        ga.l =+ new Date;
+        ga( 'create', 'UA-48814688-2', 'auto' );
+        ga( 'send', 'pageview' );
       //]]>
     </script>
     <script async="async" type="application/javascript" charset="utf-8" src="https://www.google-analytics.com/analytics.js"></script>
@@ -132,7 +132,7 @@
           <div class="row">
 
             <!-- Info popover and song modals button -->
-            <div class="col-lg-12 text-right">
+            <div class="col-xs-6 text-left">
               <div class="btn-group">
                 <a role="button" tabindex="0" class="btn btn-info btn-lg" id="helpButton" title="It’s kind of a lottery!" data-toggle="popover" data-trigger="focus" data-container="body" data-placement="auto" data-content="Använd knapparna nedan för att lotta fram sånger ur de olika kategorierna. Den senast framlottade sången dyker upp högst upp. Uppe till höger framgår när respektive sång lottades fram. Resultaten finns kvar på skärmen tills du klickar på Töm. Allt skrivs även ut i webbläsarens konsol.">
                   <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
@@ -147,30 +147,32 @@
                   <li><a href="#songModal" data-target="#songModal" data-toggle="modal" data-category="B">Visa alla B-sånger</a></li>
                 </ul>
               </div>
+            </div>
+
+            <!-- The modal -->
+            <div role="dialog" tabindex="-1" class="modal fade" id="songModal" aria-labelledby="songModalLabel">
+              <div role="document" class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Stäng">
+                      <span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span>
+                    </button>
+                    <h3 class="modal-title" id="songModalLabel">Alla sånger</h3>
+                  </div>
+                  <div class="modal-body">
+                    <ol id="modalList"></ol>
+                  </div>
+                </div>
+              </div>
+            </div>
 
             <!-- Reset button -->
+            <div class="col-xs-6 text-right">
               <div class="btn-group">
                 <a role="button" class="btn btn-danger btn-lg" id="resetButton" title="Radera resultaten">
                   <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
                   Töm
                 </a>
-              </div>
-            </div>
-          </div>
-
-          <!-- The modal -->
-          <div role="dialog" tabindex="-1" class="modal fade" id="songModal" aria-labelledby="songModalLabel">
-            <div role="document" class="modal-dialog modal-lg">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Stäng">
-                    <span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span>
-                  </button>
-                  <h3 class="modal-title" id="songModalLabel">Alla sånger</h3>
-                </div>
-                <div class="modal-body">
-                  <ol id="modalList"></ol>
-                </div>
               </div>
             </div>
           </div>
@@ -282,6 +284,5 @@
         <meta property="sameAs" content="https://www.wikidata.org/wiki/Q4411935"/>
       </div>
     </div>
-
   </body>
 </html>
