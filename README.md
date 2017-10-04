@@ -54,6 +54,6 @@ Koala avser inte stöda annat än moderna webbläsare (Internet Explorer 10 och 
 
 ## Copyright
 
-© 2016–2017 Kasper Sundström
+© 2016–2017 Kasper Sundström.
 
 Alla rättigheter förbehållna.

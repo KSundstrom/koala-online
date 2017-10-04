@@ -3,8 +3,8 @@ http://humanstxt.org/
 /* TEAM */
 
 Design and development: Kasper Sundström
-Site: ksundstrom.fi
 Twitter: @ksundstrom
+Site: ksundstrom.fi
 Location: Finland
 
 /* THANKS */
@@ -13,8 +13,8 @@ Initial JavaScript/jQuery drafting: André Brunnsberg
 Location: Finland
 
 Inspiration and intended audience: The Academic Male Voice Choir of Helsinki
-Site: akademen.com
 Twitter: @akademen
+Site: akademen.com
 Location: Finland
 
 /* SITE */

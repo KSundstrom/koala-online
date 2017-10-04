@@ -63,8 +63,8 @@
     <!-- Custom CSS and font imports -->
     <link rel="stylesheet" type="text/css" href="css/main.css"/>
 
-    <!-- jQuery Core 3.1.1 -->
-    <script defer="defer" type="application/javascript" charset="utf-8" src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+    <!-- jQuery Core 3.2.1 -->
+    <script defer="defer" type="application/javascript" charset="utf-8" src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 
     <!-- Bootstrap 3.3.7 JavaScript -->
     <script defer="defer" type="application/javascript" charset="utf-8" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
