@@ -1,4 +1,5 @@
 # https://help.github.com/articles/ignoring-files
+# https://github.com/github/gitignore
 
 # Windows image file caches
 Thumbs.db
@@ -45,7 +46,7 @@ Temporary Items
 # Dropbox
 .dropbox
 
-# Numerous always-ignore extensions
+# Various always-ignore extensions
 *.diff
 *.err
 *.log

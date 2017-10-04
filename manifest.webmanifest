@@ -4,7 +4,8 @@
   "name": "KoalaX",
   "short_name": "Koala",
   "description": "Ett verktyg för Akademens tentamina för Lilla sångarmärket. It’s kind of a lottery!",
-  "icons": [
+  "icons":
+  [
     {
 			"src": "\/icon\/android-chrome-192x192.png",
 			"sizes": "192x192",

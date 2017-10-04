@@ -38,13 +38,13 @@ Koala *(Kind-of-a-Lottery App)* är ett verktyg för Akademens tentamina för Li
 
 ## Tack
 
-* Tack till **André Brunnsberg**, för hjälp med det första utkastet till JavaScript/jQuery.
 * Tack till **[Akademen](https://twitter.com/akademen)**, som inspirerat designen och är den tänkta användaren.
+* Tack till **André Brunnsberg**, för hjälp med det första utkastet till JavaScript/jQuery.
 
 
 ## Standarder och komponenter
 
-KoalaX är skrivet i polyglott XHTML5 + SVG + RDFa + ARIA, XML + XSD, CSS3, JavaScript och PHP. KoalaX använder **[Bootstrap 4](https://getbootstrap.com/)** och **[jQuery Core 3](https://jquery.com/)**. En liten del av strukturen kommer från **[HTML5 Boilerplate](https://html5boilerplate.com/)**.
+KoalaX är skrivet i polyglott XHTML5 + SVG + RDFa + ARIA, XML + XSD, CSS3, JavaScript och PHP. KoalaX använder **[Bootstrap 3](https://getbootstrap.com)** och **[jQuery Core 3](https://jquery.com)**. En del av strukturen kommer från **[HTML5 Boilerplate 6](https://html5boilerplate.com)**.
 
 
 ## Krav

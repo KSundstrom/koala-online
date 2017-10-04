@@ -36,7 +36,7 @@
     <link rel="license" type="text/plain" hreflang="en-GB" href="COPYRIGHT.txt"/>
     <link rel="help" type="text/markdown" hreflang="sv-FI" href="README.md"/>
     <link rel="manifest" type="application/manifest+json" href="manifest.webmanifest"/>
-    <link rel="canonical" href="http://koala.ksundstrom.fi/"/>
+    <link rel="canonical" href="http://koala.ksundstrom.fi"/>
 
     <!-- Icons -->
     <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="icon/apple-touch-icon.png"/>
@@ -51,7 +51,7 @@
     <meta property="og:image:type" content="image/png"/>
     <meta property="og:image:width" content="300"/>
     <meta property="og:image:height" content="300"/>
-    <meta property="og:url" content="http://koala.ksundstrom.fi/"/>
+    <meta property="og:url" content="http://koala.ksundstrom.fi"/>
     <meta property="og:description" content="Ett verktyg för Akademens tentamina för Lilla sångarmärket. It’s kind of a lottery!"/>
 
     <!-- Bootstrap 3.3.7 CSS -->
@@ -94,7 +94,7 @@
       <div class="alert alert-danger text-center" role="alert">
         <p>
           <span class="glyphicon glyphicon-alert" aria-hidden="true"></span>
-          Du använder en föråldrad webbläsare som inte stöds (Internet Explorer 9 eller äldre). Vänligen <a href="http://browsehappy.com/" class="alert-link">ladda ner en modern webbläsare</a>.
+          Du använder en föråldrad webbläsare som inte stöds (Internet Explorer 9 eller äldre). Vänligen <a href="http://browsehappy.com" class="alert-link">ladda ner en modern webbläsare</a>.
         </p>
       </div>
     <![endif]-->
@@ -258,7 +258,7 @@
 
               <!-- Organization -->
               Byggd för
-              <a hreflang="sv-FI" href="http://akademen.com/" property="sourceOrganization" typeof="MusicGroup">
+              <a hreflang="sv-FI" href="http://akademen.com" property="sourceOrganization" typeof="MusicGroup">
                 <span property="name">Akademen</span>.
                 <meta property="legalName" content="Akademiska Sångföreningen rf"/>
                 <meta property="sameAs" content="https://www.wikidata.org/wiki/Q4411935"/>
@@ -266,7 +266,7 @@
 
               <!-- Framework -->
               <span lang="en-GB" xml:lang="en-GB">
-                Framework by <a hreflang="en-US" href="https://getbootstrap.com/">Bootstrap</a>.
+                Framework by <a hreflang="en-US" href="https://getbootstrap.com">Bootstrap</a>.
               </span>
             </p>
           </div>
@@ -278,7 +278,7 @@
     <div hidden="hidden">
       <meta property="description" content="Webbverktyg för Akademens LSM-tentamina"/>
       <meta property="image" content="http://koala.ksundstrom.fi/img/logo-300-cyan.png"/>
-      <meta property="url" content="http://koala.ksundstrom.fi/"/>
+      <meta property="url" content="http://koala.ksundstrom.fi"/>
       <meta property="inLanguage" content="sv-FI"/>
       <meta property="applicationCategory" content="tool"/>
       <meta property="browserRequirements" content="modern browser (IE10+)"/>

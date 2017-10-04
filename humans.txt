@@ -1,13 +1,13 @@
-http://humanstxt.org/
+# http://humanstxt.org
 
-/* TEAM */
+# TEAM
 
 Design and development: Kasper Sundström
 Site: ksundstrom.fi
 Twitter: @ksundstrom
 Location: Helsinki, Finland
 
-/* THANKS */
+# THANKS
 
 Inspiration and intended audience: The Academic Male Voice Choir of Helsinki
 Site: akademen.com
@@ -17,7 +17,7 @@ Location: Helsinki, Finland
 Initial JavaScript/jQuery drafting: André Brunnsberg
 Location: Helsinki, Finland
 
-/* SITE */
+# TECHNOLOGY COLOPHON
 
 Language: Swedish
 Standards: Polyglot XHTML5 + SVG + RDFa + ARIA, XML + XSD, CSS3, JavaScript, AJAX, PHP
