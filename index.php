@@ -13,8 +13,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="sv-FI" xml:lang="sv-FI" dir="ltr">
   <head prefix="og: http://ogp.me/ns#">
     <meta charset="utf-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, shrink-to-fit=no, user-scalable=no"/>
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
 
     <!--
       KoalaX
@@ -54,11 +54,8 @@
     <meta property="og:url" content="http://koala.ksundstrom.fi"/>
     <meta property="og:description" content="Ett verktyg för Akademens tentamina för Lilla sångarmärket. It’s kind of a lottery!"/>
 
-    <!-- Bootstrap 3.3.7 CSS -->
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
-
-    <!-- Bootstrap 3.3.7 Theme CSS -->
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"/>
+    <!-- Bootstrap 4.0.0 Beta CSS -->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous"/>
 
     <!-- Custom CSS and font imports -->
     <link rel="stylesheet" type="text/css" href="css/main.css"/>
@@ -69,8 +66,8 @@
     <!-- Popper.js 1.12.5 -->
     <script defer="defer" type="application/javascript" charset="utf-8" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.5/umd/popper.min.js" integrity="sha256-jpW4gXAhFvqGDD5B7366rIPD7PDbAmqq4CO0ZnHbdM4=" crossorigin="anonymous"></script>
 
-    <!-- Bootstrap 3.3.7 JavaScript -->
-    <script defer="defer" type="application/javascript" charset="utf-8" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- Bootstrap 4.0.0 Beta JavaScript -->
+    <script defer="defer" type="application/javascript" charset="utf-8" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
 
     <!-- Custom AJAX and UI JavaScript -->
     <script defer="defer" type="application/javascript" charset="utf-8" src="js/main.js"></script>
@@ -87,7 +84,7 @@
     <script async="async" type="application/javascript" charset="utf-8" src="https://www.google-analytics.com/analytics.js"></script>
   </head>
 
-  <body vocab="https://schema.org/" typeof="WebApplication">
+  <body vocab="https://schema.org" typeof="WebApplication">
 
     <!-- OBSOLETE BROWSER WARNING -->
     <!--[if lte IE 9]>
@@ -246,7 +243,7 @@
 
               <!-- Copyright -->
               © <span property="copyrightYear">2016–2017</span>
-              <a hreflang="sv-FI" href="http://ksundstrom.fi/" property="copyrightHolder creator" typeof="Person">
+              <a hreflang="sv-FI" href="http://ksundstrom.fi" property="copyrightHolder creator" typeof="Person">
                 <span property="name">Kasper Sundström</span>.
                 <meta property="nationality" content="FI"/>
               </a>
