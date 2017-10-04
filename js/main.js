@@ -1,6 +1,6 @@
 /**
- * Koala
- * Copyright 2016–2017 Kasper Sundström
+ * KoalaX
+ * Copyright 2016–2017 Kasper Sundström. Alla rättigheter förbehållna. All rights reserved.
  */
 
 /**
@@ -206,7 +206,7 @@ function loadXML() {
         + ( $( this ).find( 'byHeart' ).text() === 'true' ?
             '<span class="lsmByHeart pull-right">Utantill</span> ' :
             '<span class="lsmByHeart pull-right">Med noter</span> ' )
-            
+
       );
       $( '#songButtonB2' ).removeClass( 'disabled' );
     });

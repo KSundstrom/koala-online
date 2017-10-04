@@ -3,23 +3,25 @@ http://humanstxt.org/
 /* TEAM */
 
 Design and development: Kasper Sundström
-Twitter: @ksundstrom
 Site: ksundstrom.fi
-Location: Finland
+Twitter: @ksundstrom
+Location: Helsinki, Finland
 
 /* THANKS */
 
-Initial JavaScript/jQuery drafting: André Brunnsberg
-Location: Finland
-
 Inspiration and intended audience: The Academic Male Voice Choir of Helsinki
-Twitter: @akademen
 Site: akademen.com
-Location: Finland
+Twitter: @akademen
+Location: Helsinki, Finland
+
+Initial JavaScript/jQuery drafting: André Brunnsberg
+Location: Helsinki, Finland
 
 /* SITE */
 
 Language: Swedish
 Standards: Polyglot XHTML5 + SVG + RDFa + ARIA, XML + XSD, CSS3, JavaScript, AJAX, PHP
-Components: Bootstrap 3.3.7, jQuery 3.1.1, HTML5 Boilerplate 5.3.0
-Software: Atom, Notepad++, Illustrator, Excel, XAMPP, FileZilla, GitHub
+Components: Bootstrap 3.3.7, jQuery 3.2.1, HTML5 Boilerplate 5.3.0
+Software: Atom, Notepad++, Illustrator, Excel, XAMPP, FileZilla, GitHub, Opera, Firefox
+Published: 2016-07-13
+Last update: 2017-10-04

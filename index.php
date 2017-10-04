@@ -14,22 +14,22 @@
   <head prefix="og: http://ogp.me/ns#">
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, shrink-to-fit=no, user-scalable=no"/>
 
     <!--
-      Koala
-      Copyright 2016–2017 Kasper Sundström
+      KoalaX
+      Copyright 2016–2017 Kasper Sundström. Alla rättigheter förbehållna. All rights reserved.
     -->
 
-    <title>Koala</title>
+    <title>KoalaX</title>
 
     <meta name="robots" content="index, follow"/>
     <meta name="description" content="Ett verktyg för Akademens tentamina för Lilla sångarmärket. It’s kind of a lottery!"/>
     <meta name="keywords" content="Koala, KoalaX, KoalaOnline, Kind-of-a-Lottery App, Akademen, Akademiska Sångföreningen, LSM, Lilla sångarmärket, tentamen"/>
     <meta name="creator" content="Kasper Sundström"/>
     <meta name="publisher" content="Kasper Sundström"/>
-    <meta name="application-name" content="Koala"/>
-    <meta name="apple-mobile-web-app-title" content="Koala"/>
+    <meta name="application-name" content="KoalaX"/>
+    <meta name="apple-mobile-web-app-title" content="KoalaX"/>
     <meta name="theme-color" content="#00aeed"/>
 
     <link rel="author" type="text/plain" hreflang="en-GB" href="humans.txt"/>
@@ -45,7 +45,7 @@
     <link rel="icon" type="image/png" href="icon/favicon-16x16.png" sizes="16x16"/>
 
     <!-- Open Graph -->
-    <meta property="og:title" content="Koala"/>
+    <meta property="og:title" content="KoalaX"/>
     <meta property="og:type" content="website"/>
     <meta property="og:image" content="http://koala.ksundstrom.fi/img/logo-300-cyan.png"/>
     <meta property="og:image:type" content="image/png"/>
@@ -66,10 +66,13 @@
     <!-- jQuery Core 3.2.1 -->
     <script defer="defer" type="application/javascript" charset="utf-8" src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 
-    <!-- Bootstrap 3.3.7 JavaScript -->
-    <script defer="defer" type="application/javascript" charset="utf-8" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <!-- Popper.js 1.12.5 -->
+    <script defer="defer" type="application/javascript" charset="utf-8" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.5/umd/popper.min.js" integrity="sha256-jpW4gXAhFvqGDD5B7366rIPD7PDbAmqq4CO0ZnHbdM4=" crossorigin="anonymous"></script>
 
-    <!-- Custom UI and AJAX JavaScript -->
+    <!-- Bootstrap 3.3.7 JavaScript -->
+    <script defer="defer" type="application/javascript" charset="utf-8" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <!-- Custom AJAX and UI JavaScript -->
     <script defer="defer" type="application/javascript" charset="utf-8" src="js/main.js"></script>
 
     <!-- Google Analytics -->
@@ -83,6 +86,7 @@
     </script>
     <script async="async" type="application/javascript" charset="utf-8" src="https://www.google-analytics.com/analytics.js"></script>
   </head>
+
   <body vocab="https://schema.org/" typeof="WebApplication">
 
     <!-- OBSOLETE BROWSER WARNING -->
@@ -110,7 +114,7 @@
         </div>
         <h1>
           <span id="brandwrapper" title="Kind-of-a-Lottery App" lang="en-GB" xml:lang="en-GB">
-             <span property="name">Koala</span>
+             <span property="name">KoalaX</span>
              <meta property="alternateName" content="Kind-of-a-Lottery App"/>
           </span>
           <sub class="small">
