@@ -17,19 +17,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
 
     <!--
-      KoalaX
+      KoalaOnline
       Copyright 2016–2017 Kasper Sundström. Alla rättigheter förbehållna. All rights reserved.
     -->
 
-    <title>KoalaX</title>
+    <title>KoalaOnline</title>
 
     <meta name="robots" content="index, follow"/>
     <meta name="description" content="Ett verktyg för Akademens tentamina för Lilla sångarmärket. It’s kind of a lottery!"/>
-    <meta name="keywords" content="Koala, KoalaX, KoalaOnline, Kind-of-a-Lottery App, Akademen, Akademiska Sångföreningen, LSM, Lilla sångarmärket, tentamen"/>
+    <meta name="keywords" content="Koala, KoalaOnline, KoalaX, Kind-of-a-Lottery App, Akademen, Akademiska Sångföreningen, LSM, Lilla sångarmärket, tentamen"/>
     <meta name="creator" content="Kasper Sundström"/>
     <meta name="publisher" content="Kasper Sundström"/>
-    <meta name="application-name" content="KoalaX"/>
-    <meta name="apple-mobile-web-app-title" content="KoalaX"/>
+    <meta name="application-name" content="KoalaOnline"/>
+    <meta name="apple-mobile-web-app-title" content="KoalaOnline"/>
     <meta name="theme-color" content="#00aeed"/>
 
     <link rel="author" type="text/plain" hreflang="en-GB" href="humans.txt"/>
@@ -45,7 +45,7 @@
     <link rel="icon" type="image/png" href="icon/favicon-16x16.png" sizes="16x16"/>
 
     <!-- Open Graph -->
-    <meta property="og:title" content="KoalaX"/>
+    <meta property="og:title" content="KoalaOnline"/>
     <meta property="og:type" content="website"/>
     <meta property="og:image" content="http://koala.ksundstrom.fi/img/logo-300-cyan.png"/>
     <meta property="og:image:type" content="image/png"/>
@@ -111,7 +111,7 @@
         </div>
         <h1>
           <span id="brandwrapper" title="Kind-of-a-Lottery App" lang="en-GB" xml:lang="en-GB">
-             <span property="name">KoalaX</span>
+             <span property="name">KoalaOnline</span>
              <meta property="alternateName" content="Kind-of-a-Lottery App"/>
           </span>
           <sub class="small">
@@ -256,14 +256,14 @@
               <!-- Organization -->
               Byggd för
               <a hreflang="sv-FI" href="http://akademen.com" property="sourceOrganization" typeof="MusicGroup">
-                <span property="name">Akademen</span>.
+                <span property="name">Akademiska Sångföreningen</span>.
                 <meta property="legalName" content="Akademiska Sångföreningen rf"/>
                 <meta property="sameAs" content="https://www.wikidata.org/wiki/Q4411935"/>
               </a>
 
               <!-- Framework -->
               <span lang="en-GB" xml:lang="en-GB">
-                Framework by <a hreflang="en-US" href="https://getbootstrap.com">Bootstrap</a>.
+                Front-end framework by <a hreflang="en-US" href="https://getbootstrap.com">Bootstrap</a>.
               </span>
             </p>
           </div>
@@ -281,7 +281,7 @@
       <meta property="browserRequirements" content="modern browser (IE10+)"/>
       <meta property="operatingSystem" content="any"/>
       <div property="audience" typeof="Audience">
-        <meta property="name" content="Akademen"/>
+        <meta property="name" content="Akademiska Sångföreningen"/>
         <meta property="sameAs" content="https://www.wikidata.org/wiki/Q4411935"/>
       </div>
     </div>
