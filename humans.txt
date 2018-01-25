@@ -24,4 +24,4 @@ Standards: Polyglot XHTML5 + SVG + RDFa + ARIA, XML + XSD, CSS3, JavaScript, AJA
 Components: Bootstrap 3.3.7, jQuery 3.2.1, HTML5 Boilerplate 5.3.0
 Software: Atom, Notepad++, Illustrator, Excel, XAMPP, FileZilla, GitHub, Opera, Firefox
 Published: 2016-07-13
-Last update: 2017-10-04
+Last update: 2017-12-18

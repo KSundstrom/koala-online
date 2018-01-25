@@ -2,7 +2,7 @@
 
 > It’s kind of a lottery!
 
-Koala *(Kind-of-a-Lottery App)* är ett verktyg för Akademens tentamina för Lilla sångarmärket. Den nuvarande versionen KoalaX är en XML-baserad version av den tidigare TXT-baserade versionen (även kallad KoalaOnline), vilken i sin tur inspirerades av ett tidigare Java-program (även kallat JKoala), alla skrivna av Kasper Sundström.
+Koala *(Kind-of-a-Lottery App)* är ett verktyg för Akademens tentamina för Lilla sångarmärket. Den nuvarande versionen är en XML-baserad version av den tidigare TXT-baserade versionen, vilken i sin tur inspirerades av ett tidigare Java-program, alla skrivna av Kasper Sundström.
 
 
 ## Uppdatering av sångerna i den nuvarande XML-baserade versionen
@@ -38,7 +38,7 @@ Koala *(Kind-of-a-Lottery App)* är ett verktyg för Akademens tentamina för Li
 
 ## Tack
 
-* Tack till **[Akademen](https://twitter.com/akademen)**, som inspirerat designen och är den tänkta användaren.
+* Tack till **[Akademiska Sångföreningen](https://twitter.com/akademen)**, som inspirerat designen och är den tänkta användaren.
 * Tack till **André Brunnsberg**, för hjälp med det första utkastet till JavaScript/jQuery.
 
 
