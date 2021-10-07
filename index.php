@@ -18,7 +18,7 @@
 
     <!--
       KoalaOnline
-      Copyright 2016–2017 Kasper Sundström. Alla rättigheter förbehållna. All rights reserved.
+      Copyright 2016–2021 Kasper Sundström. Alla rättigheter förbehållna. All rights reserved.
     -->
 
     <title>KoalaOnline</title>
@@ -242,16 +242,17 @@
             <p class="small text-muted">
 
               <!-- Copyright -->
-              © <span property="copyrightYear">2016–2017</span>
+              © <span property="copyrightYear">2016–<?php echo date('Y', getlastmod()); ?></span>
               <a hreflang="sv-FI" href="http://ksundstrom.fi" property="copyrightHolder creator" typeof="Person">
                 <span property="name">Kasper Sundström</span>.
                 <meta property="nationality" content="FI"/>
               </a>
 
               <!-- Dates -->
+              Först publicerad
+              <span property="datePublished">2016-07-13</span>.
               Uppdaterad
               <span property="dateModified"><?php echo date('Y-m-d', getlastmod()); ?></span>.
-              <meta property="datePublished" content="2016-07-13"/>
 
               <!-- Organization -->
               Byggd för
