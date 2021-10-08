@@ -10,16 +10,16 @@ Location: Helsinki, Finland
 Initial JavaScript/jQuery drafting: André Brunnsberg
 Location: Helsinki, Finland
 
-Inspiration and intended audience: The Academic Male Voice Choir of Helsinki
+Inspiration and intended user: The Academic Male Voice Choir of Helsinki
 Site: akademen.com
 Twitter: @akademen
 Location: Helsinki, Finland
 
 # TECHNOLOGY COLOPHON
 
-Language: Swedish
+Language: Swedish (Finland)
 Standards: Polyglot XHTML5 + SVG + RDFa + ARIA, XML + XSD, CSS3, JavaScript, AJAX, PHP
-Components: Bootstrap 4.0.0 Beta, jQuery Core 3.2.1, Popper.js 1.12.5, HTML5 Boilerplate 5.3.0
-Software: Atom, Notepad++, Illustrator, Excel, XAMPP, FileZilla, GitHub, Opera, Firefox
-Published: 2016-07-13
-Last update: 2021-10-07
+Components: Bootstrap 4.6.0, jQuery Core 3.5.1, HTML5 Boilerplate 8.0.0
+Software: Visual Studio Code, Atom, Notepad++, Illustrator, Excel, GitHub Desktop, GitHub, FileZilla, XAMPP, Opera, Firefox, Chrome
+First published: 2016-07-13
+Last update: 2021-10-08

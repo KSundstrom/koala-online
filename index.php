@@ -84,11 +84,11 @@
   <body vocab="https://schema.org" typeof="WebApplication">
 
     <!-- OBSOLETE BROWSER WARNING -->
-    <!--[if lte IE 10]>
+    <!--[if lte IE 9]>
       <div class="alert alert-danger text-center" role="alert">
         <p>
           <span class="glyphicon glyphicon-alert" aria-hidden="true"></span>
-          Du använder en föråldrad webbläsare som inte stöds (Internet Explorer 10 eller äldre). Vänligen <a href="http://browsehappy.com" class="alert-link">ladda ner en modern webbläsare</a>.
+          Du använder en föråldrad webbläsare som inte stöds (Internet Explorer 9 eller äldre). Vänligen <a href="http://browsehappy.com" class="alert-link">ladda ner en modern webbläsare</a>.
         </p>
       </div>
     <![endif]-->
