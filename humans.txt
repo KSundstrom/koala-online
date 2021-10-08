@@ -7,14 +7,12 @@ Site: ksundstrom.fi
 Twitter: @ksundstrom
 Location: Helsinki, Finland
 
-# THANKS
+Initial JavaScript/jQuery drafting: André Brunnsberg
+Location: Helsinki, Finland
 
 Inspiration and intended audience: The Academic Male Voice Choir of Helsinki
 Site: akademen.com
 Twitter: @akademen
-Location: Helsinki, Finland
-
-Initial JavaScript/jQuery drafting: André Brunnsberg
 Location: Helsinki, Finland
 
 # TECHNOLOGY COLOPHON

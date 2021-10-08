@@ -54,20 +54,17 @@
     <meta property="og:url" content="http://koala.ksundstrom.fi"/>
     <meta property="og:description" content="Ett verktyg för Akademens tentamina för Lilla sångarmärket. It’s kind of a lottery!"/>
 
-    <!-- Bootstrap 4.0.0 Beta CSS -->
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous"/>
+    <!-- Bootstrap 4.6.0 CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous"/>
 
     <!-- Custom CSS and font imports -->
     <link rel="stylesheet" type="text/css" href="css/main.css"/>
 
-    <!-- jQuery Core 3.2.1 -->
-    <script defer="defer" type="application/javascript" charset="utf-8" src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <!-- jQuery Core 3.5.1 -->
+    <script defer="defer" type="application/javascript" charset="utf-8" src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 
-    <!-- Popper.js 1.12.5 -->
-    <script defer="defer" type="application/javascript" charset="utf-8" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.5/umd/popper.min.js" integrity="sha256-jpW4gXAhFvqGDD5B7366rIPD7PDbAmqq4CO0ZnHbdM4=" crossorigin="anonymous"></script>
-
-    <!-- Bootstrap 4.0.0 Beta JavaScript -->
-    <script defer="defer" type="application/javascript" charset="utf-8" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <!-- Bootstrap 4.6.0 JavaScript Bundle -->
+    <script defer="defer" type="application/javascript" charset="utf-8" src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
 
     <!-- Custom AJAX and UI JavaScript -->
     <script defer="defer" type="application/javascript" charset="utf-8" src="js/main.js"></script>
@@ -87,11 +84,11 @@
   <body vocab="https://schema.org" typeof="WebApplication">
 
     <!-- OBSOLETE BROWSER WARNING -->
-    <!--[if lte IE 9]>
+    <!--[if lte IE 10]>
       <div class="alert alert-danger text-center" role="alert">
         <p>
           <span class="glyphicon glyphicon-alert" aria-hidden="true"></span>
-          Du använder en föråldrad webbläsare som inte stöds (Internet Explorer 9 eller äldre). Vänligen <a href="http://browsehappy.com" class="alert-link">ladda ner en modern webbläsare</a>.
+          Du använder en föråldrad webbläsare som inte stöds (Internet Explorer 10 eller äldre). Vänligen <a href="http://browsehappy.com" class="alert-link">ladda ner en modern webbläsare</a>.
         </p>
       </div>
     <![endif]-->
