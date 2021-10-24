@@ -1,17 +1,29 @@
-# http://editorconfig.org
+# https://editorconfig.org
 
+# Topmost editorconfig file
 root = true
 
+# Default charset, EOF, final newline insertion, trailing whitespace trimming
 [*]
 charset = utf-8
-indent_size = 2
-indent_style = space
 end_of_line = lf
 insert_final_newline = true
 trim_trailing_whitespace = true
 
+# Default indentation
+[*]
+indent_style = space
+indent_size = 2
+
+# Python
+[*.py]
+indent_style = space
+indent_size = 4
+
+# Makefile
+[Makefile]
+indent_style = tab
+
+# Markdown
 [*.md]
 trim_trailing_whitespace = false
-
-[*.py]
-indent_size = 4
