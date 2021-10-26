@@ -2,7 +2,7 @@
 
 > It’s kind of a lottery!
 
-Koala *(Kind-of-a-Lottery App)* är ett verktyg för Akademens tentamina för Lilla sångarmärket. Den nuvarande webbapplikationen är en XML-baserad version av en tidigare TXT-baserad version, vilken i sin tur inspirerades av ett tidigare Java-program, alla skrivna av Kasper Sundström.
+Koala *(Kind-of-a-Lottery App)* är ett verktyg för Akademens tentamina för Lilla sångarmärket. _KoalaOnline_, den nuvarande webbapplikationen, även känd som _KoalaX_, är en XML-baserad version av en tidigare TXT-baserad version, vilken i sin tur inspirerades av en tidigare lokal [Java-app](https://github.com/KSundstrom/j-koala), alla skrivna av Kasper Sundström.
 
 
 ## Uppdatering av sångerna
@@ -34,7 +34,7 @@ KoalaOnline är skrivet i polyglott XHTML5 + SVG + RDFa + ARIA, XML + XSD, CSS3,
 
 ## Krav
 
-KoalaX avser inte stöda annat än moderna webbläsare (Internet Explorer 10 och senare).
+KoalaOnline avser inte stöda annat än moderna webbläsare (Internet Explorer 10 och senare).
 
 
 ## Copyright
