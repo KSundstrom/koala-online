@@ -34,7 +34,7 @@ KoalaOnline är skrivet i polyglott XHTML5 + SVG + RDFa + ARIA, XML + XSD, CSS3,
 
 ## Krav
 
-KoalaX avser inte stöda annat än moderna webbläsare (Internet Explorer 10 och senare).
+KoalaOnline avser inte stöda annat än moderna webbläsare (Internet Explorer 10 och senare).
 
 
 ## Copyright

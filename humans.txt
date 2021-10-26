@@ -19,7 +19,7 @@ Location: Helsinki, Finland
 
 Language: Swedish (Finland)
 Standards: Polyglot XHTML5 + SVG + RDFa + ARIA, XML + XSD, CSS3, JavaScript, AJAX, PHP
-Components: Bootstrap 4.6.0, jQuery Core 3.5.1, HTML5 Boilerplate 8.0.0
+Components: Bootstrap, jQuery Core, HTML5 Boilerplate
 Software: Visual Studio Code, Atom, Notepad++, Illustrator, Excel, GitHub Desktop, GitHub, FileZilla, XAMPP, Opera, Firefox, Chrome
 First published: 2016-07-13
-Last update: 2021-10-08
+Last update: 2021-10-26
