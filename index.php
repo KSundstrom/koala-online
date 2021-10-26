@@ -3,22 +3,24 @@
   $needle = 'application/xhtml+xml';
   $position = strpos( $haystack, $needle );
   if( $position !== false ) {
-    header( 'Content-Type: application/xhtml+xml; charset=utf-8' );
-    echo '<?xml version="1.0" encoding="utf-8"?>' . chr( 0x0a );
+    header( 'Content-Type: application/xhtml+xml; charset=UTF-8' );
+    echo '<?xml version="1.0" encoding="UTF-8"?>' . chr( 0x0a );
   } else {
-    header( 'Content-Type: text/html; charset=utf-8' );
+    header( 'Content-Type: text/html; charset=UTF-8' );
   }
 ?>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="sv-FI" xml:lang="sv-FI" dir="ltr">
   <head prefix="og: http://ogp.me/ns#">
-    <meta charset="utf-8"/>
+    <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"/>
 
     <!--
       KoalaOnline
-      Copyright 2016–2021 Kasper Sundström. Alla rättigheter förbehållna. All rights reserved.
+      Copyright 2016–2021 Kasper Sundström.
+      All rights reserved.
+      Alla rättigheter förbehållna.
     -->
 
     <title>KoalaOnline</title>
@@ -36,7 +38,7 @@
     <link rel="license" type="text/plain" hreflang="en-GB" href="COPYRIGHT.txt"/>
     <link rel="help" type="text/markdown" hreflang="sv-FI" href="README.md"/>
     <link rel="manifest" type="application/manifest+json" href="manifest.webmanifest"/>
-    <link rel="canonical" href="http://koala.ksundstrom.fi"/>
+    <link rel="canonical" href="https://koala.ksundstrom.fi/"/>
 
     <!-- Icons -->
     <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="icon/apple-touch-icon.png"/>
@@ -47,11 +49,11 @@
     <!-- Open Graph -->
     <meta property="og:title" content="KoalaOnline"/>
     <meta property="og:type" content="website"/>
-    <meta property="og:image" content="http://koala.ksundstrom.fi/img/logo-300-cyan.png"/>
+    <meta property="og:image" content="https://koala.ksundstrom.fi/img/logo-300-cyan.png"/>
     <meta property="og:image:type" content="image/png"/>
     <meta property="og:image:width" content="300"/>
     <meta property="og:image:height" content="300"/>
-    <meta property="og:url" content="http://koala.ksundstrom.fi"/>
+    <meta property="og:url" content="https://koala.ksundstrom.fi/"/>
     <meta property="og:description" content="Ett verktyg för Akademens tentamina för Lilla sångarmärket. It’s kind of a lottery!"/>
 
     <!-- Bootstrap 3.4.1 CSS -->
@@ -70,7 +72,7 @@
     <script defer="defer" type="application/javascript" charset="utf-8" src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
 
     <!-- Custom AJAX and UI JavaScript -->
-    <script defer="defer" type="application/javascript" charset="utf-8" src="js/main.js"></script>
+    <script defer="defer" type="application/javascript" charset="UTF-8" src="js/main.js"></script>
 
     <!-- Google Analytics -->
     <script type="application/javascript">
@@ -81,17 +83,17 @@
         ga( 'send', 'pageview' );
       //]]>
     </script>
-    <script async="async" type="application/javascript" charset="utf-8" src="https://www.google-analytics.com/analytics.js"></script>
+    <script async="async" type="application/javascript" charset="UTF-8" src="https://www.google-analytics.com/analytics.js"></script>
   </head>
 
   <body vocab="https://schema.org" typeof="WebApplication">
 
     <!-- OBSOLETE BROWSER WARNING -->
-    <!--[if lte IE 9]>
+    <!--[if lt IE 10]>
       <div class="alert alert-danger text-center" role="alert">
         <p>
           <span class="glyphicon glyphicon-alert" aria-hidden="true"></span>
-          Du använder en föråldrad webbläsare som inte stöds (Internet Explorer 9 eller äldre). Vänligen <a href="http://browsehappy.com" class="alert-link">ladda ner en modern webbläsare</a>.
+          Du använder en föråldrad webbläsare som inte stöds (Internet Explorer 9 eller äldre). Vänligen <a href="https://browsehappy.com/" class="alert-link">ladda ner en modern webbläsare</a>.
         </p>
       </div>
     <![endif]-->
@@ -243,7 +245,7 @@
 
               <!-- Copyright -->
               © <span property="copyrightYear">2016–<?php echo date('Y', getlastmod()); ?></span>
-              <a hreflang="sv-FI" href="http://ksundstrom.fi" property="copyrightHolder creator" typeof="Person">
+              <a hreflang="sv-FI" href="https://ksundstrom.fi/" property="copyrightHolder creator" typeof="Person">
                 <span property="name">Kasper Sundström</span>.
                 <meta property="nationality" content="FI"/>
               </a>
@@ -256,7 +258,7 @@
 
               <!-- Organization -->
               Byggd för
-              <a hreflang="sv-FI" href="http://akademen.com" property="sourceOrganization" typeof="MusicGroup">
+              <a hreflang="sv-FI" href="https://www.akademen.com/" property="sourceOrganization" typeof="MusicGroup">
                 <span property="name">Akademiska Sångföreningen</span>.
                 <meta property="legalName" content="Akademiska Sångföreningen rf"/>
                 <meta property="sameAs" content="https://www.wikidata.org/wiki/Q4411935"/>
@@ -264,7 +266,7 @@
 
               <!-- Framework -->
               <span lang="en-GB" xml:lang="en-GB">
-                Front-end framework by <a hreflang="en-US" href="https://getbootstrap.com">Bootstrap</a>.
+                Front-end framework by <a hreflang="en-US" href="https://getbootstrap.com/">Bootstrap</a>.
               </span>
             </p>
           </div>
@@ -275,8 +277,8 @@
     <!-- Other RDFa data -->
     <div hidden="hidden">
       <meta property="description" content="Webbverktyg för Akademens LSM-tentamina"/>
-      <meta property="image" content="http://koala.ksundstrom.fi/img/logo-300-cyan.png"/>
-      <meta property="url" content="http://koala.ksundstrom.fi"/>
+      <meta property="image" content="https://koala.ksundstrom.fi/img/logo-300-cyan.png"/>
+      <meta property="url" content="https://koala.ksundstrom.fi/"/>
       <meta property="inLanguage" content="sv-FI"/>
       <meta property="applicationCategory" content="tool"/>
       <meta property="browserRequirements" content="modern browser (IE10+)"/>
