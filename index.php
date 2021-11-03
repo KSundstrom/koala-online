@@ -1,18 +1,18 @@
 <?php
-  $haystack = strtolower( $_SERVER['HTTP_ACCEPT'] );
+  $haystack = isset( $_SERVER['HTTP_ACCEPT'] ) ? strtolower( $_SERVER['HTTP_ACCEPT'] ) : null;
   $needle = 'application/xhtml+xml';
   $position = strpos( $haystack, $needle );
   if( $position !== false ) {
-    header( 'Content-Type: application/xhtml+xml; charset=UTF-8' );
-    echo '<?xml version="1.0" encoding="UTF-8"?>' . chr( 0x0a );
+    header( 'Content-Type: application/xhtml+xml; charset=utf-8' );
+    echo '<?xml version="1.0" encoding="utf-8"?>' . chr( 0x0a );
   } else {
-    header( 'Content-Type: text/html; charset=UTF-8' );
+    header( 'Content-Type: text/html; charset=utf-8' );
   }
 ?>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="sv-FI" xml:lang="sv-FI" dir="ltr">
   <head prefix="og: http://ogp.me/ns#">
-    <meta charset="UTF-8"/>
+    <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"/>
 
@@ -72,7 +72,7 @@
     <script defer="defer" type="application/javascript" charset="utf-8" src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
 
     <!-- Custom AJAX and UI JavaScript -->
-    <script defer="defer" type="application/javascript" charset="UTF-8" src="js/main.js"></script>
+    <script defer="defer" type="application/javascript" charset="utf-8" src="js/main.js"></script>
 
     <!-- Google Analytics -->
     <script type="application/javascript">
@@ -83,7 +83,7 @@
         ga( 'send', 'pageview' );
       //]]>
     </script>
-    <script async="async" type="application/javascript" charset="UTF-8" src="https://www.google-analytics.com/analytics.js"></script>
+    <script async="async" type="application/javascript" charset="utf-8" src="https://www.google-analytics.com/analytics.js"></script>
   </head>
 
   <body vocab="https://schema.org" typeof="WebApplication">
@@ -251,7 +251,7 @@
               </a>
 
               <!-- Dates -->
-              Först publicerad
+              Publicerad
               <span property="datePublished">2016-07-13</span>.
               Uppdaterad
               <span property="dateModified"><?php echo date('Y-m-d', getlastmod()); ?></span>.
@@ -259,14 +259,14 @@
               <!-- Organization -->
               Byggd för
               <a hreflang="sv-FI" href="https://www.akademen.com/" property="sourceOrganization" typeof="MusicGroup">
-                <span property="name">Akademiska Sångföreningen</span>.
+                <span property="name">Akademen</span>.
                 <meta property="legalName" content="Akademiska Sångföreningen rf"/>
                 <meta property="sameAs" content="https://www.wikidata.org/wiki/Q4411935"/>
               </a>
 
               <!-- Framework -->
               <span lang="en-GB" xml:lang="en-GB">
-                Front-end framework by <a hreflang="en-US" href="https://getbootstrap.com/">Bootstrap</a>.
+                Framework by <a hreflang="en-US" href="https://getbootstrap.com/">Bootstrap</a>.
               </span>
             </p>
           </div>
