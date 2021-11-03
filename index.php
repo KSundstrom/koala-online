@@ -1,31 +1,32 @@
 <?php
-  $haystack = strtolower( $_SERVER['HTTP_ACCEPT'] );
+  $haystack = isset( $_SERVER['HTTP_ACCEPT'] ) ? strtolower( $_SERVER['HTTP_ACCEPT'] ) : null;
   $needle = 'application/xhtml+xml';
   $position = strpos( $haystack, $needle );
   if( $position !== false ) {
-    header( 'Content-Type: application/xhtml+xml; charset=UTF-8' );
-    echo '<?xml version="1.0" encoding="UTF-8"?>' . chr( 0x0a );
+    header( 'Content-Type: application/xhtml+xml; charset=utf-8' );
+    echo '<?xml version="1.0" encoding="utf-8"?>' . chr( 0x0a );
   } else {
-    header( 'Content-Type: text/html; charset=UTF-8' );
+    header( 'Content-Type: text/html; charset=utf-8' );
   }
 ?>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="sv-FI" xml:lang="sv-FI" dir="ltr">
   <head prefix="og: http://ogp.me/ns#">
-    <meta charset="UTF-8"/>
+    <meta charset="utf-8"/>
     <meta http-equiv="x-ua-compatible" content="ie=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
 
     <!--
       KoalaOnline
       Copyright 2016–2021 Kasper Sundström.
-      All rights reserved.
-      Alla rättigheter förbehållna.
+      Alla rättigheter förbehållna. All rights reserved.
     -->
 
     <title>KoalaOnline</title>
 
-    <meta name="robots" content="index, follow"/>
+    <!-- Robots REMEMBER TO UPDATE -->
+    <meta name="robots" content="noindex, nofollow"/>
+
     <meta name="description" content="Ett verktyg för Akademens tentamina för Lilla sångarmärket. It’s kind of a lottery!"/>
     <meta name="keywords" content="Koala, KoalaOnline, KoalaX, Kind-of-a-Lottery App, Akademen, Akademiska Sångföreningen, LSM, Lilla sångarmärket, tentamen"/>
     <meta name="creator" content="Kasper Sundström"/>
@@ -56,20 +57,20 @@
     <meta property="og:url" content="https://koala.ksundstrom.fi/"/>
     <meta property="og:description" content="Ett verktyg för Akademens tentamina för Lilla sångarmärket. It’s kind of a lottery!"/>
 
-    <!-- Bootstrap 4.6.0 CSS -->
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous"/>
+    <!-- Bootstrap 4.6.1 CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous"/>
 
     <!-- Custom CSS and font imports -->
     <link rel="stylesheet" type="text/css" href="css/main.css"/>
 
-    <!-- jQuery Core 3.5.1 -->
-    <script defer="defer" type="application/javascript" charset="UTF-8" src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <!-- jQuery Core 3.6.0 -->
+    <script defer="defer" type="application/javascript" charset="utf-8" src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
-    <!-- Bootstrap 4.6.0 JavaScript Bundle -->
-    <script defer="defer" type="application/javascript" charset="UTF-8" src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <!-- Bootstrap 4.6.1 JavaScript Bundle -->
+    <script defer="defer" type="application/javascript" charset="utf-8" src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
 
     <!-- Custom AJAX and UI JavaScript -->
-    <script defer="defer" type="application/javascript" charset="UTF-8" src="js/main.js"></script>
+    <script defer="defer" type="application/javascript" charset="utf-8" src="js/main.js"></script>
 
     <!-- Google Analytics -->
     <script type="application/javascript">
@@ -80,9 +81,8 @@
         ga( 'send', 'pageview' );
       //]]>
     </script>
-    <script async="async" type="application/javascript" charset="UTF-8" src="https://www.google-analytics.com/analytics.js"></script>
+    <script async="async" type="application/javascript" charset="utf-8" src="https://www.google-analytics.com/analytics.js"></script>
   </head>
-
   <body vocab="https://schema.org/" typeof="WebApplication">
 
     <!-- OBSOLETE BROWSER WARNING -->
@@ -248,7 +248,7 @@
               </a>
 
               <!-- Dates -->
-              Först publicerad
+              Publicerad
               <span property="datePublished">2016-07-13</span>.
               Uppdaterad
               <span property="dateModified"><?php echo date('Y-m-d', getlastmod()); ?></span>.
@@ -256,14 +256,14 @@
               <!-- Organization -->
               Byggd för
               <a hreflang="sv-FI" href="https://www.akademen.com/" property="sourceOrganization" typeof="MusicGroup">
-                <span property="name">Akademiska Sångföreningen</span>.
+                <span property="name">Akademen</span>.
                 <meta property="legalName" content="Akademiska Sångföreningen rf"/>
                 <meta property="sameAs" content="https://www.wikidata.org/wiki/Q4411935"/>
               </a>
 
               <!-- Framework -->
               <span lang="en-GB" xml:lang="en-GB">
-                Front-end framework by <a hreflang="en-US" href="https://getbootstrap.com/">Bootstrap</a>.
+                Framework by <a hreflang="en-US" href="https://getbootstrap.com/">Bootstrap</a>.
               </span>
             </p>
           </div>
