@@ -2,43 +2,43 @@
 
 > It’s kind of a lottery!
 
-Koala *(Kind-of-a-Lottery App)* är ett verktyg för Akademens tentamina för Lilla sångarmärket. _KoalaOnline_, den nuvarande webbapplikationen, även känd som _KoalaX_, är en XML-baserad version av en tidigare TXT-baserad version, vilken i sin tur inspirerades av en tidigare lokal [Java-app](https://github.com/KSundstrom/j-koala), alla skrivna av Kasper Sundström.
+Koala (_Kind-of-a-Lottery App_) is a tool for the Academic Male Voice Choir of Helsinki’s LSM (_Lilla Sångarmärket_) exams. _KoalaOnline_, also known as _KoalaX_, is the current web application; it is an XML-based version of an earlier TXT-based version, which was in turn preceded by an earlier local Java application, [_JKoala_](https://github.com/KSundstrom/j-koala), all written by Kasper Sundström.
 
 
-## Uppdatering av sångerna
+## Updating the songs
 
-* Sångerna läses in från XML-filen `lsm.xml` i mappen `xml`.
-* Filens struktur definieras av schemafilen `lsm.xsd` i samma mapp. *Ändra inte i denna fil om du inte vet vad du gör (kräver ändringar i andra filer).*
-* Ta backup på `lsm.xml` före uppdatering av den.
-* Smärre korrigeringar av informationen kan göras direkt i filen.
-* Större ändringar görs lämpligen med ett program som kan hantera XML i tabellform (exempelvis Excel).
-* Spara filen *utan att ändra filnamn och ändelse*.
-* Sträva efter att använda riktiga typografiska citationstecken, apostrofer, ellipser och andra specialtecken.
+* The songs are read from the XML file `lsm.xml` in the `xml` directory.
+* The structure of the XML file is defined by the schema file `lsm.xsd` in the same directory. _Do not make changes in this file unless you know what you are doing! Changing the schema file requires changes in other files!_
+* Back up the file `lsm.xml` before updating it.
+* Minor corrections of the information can easily be made directly in the raw text.
+* Major changes should be done in an application capable of handling XML data in tabular form, such as Microsoft Excel.
+* Save the file _without changing file name or extension_.
+* Use proper typographic quotations marks (`”`), apostrophes (`’`), ellipses (`…`), and other special characters.
 
 
-## Upphovsman
+## Author
 
 **[Kasper Sundström](https://twitter.com/ksundstrom)**
 
 
-## Tack
+## Thanks
 
-* Tack till **André Brunnsberg**, för hjälp med det första utkastet till JavaScript/jQuery.
-* Tack till **[Akademiska Sångföreningen](https://twitter.com/akademen)**, som inspirerat designen och är den tänkta användaren.
-
-
-## Standarder och komponenter
-
-KoalaOnline är skrivet i polyglott XHTML5 + SVG + RDFa + ARIA, XML + XSD, CSS3, JavaScript och PHP. KoalaOnline använder **[Bootstrap](https://getbootstrap.com/)** och **[jQuery Core](https://jquery.com/)**. En del av strukturen kommer från **[HTML5 Boilerplate](https://html5boilerplate.com/)**.
+* To **André Brunnsberg**, for assistance with the first JavaScript/jQuery draft.
+* To the **[Academic Male Voice Choir of Helsinki](https://twitter.com/akademen)**, which has inspired the design and is the intended user.
 
 
-## Krav
+## Standards and components
 
-KoalaOnline avser inte stöda annat än moderna webbläsare (Internet Explorer 10 och senare).
+KoalaOnline is written in polyglot XHTML5 + SVG + RDFa + ARIA, XML + XSD, CSS3, JavaScript, and PHP. KoalaOnline utilizes **[Bootstrap](https://getbootstrap.com/)** and **[jQuery Core](https://jquery.com/)**. Part of the structure comes from **[HTML5 Boilerplate](https://html5boilerplate.com/)**.
+
+
+## Requirements
+
+KoalaOnline supports only relatively modern browsers (Internet Explorer 10 and newer).
 
 
 ## Copyright
 
 © 2016–2021 Kasper Sundström.
 
-Alla rättigheter förbehållna. All rights reserved.
+All rights reserved.
