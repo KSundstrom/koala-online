@@ -30,7 +30,7 @@ Koala (_Kind-of-a-Lottery App_) is a tool for the Academic Male Voice Choir of H
 ## Standards and components
 
 * Written in polyglot XHTML5 + SVG + RDFa + ARIA, XML + XSD, CSS3, JavaScript, and PHP.
-* Utilizes **[Bootstrap 4](https://getbootstrap.com/docs/4.6/)**, **[jQuery 3](https://jquery.com/)**.
+* Utilizes **[Bootstrap 4](https://getbootstrap.com/docs/4.6/)** and **[jQuery 3](https://jquery.com/)**.
 * Structure in part from **[HTML5 Boilerplate 8](https://html5boilerplate.com/)**.
 
 
