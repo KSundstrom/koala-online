@@ -2,7 +2,7 @@
 
 > It’s kind of a lottery!
 
-Koala (_Kind-of-a-Lottery App_) is a tool for the Academic Male Voice Choir of Helsinki’s LSM (_Lilla Sångarmärket_) exams. _KoalaOnline_, also known as _KoalaX_, is the current web application; it is an XML-based version of an earlier TXT-based version, which was in turn preceded by an earlier local Java application, [_JKoala_](https://github.com/KSundstrom/j-koala), all written by Kasper Sundström.
+Koala (_Kind-of-a-Lottery App_) is a tool for the Academic Male Voice Choir of Helsinki’s _Lilla Sångarmärket_ exams. _KoalaOnline_, also known as _KoalaX_, is the current web application; it is an XML-based version of an earlier TXT-based version, which was in turn preceded by an earlier local Java application, [_JKoala_](https://github.com/KSundstrom/j-koala), all written by Kasper Sundström.
 
 
 ## Updating the songs
