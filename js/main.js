@@ -1,7 +1,7 @@
 /**
  * KoalaOnline
- * Copyright 2016–2021 Kasper Sundström.
- * Alla rättigheter förbehållna. All rights reserved.
+ * Copyright 2016–2022 Kasper Sundström.
+ * All rights reserved. Alla rättigheter förbehållna.
  */
 
 /**

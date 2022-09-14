@@ -4,7 +4,6 @@
 
 Koala (_Kind-of-a-Lottery App_) is a tool for the Academic Male Voice Choir of Helsinki’s _Lilla Sångarmärket_ exams. _KoalaOnline_, also known as _KoalaX_, is the current web application; it is an XML-based version of an earlier TXT-based version, which was in turn preceded by an earlier local Java application, [_JKoala_](https://github.com/KSundstrom/j-koala), all written by Kasper Sundström.
 
-
 ## Updating the songs
 
 * The songs are read from the XML file `lsm.xml` in the `xml` directory.
@@ -15,17 +14,14 @@ Koala (_Kind-of-a-Lottery App_) is a tool for the Academic Male Voice Choir of H
 * Save the file _without changing file name or extension_.
 * Use proper typographic quotations marks (`”`), apostrophes (`’`), ellipses (`…`), and other special characters.
 
-
 ## Author
 
 **[Kasper Sundström](https://twitter.com/ksundstrom)**
-
 
 ## Thanks
 
 * To **André Brunnsberg**, for assistance with the first JavaScript/jQuery draft.
 * To the **[Academic Male Voice Choir of Helsinki](https://twitter.com/akademen)**, which has inspired the design and is the intended user.
-
 
 ## Standards and components
 
@@ -33,14 +29,12 @@ Koala (_Kind-of-a-Lottery App_) is a tool for the Academic Male Voice Choir of H
 * Utilizes **[Bootstrap 3](https://getbootstrap.com/docs/3.4/)** and **[jQuery 3](https://jquery.com/)**.
 * Structure in part from **[HTML5 Boilerplate 8](https://html5boilerplate.com/)**.
 
-
 ## Requirements
 
 * Supports only modern browsers (Internet Explorer 10 and later).
 
-
 ## Copyright
 
-© 2016–2021 Kasper Sundström.
+© 2016–2022 Kasper Sundström.
 
 All rights reserved.

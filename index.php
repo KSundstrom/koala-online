@@ -1,12 +1,12 @@
 <?php
-  $haystack = isset( $_SERVER['HTTP_ACCEPT'] ) ? strtolower( $_SERVER['HTTP_ACCEPT'] ) : null;
+  $haystack = isset($_SERVER['HTTP_ACCEPT']) ? strtolower($_SERVER['HTTP_ACCEPT']) : null;
   $needle = 'application/xhtml+xml';
-  $position = strpos( $haystack, $needle );
-  if( $position !== false ) {
-    header( 'Content-Type: application/xhtml+xml; charset=utf-8' );
-    echo '<?xml version="1.0" encoding="utf-8"?>' . chr( 0x0a );
+  $position = strpos($haystack, $needle);
+  if($position !== false) {
+    header('Content-Type: application/xhtml+xml; charset=utf-8');
+    echo '<?xml version="1.0" encoding="utf-8"?>' . chr(0x0a);
   } else {
-    header( 'Content-Type: text/html; charset=utf-8' );
+    header('Content-Type: text/html; charset=utf-8');
   }
 ?>
 <!DOCTYPE html>
@@ -18,9 +18,8 @@
 
     <!--
       KoalaOnline
-      Copyright 2016–2021 Kasper Sundström.
-      All rights reserved.
-      Alla rättigheter förbehållna.
+      Copyright 2016–2022 Kasper Sundström.
+      All rights reserved. Alla rättigheter förbehållna.
     -->
 
     <title>KoalaOnline</title>
@@ -57,35 +56,23 @@
     <meta property="og:description" content="Ett verktyg för Akademens tentamina för Lilla sångarmärket. It’s kind of a lottery!"/>
 
     <!-- Bootstrap 3.4.1 CSS -->
-    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous"/>
 
     <!-- Bootstrap 3.4.1 Theme CSS -->
-    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous"/>
 
     <!-- Custom CSS and font imports -->
     <link rel="stylesheet" type="text/css" href="css/main.css"/>
 
-    <!-- jQuery Core 3.6.0 -->
-    <script defer="defer" type="application/javascript" charset="utf-8" src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- jQuery Core 3.6.1 -->
+    <script defer="defer" type="application/javascript" charset="utf-8" src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 
     <!-- Bootstrap 3.4.1 JavaScript -->
-    <script defer="defer" type="application/javascript" charset="utf-8" src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+    <script defer="defer" type="application/javascript" charset="utf-8" src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
 
     <!-- Custom AJAX and UI JavaScript -->
     <script defer="defer" type="application/javascript" charset="utf-8" src="js/main.js"></script>
-
-    <!-- Google Analytics -->
-    <script type="application/javascript">
-      //<![CDATA[
-        window.ga = window.ga || function(){ ( ga.q = ga.q || [] ).push( arguments ) };
-        ga.l =+ new Date;
-        ga( 'create', 'UA-48814688-2', 'auto' );
-        ga( 'send', 'pageview' );
-      //]]>
-    </script>
-    <script async="async" type="application/javascript" charset="utf-8" src="https://www.google-analytics.com/analytics.js"></script>
   </head>
-
   <body vocab="https://schema.org" typeof="WebApplication">
 
     <!-- OBSOLETE BROWSER WARNING -->
